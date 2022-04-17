@@ -6,6 +6,8 @@ import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
 
+const emit = defineEmits()
+
 const projectsStore = useProjectsStore()
 
 onMounted(async () => {
@@ -16,6 +18,10 @@ const dropdownOpened = ref(false)
 
 const clickOutsideDropdown = () => {
     dropdownOpened.value = false
+}
+
+function closeMenu() {
+    emit('closeMenu')
 }
 
 document.addEventListener('click', clickOutsideDropdown)
@@ -48,7 +54,9 @@ onBeforeUnmount(() => {
                 <div
                     v-for="project in projectsStore.projects"
                     :key="project.id"
-                    class="projects-menu-dropdown-link">
+                    class="projects-menu-dropdown-link"
+                    @click="closeMenu"
+                >
                     <RouterLink :to="`/projects/${project.id}`">
                         <span class="projects-menu-dropdown-link-img">
                             <InlineSvg :src="project.img_src"/>

@@ -46,7 +46,9 @@ function scrollTo(url) {
 
             <ProjectsDropdown
                 v-if="link === 'projects'"
-                :key="link" />
+                :key="link"
+                @closeMenu="emit('link-click')"
+            />
 
             <a
                 v-else-if="link.url.indexOf('#') !== -1"
