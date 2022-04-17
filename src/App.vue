@@ -6,6 +6,7 @@ import { useRoute } from 'vue-router'
 const layout = ref()
 const route = useRoute()
 const pageLoaded = ref(false)
+const pageLoadedAnimate = ref(false)
 
 watch(
     () => route.meta?.layout,
@@ -18,7 +19,10 @@ watch(
         }
         setTimeout(() => {
             pageLoaded.value = true
-        }, 800)
+        }, 500)
+        setTimeout(() => {
+            pageLoadedAnimate.value = true
+        }, 600)
     },
     { immediate: true }
 )
@@ -26,8 +30,10 @@ watch(
 
 <template>
     <div
+        v-if="pageLoaded"
         class="app-root"
-        :class="{'app-loaded': pageLoaded}">
+        :class="{'app-loaded': pageLoadedAnimate}"
+    >
         <Transition name="scale-slide">
             <Component :is="layout">
 

@@ -71,7 +71,9 @@ onUnmounted(() => {
                     </div>
 
                     <div class="second-header-menu">
-                        <SecondHeaderMenu />
+                        <SecondHeaderMenu
+                            @closeMenu="menuOpened = false"
+                        />
                     </div>
 
                     <div class="second-menu-soc">

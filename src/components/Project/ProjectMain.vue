@@ -37,6 +37,14 @@ const {
 
                 <div class="project-main-left">
 
+                    <div class="article-main-back">
+                        <RouterLink
+                            to="/"
+                            class="search-header-back-link">
+                            <span class="icon-arrow-left" />{{ t('project_page.back_link') }}
+                        </RouterLink>
+                    </div>
+
                     <div class="project-main-info">
 
                         <div class="project-main-logo">

@@ -1,10 +1,38 @@
 <script setup>
+import { ref, onMounted } from 'vue'
+import { useRouter } from 'vue-router'
 import { useHomeStore } from "@/stores/home"
 import { useI18n } from 'vue-i18n'
+import tippy, { inlinePositioning } from 'tippy.js'
+
+const router = useRouter()
 
 const { t } = useI18n()
 
 const homeStore = useHomeStore()
+
+const aboutDescription = ref(null)
+
+function checkLinksInDescr() {
+    aboutDescription.value?.querySelectorAll('[data-title]').forEach(tooltip => {
+        tippy(tooltip, {
+            content: tooltip.dataset.title,
+            inlinePositioning: true,
+            plugins: [inlinePositioning]
+        })
+    })
+    aboutDescription.value?.querySelectorAll('a').forEach(link => {
+        const href = link.getAttribute('href')
+        if (href.charAt(0) === '/') {
+            link.addEventListener('click', e => {
+                e.preventDefault()
+                router.push(href)
+            })
+        }
+    })
+}
+
+onMounted(checkLinksInDescr)
 
 </script>
 
@@ -28,6 +56,7 @@ const homeStore = useHomeStore()
                 <div class="about-right">
 
                     <p
+                        ref="aboutDescription"
                         v-animate="'slide-up'"
                         v-html="t('home_page.about.description')"
                     />

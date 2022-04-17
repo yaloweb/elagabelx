@@ -4,12 +4,10 @@ import { useSecondSiteGlobalStore } from '@/stores/secondSiteGlobal'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
-
 const secondSiteGlobalStore = useSecondSiteGlobalStore()
-
 const { menu } = secondSiteGlobalStore
-
 const submenusOpened = ref({})
+const emit = defineEmits()
 
 menu.forEach((menuItem, idx) => {
     if (menuItem.childrens) {
@@ -50,6 +48,10 @@ function getDropdownHeight () {
     })
 }
 
+function closeMenu() {
+    emit('close-menu')
+}
+
 window.addEventListener('resize', getDropdownHeight)
 
 onMounted(() => {
@@ -67,7 +69,8 @@ onUnmounted(() => {
         <ul>
             <li
                 v-for="(menuItem, menuIdx) in menu"
-                :key="menuIdx">
+                :key="menuIdx"
+            >
 
                 <template v-if="menuItem.childrens">
 
@@ -86,7 +89,9 @@ onUnmounted(() => {
                         :ref="item => dropdown[menuIdx] = item">
                         <li
                             v-for="(childrenItem, childrenIdx) in menuItem.childrens"
-                            :key="`${menuIdx}-${childrenIdx}`">
+                            :key="`${menuIdx}-${childrenIdx}`"
+                            @click="closeMenu"
+                        >
                             <RouterLink :to="childrenItem.url">
                                 <span class="second-menu-link-title" :data-title="childrenItem.title">
                                     {{ childrenItem.title }}
@@ -98,11 +103,13 @@ onUnmounted(() => {
                 </template>
 
                 <template v-else>
-                    <RouterLink :to="menuItem.url">
-                        <span class="second-menu-link-title" :data-title="menuItem.title">
-                            {{ menuItem.title }}
-                        </span>
-                    </RouterLink>
+                    <span @click="closeMenu">
+                        <RouterLink :to="menuItem.url">
+                            <span class="second-menu-link-title" :data-title="menuItem.title">
+                                {{ menuItem.title }}
+                            </span>
+                        </RouterLink>
+                    </span>
                 </template>
 
             </li>

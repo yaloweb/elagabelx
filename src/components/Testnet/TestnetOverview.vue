@@ -1,14 +1,18 @@
 <script setup>
 import { useTestnetStore } from '@/stores/testnet'
 import { storeToRefs } from 'pinia'
-import { computed } from 'vue'
+import { computed, onMounted, ref } from 'vue'
+import { useRouter } from 'vue-router'
 import TestnetBlockHeader from '@/components/Testnet/TestnetBlockHeader.vue'
 import { useI18n } from 'vue-i18n'
+import tippy, { inlinePositioning } from 'tippy.js'
 
 const { t } = useI18n()
 
 const testnetStore = useTestnetStore()
 const { testnet } = storeToRefs(testnetStore)
+const router = useRouter()
+const overviewDescription = ref(null)
 
 const statusList = [
     {
@@ -28,6 +32,27 @@ const statusList = [
 const getStatus = computed(() => {
     return statusList.filter(item => item.value === testnet.value.overview.status)[0]
 })
+
+function checkLinksInDescr() {
+    overviewDescription.value?.querySelectorAll('[data-title]').forEach(tooltip => {
+        tippy(tooltip, {
+            content: tooltip.dataset.title,
+            inlinePositioning: true,
+            plugins: [inlinePositioning]
+        })
+    })
+    overviewDescription.value?.querySelectorAll('a').forEach(link => {
+        const href = link.getAttribute('href')
+        if (href.charAt(0) === '/') {
+            link.addEventListener('click', e => {
+                e.preventDefault()
+                router.push(href)
+            })
+        }
+    })
+}
+
+onMounted(checkLinksInDescr)
 
 </script>
 
@@ -52,7 +77,10 @@ const getStatus = computed(() => {
                 </li>
             </ul>
 
-            <p v-html="testnet.overview.description"/>
+            <p
+                v-html="testnet.overview.description"
+                ref="overviewDescription"
+            />
 
         </div>
 

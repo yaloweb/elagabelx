@@ -7,11 +7,8 @@ import SearchForm from '@/components/Form/SearchForm.vue'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
-
 const glossaryStore = useGlossaryStore()
-
 const { glossary } = storeToRefs(glossaryStore)
-
 const searchValue = ref('')
 
 onMounted(async () => {
@@ -96,7 +93,10 @@ const glossaryFiltered = computed(() => {
             v-animate="'slide-up'">
             <div class="container">
 
-                <GlossaryNavigation :list="glossaryFiltered"/>
+                <GlossaryNavigation
+                    v-if="glossaryFiltered && glossaryFiltered.length"
+                    :list="glossaryFiltered"
+                />
 
             </div>
         </section>

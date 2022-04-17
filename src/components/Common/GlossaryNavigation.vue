@@ -1,6 +1,7 @@
 <script setup>
-import { ref, watch, computed, onBeforeUpdate } from 'vue'
+import { ref, watch, computed, onBeforeUpdate, onMounted } from 'vue'
 import { PerfectScrollbar } from 'vue3-perfect-scrollbar'
+import { useRoute } from 'vue-router'
 import { useI18n } from 'vue-i18n'
 
 const { t } = useI18n()
@@ -9,13 +10,36 @@ const props = defineProps({
     list: Array
 })
 
+const route = useRoute()
+const getWordQuery = route.query.word
+
 const selectedGlossary = ref([0, 0])
 
 function setSelectedGlossary() {
-    this.selectedGlossary.value = [0, 0]
+    selectedGlossary.value = [0, 0]
 }
 
-watch(props.list, setSelectedGlossary)
+function setGlossaryByQuery() {
+    if (getWordQuery && props.list.length) {
+        props.list.forEach((item, idx) => {
+            item.list.forEach((wordItem, wordIdx) => {
+                if (wordItem.title === getWordQuery) {
+                    selectedGlossary.value = [idx, wordIdx]
+                }
+            })
+        })
+    }
+}
+
+setGlossaryByQuery()
+
+watch(
+    props.list,
+    () => {
+        setSelectedGlossary()
+        setGlossaryByQuery()
+    }
+)
 
 const selectedGlossaryObject = computed(() => {
     let result = props.list[selectedGlossary.value[0]]?.list[selectedGlossary.value[1]]
@@ -36,6 +60,8 @@ onBeforeUpdate(() => {
     navItem.value = []
 })
 
+const glossaryContent = ref(null)
+
 function scrollToNavItem(index) {
     const top = navItem.value[index] ? navItem.value[index].getBoundingClientRect().top : 0
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop
@@ -46,6 +72,18 @@ function scrollToNavItem(index) {
     })
 
     selectedGlossary.value = [index, 0]
+}
+
+function selectGlossary(wordIdx, wordTitleIdx) {
+    selectedGlossary.value = [wordIdx, wordTitleIdx]
+
+    if (window.innerWidth < 768) {
+        window.scrollTo({
+            top: glossaryContent.value.getBoundingClientRect().top + window.pageYOffset - 30,
+            left: 0,
+            behavior: 'smooth'
+        })
+    }
 }
 
 </script>
@@ -89,7 +127,7 @@ function scrollToNavItem(index) {
                                 :key="`${glossaryWordIdx}-${glossaryWordTitleIdx}`"
                                 class="glossary-nav-item-titles-item"
                                 :class="{'active': glossaryWordTitleIdx === selectedGlossary[1]}"
-                                @click="selectedGlossary = [glossaryWordIdx, glossaryWordTitleIdx]">
+                                @click="selectGlossary(glossaryWordIdx, glossaryWordTitleIdx)">
                                 {{ glossaryWordTitle.title }}
                             </div>
                         </div>
@@ -104,7 +142,10 @@ function scrollToNavItem(index) {
 
             </div>
 
-            <div class="glossary-content">
+            <div
+                class="glossary-content"
+                ref="glossaryContent"
+            >
                 <div class="glossary-content-container">
 
                     <div

@@ -36,7 +36,7 @@ watch(
         <div class="educational-materials-sort-left">
 
             <div
-                v-if="filters.selectedSort === 'cards'"
+                v-if="filters.selectedSort === 'articles'"
                 class="educational-materials-sort-ranks">
 
                 <div
@@ -55,7 +55,7 @@ watch(
             </div>
 
             <div
-                v-if="filters.selectedSort === 'articles'"
+                v-if="filters.selectedSort === 'cards'"
                 class="educational-materials-sort-ratings">
 
                 <div class="educational-materials-sort-ratings-item">

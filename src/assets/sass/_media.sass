@@ -1434,10 +1434,6 @@
       height: 48px
       font-size: 10px
 
-@media (max-width: 575.98px)
-  .header-menu-body
-    width: 100%
-
   .banners-images
     position: absolute
     bottom: 0
@@ -1469,6 +1465,15 @@
       top: auto
       left: 15px
       width: calc(100% - 30px)
+
+  .banners-image
+    img
+      width: 250px
+      bottom: 40px
+
+@media (max-width: 575.98px)
+  .header-menu-body
+    width: 100%
 
   .s-project-main
     padding: 12px 0 23px
@@ -2172,3 +2177,13 @@
 
     .search-blog-form
       margin-left: 0
+
+  .banners-more
+    .btn-with-arrow
+      span
+        margin-left: 10px
+
+  .project-main-left
+    .article-main-back
+      display: block
+      position: static

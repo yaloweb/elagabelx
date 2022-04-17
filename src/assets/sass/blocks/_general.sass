@@ -58,6 +58,7 @@ h2, .h2
   font-size: rem(22px)
   font-weight: 600
   background-color: $accent
+  white-space: nowrap
   +tr
 
   &:hover:not(:active)
@@ -160,3 +161,17 @@ h2, .h2
   transform: scale(0.99) translateY(10px)
   opacity: 0
   z-index: 1
+
+.tippy-box
+  max-width: rem(272px) !important
+  background-color: #272829
+  box-shadow: 4px 15px 58px rgba(0, 0, 0, 0.43)
+  border-radius: rem(8px)
+
+.tippy-content
+  padding: rem(15px)
+  font-size: rem(14px)
+  color: #C4C4C4
+
+.tippy-arrow
+  color: #272829

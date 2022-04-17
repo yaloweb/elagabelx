@@ -121,25 +121,6 @@ onMounted(async () => {
 
                     </div>
 
-
-                    <div
-                        v-if="article.written_by && article.written_by.length"
-                        class="article-written-by">
-
-                        <div class="article-written-by-title">WRITTEN BY</div>
-
-                        <div class="article-written-by-list">
-
-                            <ArticleWrittenByItem
-                                v-for="writtenBy in article.written_by"
-                                :key="writtenBy.id"
-                                :item="writtenBy"
-                            />
-
-                        </div>
-
-                    </div>
-
                 </div>
 
             </div>

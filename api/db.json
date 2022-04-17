@@ -53,7 +53,7 @@
 			},
 			"about": {
 				"title": "О нас",
-				"description": "Мы являемся ведущим поставщиком стекинг-услуг для <a href=\"#\">блокчейн-проектов</a>. Присоединяйтесь к нашему сообществу, чтобы участвовать в развитии защищенных сетей и получать вознаграждения за это! Мы знаем о стекинге всё.",
+				"description": "Мы являемся ведущим поставщиком стекинг-услуг для <a href=\"/glossary?word=Blockchain\" data-title=\"Это текст - &#34;рыба&#34;, часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной &#34;рыбой&#34; для текстов на латинице с начала XVI века.\">блокчейн-проектов</a>. Присоединяйтесь к нашему сообществу, чтобы участвовать в развитии защищенных сетей и получать вознаграждения за это! Мы знаем о стекинге всё.",
 				"delivered_assets": "Всего поставленных активов",
 				"awards_pald": "Всего наград палд"
 			},
@@ -70,6 +70,7 @@
 			}
 		},
 		"project_page": {
+			"back_link": "Вернуться назад",
 			"network_validator": "Валидатор сети",
 			"expected_profit": "Ожидаемая прибыль",
 			"commision": "Комиссия",
@@ -268,7 +269,7 @@
 				"title": "Защитите сеть Ethere и получайте награды",
 				"description": "Фисированная комиссия 01.ETH за каждый валидатор до тех пор, пока не будет доступен вывод средств",
 				"img": "/img/main-page/banner-1.png",
-				"url": "/educational-materials/1"
+				"url": "/educational-materials/2"
 			},
 			{
 				"id": 3,
@@ -276,7 +277,7 @@
 				"title": "Защитите сеть Ethere и получайте награды",
 				"description": "Фисированная комиссия 01.ETH за каждый валидатор до тех пор, пока не будет доступен вывод средств",
 				"img": "/img/main-page/banner-1.png",
-				"url": "/educational-materials/1"
+				"url": "/educational-materials/3"
 			}
 		],
 		"about": {
@@ -702,7 +703,7 @@
 			"status": 1,
 			"dates": ["1 ноября", "уточняется"],
 			"type": "технология",
-			"description": "Это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.",
+			"description": "Это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum <a href=\"/glossary?word=Blockchain\" data-title=\"Это текст - &#34;рыба&#34;, часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной &#34;рыбой&#34; для текстов на латинице с начала XVI века.\">для распечатки образцов</a>. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.",
 			"rating": "Многообещающе",
 			"hardware": 3,
 			"complexity": 3,
@@ -1842,22 +1843,6 @@
 				"name": "twitter",
 				"title": "Twitter",
 				"url": "#"
-			}
-		],
-		"written_by": [
-			{
-				"id": 1,
-				"title": "Stake Service",
-				"img_src":"/img/article/written_by_1.svg",
-				"description": "http://stakeservice.com/ StakeService is an experienced Proof-of-Stake validator for Celo, Graph, Solana, Plasm, Avalanche, Sentinel, Bitsong",
-				"url": "http://stakeservice.com/"
-			},
-			{
-				"id": 2,
-				"title": "Stake Service",
-				"img_src":"/img/article/written_by_2.png",
-				"description": "http://stakeservice.com/ StakeService is an experienced Proof-of-Stake validator for Celo, Graph, Solana, Plasm, Avalanche, Sentinel, Bitsong",
-				"url": "http://stakeservice.com/"
 			}
 		]
 	}

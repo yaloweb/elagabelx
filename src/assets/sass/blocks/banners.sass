@@ -134,12 +134,18 @@
     opacity: .75
 
 .banners-image
-  position: absolute
-  bottom: 0
-  right: 0
-
   img
+    max-width: 100%
     width: rem(883px)
+    position: absolute
+    bottom: 0
+    right: 0
+    +tr(4)
+
+    &:not(.active)
+      opacity: 0
+      visibility: hidden
+      transform: translateX(#{rem(40px)})
 
 @keyframes updown
   0%

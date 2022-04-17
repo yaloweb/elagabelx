@@ -1,5 +1,6 @@
 <script setup>
 import { ref, computed } from 'vue'
+import { Autoplay } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { useI18n } from 'vue-i18n'
 
@@ -34,8 +35,13 @@ function bannerSlideChange(e) {
         <div class="banners-slider">
 
             <swiper
+                :modules="[Autoplay]"
                 :slides-per-view="1"
                 :allow-touch-move="false"
+                :speed="600"
+                :autoplay="{
+                    delay: 5000
+                }"
                 @swiper="onSwiper"
                 @slideChange="bannerSlideChange"
             >
