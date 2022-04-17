@@ -1,0 +1,48 @@
+.s-learning-materials
+  padding: rem(54px) 0 rem(102px)
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    z-index: 0
+    width: rem(789px)
+    height: rem(283px)
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    background-color: #355F79
+    filter: blur(#{rem(110px)})
+    top: 0
+    left: rem(193px)
+
+  &:after
+    content: ''
+    width: rem(270px)
+    height: rem(270px)
+    opacity: .98
+    background-image: url(/img/illustrations/square-lines-stroke.svg)
+    background-repeat: no-repeat
+    background-position: center
+    -webkit-background-size: contain
+    background-size: contain
+    position: absolute
+    bottom: 31%
+    left: 26%
+
+  .container
+    position: relative
+    z-index: 1
+
+.learning-materials-row
+  display: flex
+
+.learning-materials-left
+  width: 30%
+  flex-shrink: 0
+  padding-right: rem(30px)
+  margin-top: rem(37px)
+
+.learning-materials-right
+  width: 70%
+  flex-shrink: 0

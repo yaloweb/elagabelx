@@ -1,0 +1,115 @@
+.testnet-overview-main-info
+  padding-bottom: rem(55px)
+  font-weight: 400
+
+  ul
+    list-style-type: none
+    display: flex
+    flex-wrap: wrap
+    padding: 0
+    margin: 0 0 rem(22px)
+
+  li
+    color: #878787
+    text-transform: uppercase
+    margin-right: rem(110px)
+    margin-bottom: rem(15px)
+
+    &.testnet-status
+      width: 100%
+      margin-right: 0
+
+    span
+      color: #fff
+
+      &.green
+        color: #50E884
+
+      &.red
+        color: #e85050
+
+  p
+    margin: 0
+    font-size: rem(22px)
+    line-height: 1.435
+    color: #C4C4C4
+
+.testnet-characteristics
+  padding: rem(51px) 0 rem(12px)
+  border-top: 1px solid rgba(201, 204, 215, 0.18)
+
+  ul
+    list-style-type: none
+    display: flex
+    flex-wrap: wrap
+    margin: 0
+    padding: 0
+
+  li
+    flex-shrink: 0
+    width: 50%
+    padding-right: rem(20px)
+    margin-bottom: rem(39px)
+    text-transform: uppercase
+    color: #878787
+
+    span
+      color: #fff
+
+    &.testnet-rating
+      width: 100%
+
+      span
+        +text-gradient(linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%))
+
+.testnet-icon-list
+  display: inline-flex
+  align-items: center
+
+  i
+    font-style: normal
+    font-size: rem(20px)
+    margin-right: rem(6px)
+
+    &:last-child
+      margin-right: 0
+
+.testnet-system-requirements
+  padding: rem(50px) 0 rem(36px)
+  border-top: 1px solid rgba(201, 204, 215, 0.18)
+
+.testnet-system-requirements-info
+  font-size: rem(22px)
+  color: #C4C4C4
+  line-height: 1.8
+
+  *:last-child
+    margin-bottom: 0
+
+.testnet-rent
+  padding-top: rem(51px)
+  border-top: 1px solid rgba(201, 204, 215, 0.18)
+  padding-bottom: rem(42px)
+
+  ul
+    display: flex
+    flex-wrap: wrap
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+    li
+      margin: 0 rem(39px) 0 0
+
+      &:last-child
+        margin-right: 0
+
+      a
+        color: $accent
+        +tr
+        text-transform: uppercase
+        text-decoration: underline
+        text-underline-offset: rem(2px)
+
+        &:hover
+          color: $accent-hover

@@ -1,0 +1,44 @@
+.slider-nav-button
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  width: rem(69px)
+  height: rem(69px)
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  border: 1px solid rgba(67, 66, 69, 0.51)
+  cursor: pointer
+  +tr
+  font-size: rem(22px)
+  background-color: transparent
+  -webkit-appearance: none
+  -moz-appearance: none
+  appearance: none
+  outline: none
+  flex-shrink: 0
+  color: #fff
+
+  &:before
+    display: inline-block
+    font-weight: normal
+    line-height: 1
+    font-family: icon
+    transform: translateY(#{rem(-3px)})
+
+  &:hover:not(:active)
+    background-color: $accent
+    box-shadow: 0 4px 50px #3A80FB
+    border: 1px solid rgba(67, 66, 69, 0.51)
+
+  &:active
+    background-color: $accent-active
+    border: 1px solid rgba(67, 66, 69, 0.51)
+
+  &.slider-prev
+    &:before
+      content: '\e900'
+
+  &.slider-next
+    &:before
+      content: '\e901'

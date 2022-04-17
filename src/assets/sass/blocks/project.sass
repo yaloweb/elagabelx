@@ -1,0 +1,182 @@
+.s-project-main
+  position: relative
+  padding: rem(190px) 0 rem(96px)
+
+  .container
+    position: relative
+    z-index: 1
+
+.project-main-illustrations-item
+  position: absolute
+
+  &:first-child
+    width: rem(150px)
+    height: rem(150px)
+    transform-origin: top right
+    animation: triangle-rotate-1 7s infinite ease-in-out
+    top: 22%
+    left: 65%
+
+    img
+      width: rem(51px)
+
+  &:last-child
+    width: rem(150px)
+    height: rem(150px)
+    transform-origin: top right
+    animation: triangle-rotate-2 9s infinite ease-in-out
+    top: 20%
+    left: 35%
+
+@keyframes triangle-rotate-1
+  0%
+    transform: rotate(0)
+  12.5%
+    transform: rotate(45deg)
+  25%
+    transform: rotate(90deg)
+  37.5%
+    transform: rotate(135deg)
+  50%
+    transform: rotate(180deg)
+  62.5%
+    transform: rotate(225deg)
+  75%
+    transform: rotate(270deg)
+  87.5%
+    transform: rotate(315deg)
+  100%
+    transform: rotate(360deg)
+
+@keyframes triangle-rotate-2
+  0%
+    transform: rotate(0)
+  12.5%
+    transform: rotate(-45deg)
+  25%
+    transform: rotate(-90deg)
+  37.5%
+    transform: rotate(-135deg)
+  50%
+    transform: rotate(-180deg)
+  62.5%
+    transform: rotate(-225deg)
+  75%
+    transform: rotate(-270deg)
+  87.5%
+    transform: rotate(-315deg)
+  100%
+    transform: rotate(-360deg)
+
+.project-main-row
+  display: flex
+  margin: 0 rem(-10px)
+
+  > div
+    width: 50%
+    flex-shrink: 0
+    padding: 0 rem(10px)
+
+.project-main-info
+  display: flex
+  align-items: center
+  margin-bottom: rem(112px)
+
+  .project-main-logo
+    margin-right: rem(54px)
+
+.project-main-logo
+  position: relative
+
+  &:before
+    content: ''
+    position: absolute
+    bottom: rem(-23px)
+    right: rem(-49px)
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    width: rem(268px)
+    height: rem(268px)
+    background: rgba(145, 166, 250, 0.38)
+    filter: blur(#{rem(100px)})
+    z-index: -1
+
+  span
+    display: flex
+    align-items: center
+    justify-content: center
+    width: rem(143px)
+    height: rem(143px)
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    background: linear-gradient(83.7deg, #BCC8F7 15.9%, #9EB1F9 96.41%)
+    z-index: 1
+
+    svg
+      width: rem(61px)
+      height: rem(61px)
+
+      *
+        fill: white
+
+.project-main-title
+  .h6
+    font-size: rem(16px)
+    font-weight: 300
+    line-height: 1.155
+    color: rgba(#fff, .8)
+    text-transform: uppercase
+    margin-bottom: 20px
+
+  h1
+    font-size: rem(70px)
+    text-transform: uppercase
+    letter-spacing: .155em
+    line-height: 0.975
+    margin: 0
+
+.project-main-numbers
+  margin-bottom: rem(33px)
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: rem(22px)
+
+.project-main-number
+  padding: rem(20px) rem(21px) rem(23px)
+  -webkit-border-radius: rem(8px)
+  -moz-border-radius: rem(8px)
+  border-radius: rem(8px)
+  background-color: #272829
+
+.project-main-number-value
+  font-weight: bold
+  font-size: rem(30px)
+  color: #A9B8F8
+  line-height: 1.467
+  margin-bottom: rem(15px)
+
+.project-main-number-title
+  line-height: 1.44
+  color: #EAEAEA
+
+.project-main-start-stacking
+  .btn
+    height: rem(101px)
+    padding: 0 rem(68px) 0 rem(29px)
+    -webkit-border-radius: rem(8px)
+    -moz-border-radius: rem(8px)
+    border-radius: rem(8px)
+
+    &:not(:active):not(:hover)
+      background-color: #B8C5F7
+
+    span
+      font-size: rem(23px)
+      padding-right: 0
+      padding-left: rem(82px)
+
+.project-page
+  .s-callback
+    background: linear-gradient(83.7deg, #BCC8F7 15.9%, #9EB1F9 96.41%)

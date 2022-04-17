@@ -1,0 +1,92 @@
+.testnet-header
+  margin-bottom: rem(28px)
+  background-color: #272829
+  padding: rem(24px) rem(24px) rem(24px) rem(49px)
+  -webkit-border-radius: rem(6px)
+  -moz-border-radius: rem(6px)
+  border-radius: rem(6px)
+
+.testnet-header-row
+  display: flex
+  align-items: center
+
+.testnet-header-logo
+  flex-grow: 1
+  margin-right: rem(30px)
+  display: flex
+  align-items: center
+
+.testnet-header-logo-icon
+  flex-shrink: 0
+  width: rem(96px)
+  height: rem(96px)
+  background: linear-gradient(83.7deg, #BCC8F7 15.9%, #9EB1F9 96.41%)
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-right: rem(33px)
+
+  svg
+    width: rem(40px)
+    height: rem(40px)
+    flex-shrink: 0
+
+    *
+      fill: white
+
+.testnet-header-logo-title
+  text-transform: uppercase
+  font-size: rem(30px)
+  font-weight: normal
+  letter-spacing: 0.155em
+  margin: 0
+
+.testnet-header-rating
+  display: flex
+
+.testnet-header-rating-item
+  width: rem(286px)
+  margin-right: rem(25px)
+  -webkit-border-radius: rem(8px)
+  -moz-border-radius: rem(8px)
+  border-radius: rem(8px)
+  overflow: hidden
+  background: linear-gradient(83.7deg, #BCC8F7 15.9%, #9EB1F9 96.41%)
+  padding: rem(20px) rem(35px) rem(23px) rem(21px)
+  position: relative
+
+  > *:not(:before)
+    position: relative
+    z-index: 1
+
+  &:last-child
+    margin-right: 0
+
+  &:before
+    content: ''
+    position: absolute
+    top: 50%
+    right: rem(-32px)
+    margin-top: rem(-33px)
+    width: rem(64px)
+    height: rem(66px)
+    background-image: url(/img/illustrations/square-lines-small.svg)
+    background-repeat: no-repeat
+    background-position: center
+    -webkit-background-size: contain
+    background-size: contain
+    z-index: 0
+
+.testnet-header-rating-value
+  font-weight: bold
+  font-size: rem(30px)
+  line-height: 1.467
+  margin-bottom: rem(15px)
+
+.testnet-header-rating-title
+  line-height: 1.44
+  font-size: rem(16px)
+

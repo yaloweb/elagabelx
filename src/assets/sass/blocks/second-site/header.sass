@@ -1,0 +1,174 @@
+.second-header
+  position: relative
+  z-index: 5
+  padding: rem(26px) 0
+  margin-bottom: rem(50px)
+
+.second-header-row
+  display: flex
+  align-items: center
+
+.second-header-logo
+  margin-right: rem(42px)
+
+.second-logo
+  img
+    width: rem(257px)
+
+.second-header-validator-link
+  margin-right: rem(30px)
+
+  a
+    display: inline-flex
+    align-items: center
+    color: rgba(#fff, .36)
+    +tr
+    font-size: rem(18px)
+    font-weight: 300
+    white-space: nowrap
+
+    &:hover
+      color: $accent
+
+    span
+      font-size: rem(14px)
+      margin-right: rem(12px)
+
+.second-header-menu
+  margin-right: rem(57px)
+  margin-left: auto
+
+.second-menu
+  ul
+    list-style-type: none
+
+    &:not(.second-menu-children-dropdown)
+      padding: 0
+      margin: 0
+      display: flex
+      align-items: center
+
+    li
+      margin-right: rem(64px)
+      position: relative
+
+      &:last-child
+        margin-right: 0
+
+  a, .second-menu-link-children-title
+    white-space: nowrap
+    color: #fff
+    position: relative
+    font-size: rem(18px)
+    font-weight: 300
+    cursor: pointer
+    +tr
+
+    &:hover,
+    &.router-link-active,
+    &.active
+      color: transparent
+
+      span
+        &:after
+          opacity: 1
+
+    span
+      position: relative
+      display: inline-block
+
+      &:after
+        content: attr(data-title)
+        position: absolute
+        top: 0
+        left: 0
+        +text-gradient(linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%))
+        +tr
+        opacity: 0
+
+.second-menu-link-children-title
+  padding-right: rem(28px)
+
+  &.active
+    &:after,
+    &:before
+      -webkit-transform: rotate(180deg)
+      -moz-transform: rotate(180deg)
+      -ms-transform: rotate(180deg)
+      -o-transform: rotate(180deg)
+      transform: rotate(180deg)
+
+  &:after,
+  &:before
+    content: '\e912'
+    font-family: icon
+    position: absolute
+    right: 0
+    top: rem(7px)
+    font-size: rem(14px)
+    transition: transform .4s ease
+    font-weight: normal
+    line-height: 1
+
+  &:after
+    +text-gradient(linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%))
+
+
+.second-menu-children-dropdown
+  position: absolute
+  white-space: nowrap
+  padding: rem(13px) 0
+  top: 100%
+  margin-top: rem(9px)
+  right: 0
+  background-color: #272829
+  z-index: 3
+  -webkit-border-radius: rem(6px)
+  -moz-border-radius: rem(6px)
+  border-radius: rem(6px)
+  overflow: hidden
+  box-shadow: -11px 15px 115px rgba(0, 0, 0, 0.43)
+  +tr
+
+  &:not(.opened)
+    opacity: 0
+    visibility: hidden
+    transform: translateY(#{rem(-5px)})
+
+  li
+    margin: 0 !important
+
+  a
+    display: block
+    padding: 0 rem(46px) 0 rem(24px)
+    height: rem(39px)
+    line-height: rem(39px)
+
+    &:hover,
+    &.router-link-active
+      background-color: #1F2021
+
+.second-menu-soc
+  margin-right: rem(86px)
+
+  .footer-soc-nav-link
+    margin-right: rem(15px)
+
+    &:last-child
+      margin-right: 0
+
+  .footer-soc-nav-link-icon
+    width: rem(40px)
+    height: rem(40px)
+    border-color: rgba(255, 255, 255, 0.24)
+
+.second-header-menu-block
+  display: flex
+  align-items: center
+  flex-grow: 1
+
+.second-header-menu-block-top
+  display: none
+
+.second-header-menu-btn
+  display: none

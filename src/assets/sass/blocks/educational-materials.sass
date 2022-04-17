@@ -1,0 +1,95 @@
+.s-educational-materials
+  padding-top: rem(107px)
+  position: relative
+
+  &:after
+    content: ''
+    width: rem(270px)
+    height: rem(270px)
+    opacity: .98
+    background-image: url(/img/illustrations/square-lines-stroke.svg)
+    background-repeat: no-repeat
+    background-position: center
+    -webkit-background-size: contain
+    background-size: contain
+    position: absolute
+    bottom: 31%
+    left: 26%
+
+  &:before
+    content: ''
+    width: rem(347px)
+    height: rem(347px)
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    z-index: 0
+    position: absolute
+    top: rem(-161px)
+    right: rem(-12px)
+    background: rgba(145, 166, 250, 0.28)
+    filter: blur(#{rem(155px)})
+
+  .infinity-text-slider
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 1
+
+  .infinity-text-slider-slide
+    font-size: rem(190px)
+    letter-spacing: 0.255em
+    padding-right: rem(100px)
+    -webkit-text-stroke: 1px rgba(84, 84, 84, 0.24)
+
+  .container
+    position: relative
+    z-index: 2
+
+.educational-materials-row
+  display: flex
+
+.educational-materials-left
+  width: 30%
+  flex-shrink: 0
+  padding: rem(165px) rem(30px) rem(100px)
+
+.educational-materials-list-item-content
+  letter-spacing: 0.03em
+
+  .h6
+    font-weight: 500
+    font-size: rem(18px)
+    margin-bottom: rem(30px)
+
+.educational-materials-list-item-material
+  margin-bottom: rem(30px)
+  font-size: rem(18px)
+  font-weight: 300
+
+  &:last-child
+    margin-bottom: 0
+
+.educational-materials-list-item-material-title
+  color: #989EA9
+
+.educational-materials-list-item-material-url
+  a
+    color: #B8C5F7
+    +tr
+
+    &:hover
+      color: $accent
+
+.educational-materials-right
+  width: 70%
+  flex-shrink: 0
+  margin-bottom: rem(-64px)
+
+  .video-gallery
+    &:before
+      left: auto
+      right: rem(60px)
+      height: rem(157px)
+      top: rem(-94px)

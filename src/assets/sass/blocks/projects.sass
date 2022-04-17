@@ -1,0 +1,244 @@
+.projects-grid
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  grid-gap: rem(34px) rem(22px)
+
+.project-card
+  position: relative
+  overflow: hidden
+  z-index: 1
+  border-radius: rem(6px) rem(6px) 0 0
+  height: 100%
+  display: flex
+  flex-direction: column
+  +tr(4)
+
+  &:hover
+    box-shadow: 14px 40px 82px rgba(12, 12, 12, 0.63)
+    background-color: #fff
+
+    &:before
+      opacity: 0
+
+    &:after
+      opacity: 1
+
+    .project-body-bg-img
+      opacity: 1
+      transform: scale(1)
+
+    .project-logo
+      svg
+        *
+          fill: white
+
+    .project-annual-rate-title
+      color: #B99CE8
+
+    .project-annual-rate-title-value
+      color: #fff
+
+    .project-btn
+      background-color: #fff
+      color: #6F8FD6
+
+  &:active
+    box-shadow: 14px 40px 82px rgba(132, 85, 212, 0.33)
+
+    .project-btn
+      background-color: #9267D8
+      color: #fff
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #1F1F1F
+    +tr(4)
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, #A37FDF 0%, #7844CF 100%)
+    z-index: -1
+    +tr(4)
+    opacity: 0
+
+  &.announcement
+    border-radius: rem(6px)
+
+    .project-logo
+      svg
+        *
+          fill: #DCDFEC
+
+    .project-title
+      margin-bottom: rem(48px)
+
+    .project-body
+      padding-bottom: rem(53px)
+
+    &:before
+      background-color: #222
+
+    &:after
+      background: linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%)
+
+    &:hover
+      .project-title
+        color: #fff
+
+        &:after
+          transform: scaleX(0)
+
+      .project-annual-announcement-text
+        opacity: 1
+        visibility: visible
+        transform: none
+
+      .project-annual-announcement-date
+        opacity: 0
+        visibility: hidden
+        transform: translateY(#{rem(-10px)})
+
+.project-body-bg-img
+  position: absolute
+  top: 15px
+  left: 50%
+  margin-left: rem(-103px)
+  width: rem(206px)
+  +tr(4)
+  opacity: 0
+  transform: scale(1.05)
+
+  img
+    display: block
+    width: 100%
+    height: auto
+
+  svg
+    width: 100%
+    height: auto
+    opacity: .05
+
+    *
+      fill: white
+
+.project-body
+  flex-grow: 1
+  padding: rem(60px) rem(30px) rem(33px)
+  position: relative
+  z-index: 1
+  text-align: center
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.project-logo
+  flex-shrink: 0
+  height: rem(66px)
+  width: rem(89px)
+  margin: 0 auto rem(43px)
+
+  svg
+    display: block
+    width: 100%
+    height: 100%
+
+    *
+      fill: #32323E
+      +tr(4)
+
+.project-title
+  position: relative
+  padding-bottom: rem(29px)
+  color: #BEC2D0
+  text-transform: uppercase
+  margin-bottom: rem(41px)
+  width: 100%
+  +tr(4)
+
+  &:after
+    content: ''
+    position: absolute
+    height: 1px
+    width: rem(20px)
+    left: 0
+    right: 0
+    bottom: 0
+    margin-left: auto
+    margin-right: auto
+    background-color: #6972DB
+    +tr(4)
+
+.project-annual-rate
+  margin-top: auto
+
+.project-annual-rate-title
+  max-width: rem(130px)
+  line-height: 1.5
+  text-transform: uppercase
+  font-size: rem(14px)
+  color: #59596D
+  margin-bottom: rem(19px)
+  +tr(4)
+
+.project-annual-rate-title-value
+  color: #6972DB
+  +tr(4)
+
+.project-btn-container
+  position: relative
+
+.project-btn
+  display: flex
+  align-items: center
+  height: rem(54px)
+  background-color: #232323
+  padding: 0 rem(26px)
+  color: rgba(255, 255, 255, 0.72)
+  font-weight: 500
+  +tr(4)
+
+  &:after
+    content: '\e902'
+    font-size: rem(18px)
+    font-weight: normal
+    font-family: icon
+    line-height: 1
+    margin-left: auto
+    padding-left: 20px
+
+.project-card-link
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 2
+
+.project-annual-announcement-text
+  position: absolute
+  top: 100%
+  left: 0
+  width: 100%
+  font-size: rem(12px)
+  line-height: 1.525
+  color: rgba(#fff, .71)
+  margin-top: rem(-22px)
+  transform: translateY(#{rem(10px)})
+  opacity: 0
+  visibility: hidden
+  +tr(4)
+
+.project-annual-announcement-date
+  font-weight: 600
+  +text-gradient(linear-gradient(225deg, #03CF8E 1.6%, #4E8AC7 48.75%, #9648FD 89.24%))
+  +tr(4)

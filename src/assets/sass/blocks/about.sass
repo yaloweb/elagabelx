@@ -1,0 +1,56 @@
+.s-about
+  padding: rem(250px) 0 rem(108px)
+
+.about-row
+  display: flex
+  padding: 0 rem(125px)
+
+.about-left
+  width: 33%
+  flex-shrink: 0
+  padding-right: rem(30px)
+
+.about-right
+  width: 67%
+  flex-shrink: 0
+
+  p
+    max-width: rem(934px)
+    font-size: rem(30px)
+    line-height: 1.48
+    margin: 0
+
+    a
+      color: $accent
+      text-decoration: underline
+      text-decoration-color: $green
+      text-decoration-thickness: 2px
+      text-underline-offset: rem(15px)
+      +tr
+
+      &:hover
+        color: $green
+        text-decoration-color: $accent
+
+.about-quantities
+  display: flex
+  flex-wrap: wrap
+  margin-top: rem(126px)
+
+.about-quantities-item
+  white-space: nowrap
+  margin: 0 rem(120px) rem(40px) 0
+
+
+  &:last-child
+    margin-right: 0
+
+.about-quantities-item-title
+  margin-bottom: rem(45px)
+  text-transform: uppercase
+  color: #B1C1D8
+
+.about-quantities-item-value
+  color: #8989FB
+  font-size: rem(30px)
+  +text-gradient(linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%))

@@ -1,0 +1,107 @@
+.second-footer
+  background-color: #212223
+  padding: rem(90px) 0 0
+  margin-top: auto
+
+.second-footer-body
+  display: flex
+  padding-bottom: rem(21px)
+  margin: 0 rem(-15px)
+
+  > div
+    padding: 0 rem(15px)
+    flex-shrink: 0
+    margin-bottom: rem(34px)
+
+.second-footer-logo
+  width: 13%
+
+.second-footer-menu-col
+  width: 12%
+
+  &:nth-child(2)
+    .second-footer-menu-nav
+      ul
+        li
+          width: 100%
+
+  &:nth-child(3)
+    width: 31%
+
+    .second-footer-menu-nav
+      ul
+        column-count: 3
+        display: inline-block
+
+        li
+          page-break-inside: avoid
+          break-inside: avoid
+
+          margin-right: rem(30px)
+
+.second-footer-menu-col-title
+  text-transform: uppercase
+  letter-spacing: 0.03em
+  margin-bottom: rem(26px)
+
+  &:last-child
+    margin-bottom: 0
+
+  a
+    color: #fff
+    +tr
+
+    &:hover,
+    &.router-link-active
+      color: $accent
+
+.second-footer-menu-nav
+  ul
+    list-style-type: none
+    padding: 0
+    margin: 0
+    display: flex
+    flex-wrap: wrap
+
+    li
+      margin-bottom: rem(18px)
+
+      &:last-child
+        margin: 0
+
+      a
+        color: #fff
+        +tr
+
+        &:hover,
+        &.router-link-active
+          color: $accent
+
+.second-footer-soc
+  width: 20%
+
+.second-footer-soc-title
+  text-transform: uppercase
+  margin-bottom: rem(24px)
+
+.second-footer-soc-nav
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+
+  .footer-soc-nav-link
+    margin-bottom: rem(14px)
+
+    &:last-child
+      margin: 0
+
+.second-footer-copyright
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: rem(20px) 0
+  border-top: 1px solid rgba(255, 255, 255, 0.08)
+
+.second-footer-copyright-text
+  letter-spacing: 0.03em
+  color: #646465

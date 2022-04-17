@@ -1,0 +1,2174 @@
+@media (max-width: 1199.98px)
+  html, body
+    font-size: 12px
+
+  .main-menu-link
+    font-size: 14px
+    margin-right: 20px
+
+  .select-language
+    &.opened
+      .selected-language-dropdown
+        transform: translate(0, 0)
+
+  .selected-language-dropdown
+    left: auto
+    right: 0
+    transform: translate(0, -5px)
+
+    &:after
+      margin-left: 0
+      left: auto
+      right: 75px
+
+  .second-logo
+    img
+      width: 135px
+
+  .second-menu
+    ul
+      li
+        margin-right: 20px
+
+  .educational-material-list-grid
+    grid-template-columns: 1fr 1fr
+
+  .educational-materials-sort-ratings-item
+    margin-right: 40px
+
+@media (max-width: 991.98px)
+  .container
+    padding: 0 20px
+
+  .header-menu-body
+    position: fixed
+    top: 0
+    right: 0
+    height: 100%
+    background-color: #1A1A1A
+    width: 375px
+    flex-direction: column
+    align-items: stretch
+    padding: 12px 20px 110px
+    overflow-y: auto
+    transform: translateX(100%)
+    +tr(4)
+
+    &.opened
+      transform: translateX(0)
+
+  .header-mob-logo
+    display: block
+    width: 100%
+    margin-bottom: 102px
+
+    .logo
+      justify-content: flex-start
+
+  .logo
+    img
+      width: 135px
+
+  .header-menu-close
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    width: 32px
+    height: 32px
+    top: 11px
+    right: 16px
+
+    &:before
+      content: '\e90f'
+      font-size: 12px
+      line-height: 1
+      font-weight: normal
+      font-family: icon
+
+  .header-menu
+    width: 100%
+
+  .main-menu
+    margin-bottom: 50px
+    display: block
+
+  .main-menu-link
+    display: block
+    margin: 0 -20px 8px
+    padding: 0 20px
+    white-space: nowrap
+    height: 54px
+    line-height: 54px
+    position: relative
+    z-index: 1
+    font-weight: 500
+    font-size: 20px
+    color: #898F99
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(106.16deg, #3F85FE 11.52%, #1761E2 86.34%)
+      z-index: -1
+      +tr
+      opacity: 0
+
+    &.router-link-active
+      color: #fff
+
+      &:before
+        opacity: 1
+
+  .projects-menu
+    margin: 0 -20px 8px
+
+    &.opened
+      .projects-menu-link
+        color: #fff
+
+        &:before
+          opacity: 1
+
+  .projects-menu-link
+    padding: 0 20px
+    white-space: nowrap
+    height: 54px
+    line-height: 54px
+    position: relative
+    z-index: 1
+    font-weight: 500
+    font-size: 20px
+    color: #898F99
+
+    &:before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: linear-gradient(106.16deg, #3F85FE 11.52%, #1761E2 86.34%)
+      z-index: -1
+      +tr
+      opacity: 0
+
+  .projects-menu-dropdown
+    transform: none !important
+    left: 0
+    width: 100%
+    top: 100%
+
+    &:after
+      display: none
+
+    &.projects-less-4
+      .projects-menu-dropdown-link
+        width: 100%
+
+  .projects-menu-dropdown-grid
+    width: 100%
+
+  .projects-menu-dropdown-link
+    width: 25%
+
+  .projects-menu-dropdown-more
+    width: 50%
+
+  .header-language
+    margin-top: auto
+    margin-right: auto
+
+  .select-language
+    &.opened
+      .selected-language-dropdown
+        transform: translate(0, -10px)
+
+  .selected-language-dropdown
+    transform: translate(0, 0)
+    left: 0
+    width: auto
+    top: auto
+    right: auto
+    bottom: 100%
+
+    &:after
+      display: none
+
+  .selected-language-dropdown-grid
+    width: auto
+    display: block
+
+  .selected-language-item
+    width: auto
+    height: auto
+    margin: 0 !important
+
+    a
+      width: auto
+      position: static
+      font-size: 16px
+      text-transform: none
+      padding: 5px 20px
+      text-align: left
+      display: block
+      border: none !important
+
+      &:after
+        display: none
+
+  .selected-language-current
+    font-size: 20px
+    color: #898F99
+    display: inline-block
+
+    span
+      font-size: 20px
+      margin-right: 11px
+
+    &:after
+      font-size: 7px
+      top: 11px
+
+  .header-row
+    height: 57px
+
+  .header-menu-open
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-shrink: 0
+    margin-left: auto
+
+    &:before
+      content: '\e910'
+      font-size: 24px
+      line-height: 1
+      font-weight: normal
+      font-family: icon
+
+  .wrapper
+    padding-top: 57px
+
+  .banners-slider
+    padding: 35px 0 30px 30px
+
+  h1, .h1
+    font-size: 32px
+
+  .slider-nav-button
+    &:before
+      -webkit-transform: none
+      -moz-transform: none
+      -ms-transform: none
+      -o-transform: none
+      transform: none
+
+  .about-row
+    padding: 0
+
+  .projects-grid
+    grid-template-columns: repeat(4, 1fr)
+
+  .learning-materials-row
+    display: block
+
+  .learning-materials-left
+    padding: 0
+    width: 100%
+    margin-bottom: 20px
+
+  .learning-materials-right
+    width: 100%
+
+  .video-gallery
+    padding: 31px 0
+
+    &:after
+      left: -20px
+      right: -20px
+
+  .teams-slider
+    .swiper
+      padding: 0
+      margin: 0
+      overflow: visible
+
+  .teams-slider-nav
+    display: flex
+    justify-content: flex-end
+    margin-top: 15px
+
+    button
+      position: static
+      margin: 0 0 0 12px
+
+  .main-glossary-body-container
+    p
+      padding-left: 116px
+
+  .project-main-row
+    flex-wrap: wrap
+
+    & > div
+      width: 100%
+
+  .project-main-info
+    flex-direction: column
+
+    .project-main-logo
+      margin: 0 0 17px
+
+  .project-main-title
+    text-align: center
+
+  .project-main-validator-address
+    margin-bottom: 25px
+
+  .educational-materials-row
+    display: block
+
+  .educational-materials-left
+    width: 100%
+    padding: 0
+    margin: 0 0 33px
+
+  .educational-materials-right
+    width: 100%
+
+  .project-about
+    width: 100%
+
+  .faq-row
+    display: block
+
+  .faq-title
+    width: 100%
+
+  .faq-content
+    width: 100%
+
+  .second-header-menu-block
+    flex-direction: column
+    align-items: stretch
+    position: fixed
+    top: 0
+    right: 0
+    width: 375px
+    height: 100%
+    background-color: #1A1A1A
+    padding: 0 20px 53px
+    z-index: 100
+    overflow-y: auto
+    +tr(4)
+
+    &:not(.opened)
+      transform: translateX(100%)
+      opacity: 0
+      visibility: hidden
+
+  .second-header-menu-block-top
+    display: flex
+    align-items: center
+    height: 55px
+    margin-bottom: 21px
+
+  .second-header-logo-mob
+    flex-grow: 1
+
+  .second-logo
+    img
+      width: 135px
+
+  .second-header-menu-close
+    width: 24px
+    height: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-shrink: 0
+
+  .second-header-validator-link
+    margin: 0 0 64px
+
+    a
+      font-size: 12px
+
+  .second-menu
+    ul
+      display: block !important
+
+      li
+        margin: 0 0 33px
+
+  .second-header-menu
+    margin: 0 0 20px
+    flex-grow: 1
+
+  .second-menu-link-title
+    font-size: 20px
+
+  .second-menu-link-children-title
+    padding-right: 25px
+
+    &:after,
+    &:before
+      font-size: 14px
+      top: 1px
+
+  .second-menu-children-dropdown
+    position: static
+    width: auto
+    margin: 0 -20px
+    padding: 0
+    background-color: transparent
+    box-shadow: none
+    visibility: visible !important
+    transform: none !important
+
+    &:not(.opened)
+      max-height: 0 !important
+
+    a
+      padding: 0 39px
+      height: 46px
+      line-height: 46px
+      font-size: 18px
+
+    .second-menu-link-title
+      margin: 0
+
+  .second-menu-soc
+    margin: 0 0 75px
+
+    .footer-soc-nav-link-icon
+      width: 53px
+      height: 53px
+      font-size: 17px
+      margin-right: 9px
+
+  .second-header-menu-btn
+    display: block
+    margin-left: auto
+    font-size: 22px
+
+  .second-header
+    padding: 0
+    margin: 0
+
+  .second-header-row
+    height: 51px
+
+  .testnet-body-row
+    display: block
+
+  .testnet-body-sidebar
+    width: 100%
+    margin: 0 0 40px
+
+  .second-footer-body
+    flex-wrap: wrap
+    margin: 0
+
+    > div
+      padding: 0
+      margin: 0 0 34px
+
+  .second-footer-logo
+    width: 117px
+
+    img
+      width: 88px
+
+    & + .second-footer-menu-col
+      width: calc(100% - 117px)
+
+  .second-footer-menu-col
+    width: 100%
+
+  .second-footer-menu-col
+    &:nth-child(3)
+      width: 100%
+
+      .second-footer-menu-nav
+        ul
+          display: flex !important
+
+  .second-footer-soc
+    width: 100%
+
+  .second-footer-soc-nav
+    flex-direction: row
+
+    .footer-soc-nav-link
+      margin: 0 56px 0 0
+
+  .educational-materials-page
+    padding: 52px 0 12px
+
+  .educational-materials-sort
+    flex-direction: column-reverse
+    align-items: flex-start
+
+  .educational-materials-sort-right
+    margin-left: 0
+
+  .educational-materials-sort-left
+    margin: 0
+
+  .educational-materials-sort-ranks
+    margin: 10px 0 0
+
+  .educational-materials-sort-ratings
+    margin: 10px 0 0
+
+  .pool-card
+    display: block
+    -webkit-border-radius: 6px
+    -moz-border-radius: 6px
+    border-radius: 6px
+    margin-bottom: 15px
+
+  .pool-card-img
+    height: 168px
+    width: 100%
+
+    img
+      width: 87px
+      height: 87px
+
+  .pool-card-body
+    max-width: none
+    display: block
+
+  .pool-card-service
+    width: 100%
+    padding: 27px 25px 46px
+
+    .h3
+      margin-bottom: 11px
+      font-size: 22px
+
+    p
+      font-size: 12px
+      margin-bottom: 18px
+
+  .pool-card-cases
+    .h6
+      font-size: 16px
+      margin-bottom: 15px
+
+  .pool-card-cases-item
+    width: 30px
+    height: 30px
+    margin-right: 12px
+
+    svg
+      width: 12px
+      height: 12px
+
+  .pool-card-stake
+    padding: 32px 25px 41px
+    width: 100%
+
+    &:after
+      top: 0
+      height: 1px
+      width: 100%
+      left: 0
+      background-image: url('/img/border/dashed-x.svg')
+      -webkit-background-size: auto 1px
+      background-size: auto 1px
+      background-repeat: repeat-x
+
+  .pool-card-stake-title
+    margin-bottom: 7px
+    font-size: 22px
+
+  .pool-card-stake-total
+    margin-bottom: 19px
+    font-size: 33px
+
+  .pool-card-stake-site-url
+    margin-bottom: 30px
+
+    a
+      font-size: 14px
+
+  .pool-card-stake-soc
+    margin-left: 0
+
+  .pool-card-stake-soc
+    .testnet-block-soc
+      .footer-soc-nav-link
+        margin-right: 17px
+
+      .footer-soc-nav-link-icon
+        width: 38px
+        height: 38px
+        font-size: 13px
+
+  .pool-card-service
+    &:after,
+    &:before
+      width: 38px
+      height: 38px
+
+    &:before
+      top: auto
+      bottom: -19px
+      right: auto
+      left: -19px
+
+    &:after
+      bottom: -19px
+      right: -19px
+
+  .article-row
+    display: block
+
+  .article-sidebar
+    width: 100%
+    margin: 0 0 30px
+
+  .article-main
+    max-width: none
+
+  .article-page
+    position: relative
+    padding: 55px 0 24px
+
+  .article-main-back
+    position: absolute
+    top: 17px
+    left: 20px
+    right: 20px
+
+
+@media (max-width: 767.98px)
+  body
+    font-weight: 300
+
+  .banners
+    display: block
+
+  .banners-slider
+    width: 100%
+    padding: 35px 30px 0
+
+    .swiper
+      margin-bottom: 29px
+
+  .banners-slide-subtitle
+    font-size: 10px
+    margin-bottom: 11px
+
+  .banners-slide-title
+    margin-bottom: 10px
+
+  .banners-slide-descr
+    font-size: 12px
+    color: #5D6F8C
+
+  .slider-nav-button
+    width: 42px
+    height: 42px
+    font-size: 15px
+
+    &:before
+      transform: translateY(-2px)
+
+
+  .banners-slider-nav
+    .slider-prev
+      margin-right: 8px
+
+  .banners
+    position: relative
+
+  .banners-more
+    position: absolute
+    bottom: -23px
+    margin: 0
+    left: 41px
+    right: 41px
+    display: flex
+    z-index: 3
+
+  .btn
+    height: 46px
+    line-height: 46px
+    padding: 0 17px
+    font-size: 14px
+
+  .btn-with-arrow
+    span
+      height: 15px
+      font-size: 10px
+      padding: 0 4px 0 34px
+
+  .banners-images
+    width: 100%
+
+  .s-main-banners
+    &:after
+      top: -57px
+      bottom: 22px
+
+  .s-about
+    padding: 69px 0 62px
+
+  .about-row
+    display: block
+    padding: 0 38px
+
+  .about-left
+    width: 100%
+    padding: 0
+    margin: 0 0 16px
+
+    h2, .h2
+      margin: 0
+
+  h2, .h2
+    font-size: 26px
+
+  .about-right
+    width: 100%
+
+    p
+      font-size: 18px
+
+      a
+        text-underline-offset: 3px
+
+  .about-quantities
+    margin-top: 41px
+    display: block
+
+  .about-quantities-item
+    margin: 0 0 33px
+
+    &:last-child
+      margin: 0
+
+  .about-quantities-item-title
+    font-size: 12px
+    margin-bottom: 1px
+
+  .about-quantities-item-value
+    font-size: 30px
+
+  .s-networks
+    .container
+      padding-top: 76px
+      position: relative
+      border: none
+
+      &:after
+        content: ''
+        position: absolute
+        left: 20px
+        right: 20px
+        top: 0
+        height: 1px
+        background-color: #303030
+
+  .s-networks-dots
+    span
+      width: 11px
+      height: 46px
+
+      &:nth-child(2)
+        top: 31px
+        right: 20px
+
+  .networks-header
+    display: block
+    margin-bottom: 45px
+
+  .networks-header-title
+    width: 100%
+    padding: 0
+    margin: 0 0 16px
+
+    .h2
+      max-width: 207px
+
+  .networks-header-description
+    width: 100%
+
+  .networks-content
+    padding: 0
+
+  .projects-grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 15px
+
+  .project-card
+    -webkit-border-radius: 2px 2px 0 0
+    -moz-border-radius: 2px 2px 0 0
+    border-radius: 2px 2px 0 0
+
+  .project-body
+    padding: 30px 20px 29px
+
+  .project-logo
+    width: 42px
+    height: 37px
+    margin-bottom: 19px
+
+  .project-body-bg-img
+    display: none
+
+  .project-title
+    padding-bottom: 11px
+    margin-bottom: 22px
+
+  .project-annual-rate-title
+    margin-bottom: 12px
+    font-size: 12px
+    max-width: 120px
+
+  .project-btn
+    height: 36px
+    padding: 0 15px 0 13px
+    font-size: 12px
+
+    &:after
+      font-size: 15px
+
+  .open-full-projects-btn
+    height: 57px
+    line-height: 47px
+    grid-column: span 2
+    text-align: center
+    justify-content: center
+    &:not(:hover)
+      background-color: #232323
+      color: rgba(#fff, .72)
+
+  .s-networks
+    padding-bottom: 40px
+
+    &:after
+      left: 9px
+      bottom: 0
+      filter: blur(36px)
+
+    &:after
+      width: 94px
+      height: 94px
+
+  .s-in-the-future
+    padding: 42px 0 97px
+
+  .in-the-future-row
+    display: block
+
+  .in-the-future-left
+    width: 100%
+    padding: 0 0 0 37px
+    margin: 0 0 29px
+
+  .in-the-future-content
+    .h2, h2
+      margin-bottom: 15px
+
+    p
+      max-width: 272px
+      margin-bottom: 26px
+
+  .link-with-circle-arrow
+    span
+      width: 28px
+      height: 28px
+      font-size: 8px
+      margin-left: 13px
+
+  .in-the-future-right
+    width: 100%
+
+  .project-card
+    &.announcement
+      .project-logo
+        width: 56px
+        height: 56px
+        margin-bottom: 38px
+
+  .project-annual-announcement-text
+    margin: 0
+    font-size: 12px
+
+  .s-learning-materials
+    padding: 39px 0 30px
+
+    &:before
+      width: 279px
+      height: 152px
+      opacity: .55
+      top: 53px
+      left: 37px
+
+  .learning-materials-left
+    margin: 0 0 20px
+
+    .h2
+      max-width: 207px
+
+
+  .video-gallery
+    &:before
+      height: 158px
+      right: 56px
+      left: auto
+      top: -140px
+
+  .video-thumbs-nav
+    margin-right: 19px
+
+    .slider-prev
+      margin-right: 12px
+
+  .video-thumbs-swiper
+    max-width: calc(100% - 115px)
+
+  .video-play
+    width: 75px
+    height: 75px
+    background-color: #fff
+    font-size: 12px
+    color: #4B4C4F
+
+    span
+      padding-left: 2px
+
+    &:after
+      left: 4px
+      top: 4px
+      right: 4px
+      bottom: 4px
+      border-color: #E9EBED
+
+  .s-teams
+    padding: 30px 0 45px
+
+  .s-callback
+    padding: 67px 0 62px
+
+    .container
+      .h2
+        text-align: left
+        margin-bottom: 28px
+
+  .soc-nav
+    justify-content: flex-start
+
+  .soc-link
+    width: 58px
+    height: 58px
+    margin-right: 11px
+    font-size: 18px
+
+    &:after
+      top: 3px
+      left: 3px
+      right: 3px
+      bottom: 3px
+
+  .callback-bg-sliders
+    top: 0
+
+  .infinity-text-slider-slide
+    font-size: 107px
+
+  .footer
+    padding: 26px 0 93px
+    position: relative
+    font-size: 14px
+
+  .footer-body
+    flex-wrap: wrap
+
+  .footer-logo
+    width: 100%
+    order: -1
+    display: block
+    margin-bottom: 34px
+
+  .footer-up
+    position: absolute
+    bottom: 35px
+    left: 20px
+    right: 20px
+
+  .footer-up-btn
+    width: 100%
+    height: 58px
+    font-size: 10px
+
+  .footer-logo-link
+    img
+      width: 88px
+
+  .footer-col-title
+    font-size: 14px
+    margin-bottom: 19px
+
+  .footer-projects
+    width: 100%
+    margin-bottom: 31px
+
+  .footer-projects-nav
+    ul
+      width: 100%
+
+      li
+        margin-bottom: 14px
+
+  .footer-project-name
+    font-size: 14px
+
+  .footer-project-logo
+    height: 35px
+    width: 35px
+    margin-right: 12px
+    font-size: 15px
+
+  .footer-menu
+    width: 100%
+    margin-bottom: 26px
+
+  .footer-menu-nav
+    ul
+      column-count: 2
+
+      li
+        page-break-inside: avoid
+        break-inside: avoid
+        margin-bottom: 18px
+
+  .footer-soc
+    width: 100%
+
+  .footer-soc-nav
+    ul
+      column-count: 2
+
+      li
+        page-break-inside: avoid
+        break-inside: avoid
+        margin-bottom: 14px
+
+  .footer-soc-nav-link-icon
+    margin-right: 15px
+    width: 35px
+    height: 35px
+    font-size: 14px
+
+  .footer-body
+    padding-bottom: 24px
+
+  .footer-copyright
+    padding: 15px 0 24px
+    font-size: 12px
+
+  .in-the-future-bg-illustration-2
+    width: 112px
+    height: 112px
+    top: 300px
+    right: -42px
+
+  .teams-header
+    display: block
+    margin-bottom: 27px
+
+  .teams-header-left
+    padding: 0
+    width: 100%
+    margin: 0 0 15px
+
+  .teams-header-right
+    width: 100%
+
+  .s-main-glossary
+    padding: 12px 0 49px
+
+  .main-glossary-top
+    display: block
+    margin-bottom: 20px
+
+  .main-glossary-top-left
+    width: 100%
+    padding: 0
+    margin: 0 0 57px
+
+  .main-glossary-top-left-img
+    width: 260px
+
+  .main-glossary-top-right
+    width: 100%
+
+    h1, .h1
+      margin-bottom: 27px
+
+  .main-glossary-body-container
+    width: 100%
+
+    p
+      margin-bottom: 23px
+
+  .search-form-input
+    height: 51px
+    padding: 0 60px 0 18px
+    -webkit-border-radius: 4px 25px 25px 4px
+    -moz-border-radius: 4px 25px 25px 4px
+    border-radius: 4px 25px 25px 4px
+    font-size: 14px
+
+  .search-form-btn
+    top: 3px
+    right: 3px
+    height: 45px
+    width: 45px
+    font-size: 12px
+
+  .glossary-list
+    display: block
+
+  .glossary-nav
+    width: 100%
+    margin-bottom: 33px
+
+  .s-glossary
+    padding: 34px 0 61px
+
+  .glossary-block-nav-words
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    margin-bottom: 38px
+
+    a
+      margin: 0 8px
+      text-transform: uppercase
+      font-size: 14px
+      color: #696A6D
+
+      &.active
+        color: #fff
+        font-weight: normal
+
+      &:first-child
+        margin-left: 0
+
+      &:last-child
+        margin-right: 0
+
+  .glossary-nav
+    .ps
+      max-height: none !important
+      padding-right: 0
+
+    .ps__rail-y
+      display: none !important
+
+  .glossary-nav-item
+    padding: 21px 25px
+    margin-bottom: 8px
+
+  .glossary-nav-item-word
+    width: 25px
+    margin-right: 21px
+    font-size: 32px
+
+  .glossary-nav-item-titles-item
+    margin-bottom: 2px
+    font-size: 14px
+
+  .glossary-nav-end
+    display: block
+    text-align: center
+    margin-top: 13px
+    color: #ACB9CE
+    font-size: 14px
+
+  .glossary-content
+    width: 100%
+
+  .glossary-content
+    padding: 36px 28px 42px
+
+  .glossary-content-title
+    font-size: 26px
+    margin-bottom: 18px
+
+  .glossary-content-description
+    color: #989EA9
+
+  .testnet-header-row
+    flex-direction: column
+
+  .testnet-header
+    padding: 22px 25px 25px
+    -webkit-border-radius: 6px
+    -moz-border-radius: 6px
+    border-radius: 6px
+
+  .testnet-header-logo
+    margin: 0 0 31px
+
+  .testnet-block-content
+    padding: 30px
+
+  .testnet-block-soc
+    margin: 0
+
+  .educational-material-list-grid
+    grid-template-columns: 1fr
+    margin-bottom: 8px
+
+  .pool-page
+    padding: 93px 0 0
+
+    .page-title-center
+      text-align: left
+      margin-bottom: 38px
+
+  .s-pool
+    padding: 0 0 20px
+
+  .article-main-back
+    .search-header-back-link
+      font-size: 12px
+
+      span
+        font-size: 10px
+        margin-right: 7px
+
+        &:before
+          content: '\e911'
+
+  .article-content-navigation
+    padding: 25px 0 15px
+
+  .article-content-navigation-title
+    padding: 0 20px 12px
+    font-size: 18px
+
+  .article-content-navigation-link
+    font-size: 14px
+    padding: 13px 20px 13px 46px
+
+    &:before
+      width: 4px
+      height: 4px
+      left: 20px
+      margin-top: -2px
+
+    &:after
+      font-size: 13px
+      left: 20px
+      margin-top: -6.5px
+
+  .article-author
+    margin-bottom: 17px
+
+  .article-author-img
+    margin-right: 13px
+
+    img
+      width: 43px
+      height: 43px
+
+  .article-author-name
+    font-size: 18px
+    margin-bottom: 4px
+
+  .article-reading-info
+    margin-bottom: 25px
+    font-size: 12px
+
+    span
+      margin-right: 22px
+
+      &:after
+        width: 2px
+        height: 2px
+        top: 8px
+        right: -12px
+
+  .article-main-img
+    margin-bottom: 36px
+
+  .article-body
+    h1
+      font-size: 18px
+      margin-bottom: 17px
+
+  .article-content
+    font-size: 12px
+    padding-bottom: 17px
+
+    p
+      margin-bottom: 17px
+
+    blockquote
+      margin: 38px 0 44px
+      padding-left: 19px
+      border-left-width: 2px
+      font-size: 16px
+
+      span
+        margin-top: 15px
+        font-size: 12px
+        font-weight: normal
+
+    h3
+      font-size: 18px
+      margin: 44px 0 17px
+
+    > img
+      margin: 25px 0 28px
+
+  .block-external
+    margin: 30px 0 25px
+    flex-direction: column-reverse
+    padding: 0
+
+  .block-external-img
+    img
+      width: 100%
+
+  .block-external-content
+    padding: 24px 22px 22px 24px
+
+  .block-external-title
+    margin-bottom: 7px
+    font-size: 18px
+
+  .block-external-description
+    margin-bottom: 19px
+    font-size: 12px
+
+  .block-external-link
+    a
+      font-size: 12px
+
+  .article-footer
+    padding: 33px 0 26px
+    flex-wrap: wrap
+
+    .article-author
+      width: 100%
+      margin: 0 0 17px
+
+  .article-likes-icon
+    width: 35px
+    height: 35px
+    font-size: 14px
+    margin-right: 8px
+
+  .article-likes-quantity
+    font-size: 18px
+
+  .article-share-btn
+    height: 40px
+    line-height: 38px
+    padding: 0 21px
+    font-size: 12px
+
+  .article-share-dropdown
+    padding: 15px 0
+    -webkit-border-radius: 22px
+    -moz-border-radius: 22px
+    border-radius: 22px
+    min-width: 226px
+    margin-bottom: 17px
+
+    a
+      height: 48px
+      padding: 0 20px
+      font-size: 14px
+
+      span
+        width: 35px
+        height: 35px
+        font-size: 16px
+        margin-right: 7px
+
+  .article-written-by
+    padding: 24px 0 0
+
+  .article-written-by-item
+    margin-bottom: 39px
+    flex-wrap: wrap
+
+  .article-written-by-item-img
+    margin-right: 23px
+
+    img
+      width: 60px
+      height: 60px
+
+  .article-written-by-item-content
+    margin: 0
+    width: calc(100% - 83px)
+
+  .article-written-by-item-title
+    margin-bottom: 5px
+    font-size: 18px
+
+  .article-written-by-item-description
+    font-size: 14px
+
+  .article-written-by-item-link
+    margin: 24px 0 0 83px
+
+    a
+      width: 48px
+      height: 48px
+      font-size: 10px
+
+@media (max-width: 575.98px)
+  .header-menu-body
+    width: 100%
+
+  .banners-images
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 100%
+    height: 100%
+    z-index: 0
+
+  .banners-slider
+    position: relative
+    padding-bottom: 150px
+    z-index: 1
+
+  .banners-image-hand
+    width: 292px
+    position: absolute
+    bottom: 30px
+    right: -50px
+
+  .banners-image-gift
+    right: 80px
+    left: auto
+    bottom: 150px
+    width: 91px
+
+  .banners-image-texture
+    img
+      bottom: -30px
+      top: auto
+      left: 15px
+      width: calc(100% - 30px)
+
+  .s-project-main
+    padding: 12px 0 23px
+
+  .project-main-logo
+    margin-bottom: 17px
+
+    span
+      width: 68px
+      height: 68px
+
+      svg
+        width: 29px
+        height: 29px
+
+  .project-main-title
+    display: flex
+    flex-direction: column-reverse
+    align-items: center
+
+    h1
+      font-size: 36px
+      margin-bottom: 8px
+
+    .h6
+      font-size: 12px
+      margin: 0
+
+  .project-main-info
+    margin-bottom: 20px
+
+  .validator-input-head
+    height: auto
+    line-height: 1.4
+
+  .validator-input-head-address
+    display: none
+
+  .validator-input-head-name
+    width: 100%
+    padding: 16px 20px
+    text-transform: uppercase
+    font-size: 12px
+    font-weight: normal
+
+    span
+      display: block
+      color: #fff
+
+  .validator-input-body
+    padding: 9px 20px 14px
+
+  .validator-input
+    -webkit-border-radius: 21px
+    -moz-border-radius: 21px
+    border-radius: 21px
+
+  .validator-input-body-name
+    display: none
+
+  .validator-input-body-address
+    width: 100%
+    padding: 0
+
+  .validator-input-body-address
+    line-height: 1.4
+
+    &:before
+      content: attr(data-title)
+      display: block
+      text-transform: uppercase
+      font-size: 12px
+      font-weight: normal
+      color: #666A6D
+      margin-bottom: 3px
+
+  .validator-input-body-address-value
+    max-width: calc(100% - 45px)
+    white-space: normal
+    word-wrap: break-word
+    font-size: 12px
+    line-height: 1.1
+
+  .validator-input-body-address-btn
+    width: 23px
+    height: 23px
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 21px
+    margin-left: 22px
+
+  .project-main-validator-address
+    margin-bottom: 20px
+
+  .project-main-numbers
+    grid-gap: 10px
+
+  .project-main-number
+    padding: 14px 13px
+    -webkit-border-radius: 6px
+    -moz-border-radius: 6px
+    border-radius: 6px
+
+  .project-main-number-value
+    font-size: 14px
+    margin-bottom: 12px
+
+  .project-main-number-title
+    font-size: 12px
+    color: #616161
+    line-height: 1.1
+
+  .project-main-start-stacking
+    margin-left: -20px
+
+    .btn
+      -webkit-border-radius: 0
+      -moz-border-radius: 0
+      border-radius: 0
+      height: 73px
+      line-height: 73px
+      padding: 0 33px 0 20px
+      font-size: 14px
+      text-transform: uppercase
+
+      span
+        height: 16px
+        font-size: 11px
+        padding-left: 30px
+        margin-left: 20px
+
+  .project-main-illustrations-item
+    &:first-child
+      width: 50px
+      height: 50px
+      top: 12%
+      left: 5%
+
+      img
+        width: 33px
+
+    &:last-child
+      width: 30px
+      height: 30px
+      left: auto
+      right: 15%
+      top: 12%
+
+      img
+        width: 33px
+
+  .s-educational-materials
+    padding-top: 23px
+
+  .s-educational-materials
+    .infinity-text-slider-slide
+      font-size: 55px
+      padding-right: 20px
+
+  .educational-materials-left
+    .h2
+      max-width: 207px
+      margin-bottom: 33px
+
+    .h6
+      font-size: 14px
+      font-weight: 500
+      margin-bottom: 9px
+
+  .educational-materials-list-item-material
+    margin-bottom: 15px
+    font-size: 14px
+    font-weight: 300
+
+  .educational-materials-right
+    .video-gallery
+      padding-bottom: 77px
+
+      &:before
+        display: none
+
+  .s-project-about
+    padding: 120px 0 90px
+
+  .project-about
+    .h2
+      padding-left: 54px
+      margin-bottom: 32px
+      font-weight: normal
+      line-height: 1.12
+
+  .project-about-logo
+    margin-right: 54px
+
+    .project-main-logo
+      span
+        width: 51px
+        height: 51px
+        box-shadow: -11px 0px 52px rgba(255, 255, 255, 0.83)
+
+        svg
+          width: 22px
+          height: 22px
+
+  .project-about-content
+    border-top-width: 1px
+    padding-top: 18px
+
+  .project-about-content
+    p
+      font-size: 12px
+      margin-bottom: 13px
+
+  .project-about-illustration
+    width: 328px
+    height: 328px
+    bottom: auto
+    left: -212px
+    top: -122px
+
+    span
+      background-image: none !important
+
+    span:nth-child(12),
+    span:nth-child(15)
+      background-image: url(/img/illustrations/square-lines-stroke-white-mob.svg) !important
+
+  .s-faq
+    padding: 81px 0 58px
+
+  .faq-title
+    padding: 0
+    margin: 0 0 27px
+
+    .h2, h2
+      margin: 0
+
+  .accordion-item
+    margin-left: 53px
+
+    &.opened
+      .accordion-item-icon
+        box-shadow: 0px 4px 35px rgba(174, 189, 246, 0.55)
+
+  .accordion-item-question-value
+    font-size: 20px
+    line-height: 1.1175
+
+  .accordion-item-question
+    padding: 30px 0 24px
+
+  .accordion-item-icon
+    width: 28px
+    height: 28px
+    margin: 0 18px 0 0
+    top: 24px
+
+    &:after
+      width: 47px
+      height: 39px
+      background-image: url(/img/illustrations/triangle-polygon-mob.svg)
+      margin-left: -24px
+      bottom: 0
+
+    span
+      width: 8px
+      height: 8px
+
+      &:before
+        left: 3px
+
+      &:after
+        top: 3px
+
+  .accordion-item-answer-content
+    padding-left: 45px
+    font-size: 12px
+    left: 0.03em
+    padding-bottom: 37px
+
+  .testnet-header-logo
+    flex-direction: column
+
+  .testnet-header-logo-icon
+    margin: 0 0 25px
+    width: 75px
+    height: 75px
+
+    svg
+      width: 31px
+      height: 31px
+
+  .testnet-header-logo-title
+    font-size: 20px
+
+  .testnet-header-rating
+    display: block
+    width: 100%
+
+  .testnet-header-rating-item
+    width: 100%
+    margin: 0 0 16px
+    padding: 14px 13px 15px
+
+    &:last-child
+      margin: 0
+
+    &:before
+      width: 66px
+      height: 66px
+      right: -33px
+      margin-top: -33px
+
+  .testnet-header-rating-value
+    font-size: 14px
+    margin-bottom: 12px
+
+  .testnet-header-rating-title
+    font-size: 12px
+
+  .testnet-sidebar
+    padding: 6px 0 46px
+
+  .testnet-sidebar-menu-link
+    font-size: 14px
+    padding: 19px 25px
+
+    &:after
+      width: 2px
+
+  .testnet-sidebar-telegram
+    .soc-link
+      width: 58px
+      height: 58px
+      font-size: 16px
+
+  .testnet-block-content
+    padding: 33px 25px 30px
+
+  .testnet-block-header
+    margin: 0 0 20px
+
+  .testnet-block-header-title
+    font-size: 14px
+    line-height: 1.225
+    margin-right: 15px
+
+  .testnet-block-soc
+    .footer-soc-nav-link
+      margin-right: 7px
+
+    .footer-soc-nav-link-icon
+      width: 28px
+      height: 28px
+      font-size: 10px
+
+  .testnet-overview-main-info
+    padding-bottom: 20px
+
+    ul
+      margin: 0 0 10px
+
+      li
+        font-size: 12px
+        margin-bottom: 3px
+
+    p
+      font-size: 12px
+      line-height: 1.435
+
+  .testnet-characteristics
+    padding: 20px 0
+
+    li
+      width: 100% !important
+      padding: 0 !important
+      margin: 0 0 5px
+      font-size: 12px
+
+      &:last-child
+        margin-bottom: 0
+
+  .testnet-icon-list
+    i
+      font-size: 13px
+
+  .testnet-system-requirements
+    padding: 20px 0
+
+  .testnet-body-main
+    .h3
+      font-size: 14px
+      line-height: 1.225
+      margin-bottom: 9px
+
+  .testnet-system-requirements-info
+    font-size: 12px
+    line-height: 1.65
+
+  .testnet-rent
+    padding-bottom: 0
+
+    ul
+      margin-top: 15px
+
+      li
+        font-size: 14px
+        margin-right: 41px
+
+  .testnet-page
+    padding-bottom: 20px
+
+  .second-footer
+    padding: 26px 0 0
+
+  .second-footer-menu-col-title
+    font-size: 14px
+    margin-bottom: 10px
+
+  .second-footer-menu-nav
+    ul
+      li
+        margin-bottom: 11px
+        font-size: 14px
+
+  .second-footer-menu-col
+    &:nth-child(2)
+      .second-footer-menu-nav
+        ul
+          li
+            width: auto
+            margin-right: 39px
+
+            &:last-child
+              margin-right: 0
+    &:nth-child(3)
+      .second-footer-menu-nav
+        ul
+          li
+            margin-right: 39px
+
+  .second-footer-body
+    padding-bottom: 22px
+
+    > div
+      margin: 0 0 22px
+
+      &:last-child
+        margin-bottom: 0 !important
+
+  .second-footer-copyright
+    padding: 15px 0 19px
+    display: block
+
+  .second-footer-copyright-text
+    font-size: 12px
+    margin-bottom: 24px
+
+  .testnet-installation-guide-body
+    .testnet-rent
+      padding-top: 22px
+      padding-bottom: 26px
+
+  .testnet-official-docs
+    margin-bottom: 28px
+
+  .testnet-official-docs-block
+    font-size: 12px
+    padding: 14px 17px 13px
+    line-height: 1.23
+    border-radius: 8px
+
+  .testnet-installation-guide-code
+    .h5
+      font-size: 12px
+      margin-bottom: 3px
+
+  .code-block
+    margin-bottom: 12px
+    padding: 4px 11px 8px 9px
+    border-radius: 8px
+    font-size: 12px
+
+  .code-block-copy
+    margin-top: auto
+    font-size: 12px
+
+  .testnet-installation-guide-step
+    margin-bottom: 16px
+
+  .testnet-installation-guide-step-help
+    margin-bottom: 9px
+
+  .testnet-installation-guide-step-help-content
+    padding: 4px 11px 8px 9px
+    border-radius: 8px
+    font-size: 12px
+
+  .testnet-material-card
+    display: block
+    margin-bottom: 10px
+
+  .testnet-material-card-img
+    width: 100%
+    margin: 0
+
+    &:before
+      padding-bottom: 66%
+
+  .testnet-material-card-body
+    padding: 20px 80px 20px 20px
+
+  .testnet-material-card-date
+    font-size: 12px
+    margin: 0 0 10px
+
+  .testnet-material-title
+    font-size: 14px
+    margin: 0 0 8px
+
+  .testnet-material-description
+    font-size: 12px
+
+  .testnet-material-icon
+    width: 44px
+    height: 44px
+    bottom: 20px
+    right: 20px
+
+  .page-title-center
+    margin-bottom: 22px
+
+  .search-blog-form
+    width: 240px
+    margin: 0 auto 30px
+
+  .search-blog-form-input
+    span
+      font-size: 14px
+      margin-right: 13px
+
+    input
+      height: 35px
+      font-size: 12px
+
+  .educational-materials-tags-nav
+    flex-wrap: wrap
+    justify-content: center
+    margin-left: -3px
+    margin-right: -3px
+
+    a
+      width: calc(50% - 6px)
+      margin: 0 3px 6px
+      height: 36px
+      line-height: 36px
+      font-size: 12px
+
+      &:after
+        display: none
+
+  .educational-materials-header
+    margin-bottom: 48px
+
+  .educational-materials-sort
+    padding-bottom: 14px
+    margin-bottom: 18px
+
+  .educational-materials-sort-view
+    a
+      font-size: 11px
+      margin-right: 30px
+
+      span
+        font-size: 18px
+        margin-right: 7px
+
+  .radio-group
+    .form-radio
+      margin-bottom: 5px
+
+  .search-blog-form-results
+    margin-top: 8px
+    padding: 13px 0
+
+    a
+      height: 29px
+      line-height: 29px
+      padding: 0 14px
+      font-size: 12px
+
+  .educational-material-card-left
+    padding: 21px 0 28px 23px
+
+  .educational-material-card-title
+    font-size: 16px
+    margin-bottom: 27px
+
+  .educational-material-card-rating
+    font-size: 12px
+
+    span
+      margin: 5px 0 0
+
+  .educational-material-card-tech
+    margin-top: 23px
+    font-size: 12px
+
+  .educational-material-card-tech-icons
+    margin-left: 12px
+
+    span
+      font-size: 14px
+
+  .educational-material-card-right
+    width: 126px
+
+    &:after
+      transform: skew(-13deg, 0)
+
+  .educational-material-card-img
+    svg
+      width: 37px
+      height: 37px
+
+  .educational-material-card-bg-img
+    right: -9px
+
+    svg
+      width: 91px
+      height: 95px
+
+  .educational-material-list-grid
+    grid-gap: 8px
+
+  .educational-material-article
+    padding: 21px 36px 31px 24px
+
+  .educational-material-article-date
+    margin-bottom: 7px
+    font-size: 12px
+
+  .educational-material-article-title
+    margin-bottom: 6px
+    font-size: 16px
+    line-height: 1.225
+
+  .educational-material-article-description
+    padding-right: 49px
+    font-size: 12px
+    line-height: 1.285
+
+  .educational-material-article-rank
+    top: 15px
+    right: 13px
+
+  .rank
+    span
+      height: 14px
+      line-height: 14px
+      padding: 0 5px
+      -webkit-border-radius: 2px
+      -moz-border-radius: 2px
+      border-radius: 2px
+      font-size: 10px
+
+  .educational-material-article-link-icon
+    bottom: 15px
+    right: 15px
+    width: 44px
+    height: 44px
+    font-size: 8px
+
+  .educational-material-list-load-more
+    .btn
+      height: 52px
+      line-height: 52px
+      font-size: 14px
+
+  .search-page
+    padding-top: 40px
+
+  .search-header-back
+    text-align: left
+    margin-bottom: 33px
+
+  .search-header-back-link
+    font-size: 12px
+
+    span
+      font-size: 26px
+      margin-right: 12px
+
+  .search-header
+    h1, .h1
+      margin-bottom: 22px
+      text-align: left
+      font-size: 32px
+      line-height: 1.045
+
+    .search-blog-form
+      margin-left: 0

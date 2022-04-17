@@ -1,0 +1,110 @@
+.s-callback
+  background: linear-gradient(211.47deg, #4EFBC7 -30.59%, #7EBFFA 31.98%, #9648FD 85.72%)
+  padding: rem(48px) 0 rem(69px)
+  position: relative
+  overflow: hidden
+
+  .container
+    position: relative
+    z-index: 1
+
+    .h2
+      text-align: center
+      font-weight: 500
+      line-height: .94
+      margin-bottom: rem(28px)
+
+.soc-nav
+  display: flex
+  align-items: center
+  justify-content: center
+
+.soc-link
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-right: rem(20px)
+  width: rem(104px)
+  height: rem(104px)
+  flex-shrink: 0
+  font-size: rem(29px)
+  position: relative
+  z-index: 1
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  background-color: #fff
+  color: #A3B5F9 !important
+  +tr
+
+  &:hover:not(:active)
+    color: #fff !important
+    background-color: transparent
+
+    &:before
+      opacity: 1
+
+    &:after
+      border-color: rgba(255, 255, 255, 0.24)
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    background: linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%)
+    z-index: 0
+    +tr
+    opacity: 0
+
+  &:after
+    content: ''
+    position: absolute
+    top: rem(5px)
+    left: rem(5px)
+    right: rem(5px)
+    bottom: rem(5px)
+    border-radius: 50%
+    border: 1px solid rgba(98, 91, 248, 0.24)
+    +tr
+
+  &:last-child
+    margin: 0
+
+  span
+    position: relative
+    z-index: 1
+
+.infinity-text-slider
+  .swiper-wrapper
+    transition-timing-function: linear !important
+
+  .swiper-slide
+    width: auto !important
+
+.infinity-text-slider-slide
+  line-height: .86
+  font-size: rem(150px)
+  color: transparent
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.24)
+  text-transform: uppercase
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+  +font2
+
+.callback-bg-sliders
+  position: absolute
+  top: rem(-10px)
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 0

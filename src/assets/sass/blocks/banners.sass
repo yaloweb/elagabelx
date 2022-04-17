@@ -1,0 +1,162 @@
+.s-main-banners
+  &.loaded
+    &:after,
+    .banners-slider-nav,
+    .banners,
+    .banners-slide-subtitle,
+    .banners-slide-title,
+    .banners-slide-descr,
+    .banners-more,
+    .banners-image-gift,
+    .banners-image-hand
+      opacity: 1
+      transform: none
+
+    .banners-image-texture img
+      opacity: 1
+
+.s-main-banners
+  position: relative
+
+  &:after
+    content: ''
+    position: absolute
+    top: rem(-114px)
+    left: 0
+    right: 0
+    bottom: rem(86px)
+    z-index: 0
+    background: linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%)
+
+.banners
+  position: relative
+  z-index: 1
+  background-color: #1C1C1C
+  box-shadow: 0 rem(33px) rem(118px) rgba(0, 0, 0, 0.62)
+  display: flex
+
+.banners-slider
+  width: 47%
+  flex-shrink: 0
+  padding: rem(115px) rem(65px) 0 rem(125px)
+  display: flex
+  flex-direction: column
+
+  .swiper
+    width: 100%
+    margin-bottom: rem(40px)
+
+.banners-slide-subtitle
+  color: $green
+  text-transform: uppercase
+  margin-bottom: rem(25px)
+
+.banners-slide-title
+  margin-bottom: rem(21px)
+
+  .h1
+    margin: 0
+
+.banners-slide-descr
+  font-size: rem(22px)
+  color: #828282
+  line-height: 1.454
+
+.banners-slider-nav
+  display: flex
+  align-items: center
+  margin-top: auto
+
+  .slider-prev
+    margin-right: rem(19px)
+
+.banners-more
+  margin: rem(36px) 0 rem(-55px)
+
+.banners-images
+  flex-shrink: 0
+  width: 53%
+  position: relative
+  padding-top: rem(209px)
+  display: flex
+  flex-direction: column
+  justify-content: flex-end
+  overflow: hidden
+
+.banners-image-hand
+  padding-bottom: rem(15px)
+  position: relative
+  z-index: 2
+  flex-grow: 1
+
+  img
+    display: block
+    width: 100%
+
+.banners-image-texture
+
+  img
+    position: absolute
+    left: 12%
+    top: 9%
+    width: 78%
+    z-index: 0
+    animation: updown2 4s infinite ease-in-out
+
+.banners-image-gift
+  position: absolute
+  z-index: 1
+  bottom: 46%
+  left: 22%
+  width: 32%
+  animation: updown 3.4s infinite ease-in-out
+
+  img
+    display: block
+    width: 100%
+    position: relative
+    z-index: 1
+
+  &:after
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 97%
+    height: 97%
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    filter: blur(#{rem(45px)})
+    background: #3A80FB
+    z-index: 0
+    opacity: .75
+
+.banners-image
+  position: absolute
+  bottom: 0
+  right: 0
+
+  img
+    width: rem(883px)
+
+@keyframes updown
+  0%
+    transform: translateY(0)
+  25%
+    transform: translateY(#{rem(20px)})
+  50%
+    transform: translateY(0)
+  75%
+    transform: translateY(#{rem(20px)})
+  100%
+    transform: translateY(0)
+
+@keyframes updown2
+  0%
+    transform: translateY(#{rem(-25px)})
+  50%
+    transform: translateY(#{rem(25px)})
+  100%
+    transform: translateY(#{rem(-25px)})

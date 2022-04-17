@@ -1,0 +1,451 @@
+.article-page
+  padding: rem(48px) 0 rem(87px)
+
+.article-row
+  display: flex
+
+.article-sidebar
+  width: rem(431px)
+  flex-shrink: 0
+  margin-right: rem(131px)
+
+.article-main
+  flex-grow: 1
+  max-width: rem(877px)
+
+.article-content-navigation
+  position: sticky
+  top: rem(30px)
+  background-color: #2E2F30
+  padding: rem(31px) 0 rem(30px)
+
+.article-content-navigation-title
+  font-size: rem(22px)
+  padding: 0 rem(31px) rem(25px)
+  font-weight: normal
+  line-height: 1.105
+
+.article-content-navigation-link
+  position: relative
+  padding: rem(14px) rem(14px) rem(14px) rem(59px)
+  color: #aaa
+  font-size: rem(22px)
+  font-weight: normal
+  line-height: 1.105
+  display: flex
+  +tr
+
+  &.active
+    background-color: #292929
+
+    span
+      &:before
+        opacity: 1
+
+    &:before
+      transform: translateX(#{rem(5px)})
+      opacity: 0
+
+    &:after
+      transform: translateX(0)
+      opacity: 1
+
+  &:before
+    content: ''
+    position: absolute
+    width: rem(4px)
+    height: rem(4px)
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    background-color: #C4C4C4
+    top: 50%
+    margin-top: rem(-2px)
+    left: rem(33px)
+    +tr
+
+  &:after
+    content: '\e921'
+    font-family: icon
+    font-weight: normal
+    line-height: 1
+    font-size: rem(13px)
+    +text-gradient(linear-gradient(225.47deg, #4EFBC7 -24.59%, #7EBFFA 48.28%, #9648FD 110.85%))
+    position: absolute
+    left: rem(33px)
+    top: 50%
+    margin-top: rem(-6.5px)
+    +tr
+    opacity: 0
+    transform: translateX(#{rem(-5px)})
+
+  &:hover
+    color: transparent
+
+    span
+      &:before
+        opacity: 1
+
+  span
+    position: relative
+    +tr
+
+    &:before
+      content: attr(data-text)
+      top: 0
+      left: 0
+      height: 100%
+      position: absolute
+      z-index: 1
+      +text-gradient(linear-gradient(225.47deg, #4EFBC7 -24.59%, #7EBFFA 48.28%, #9648FD 110.85%))
+      +tr
+      opacity: 0
+
+.article-main-back
+  margin-bottom: rem(57px)
+
+.article-author
+  display: flex
+
+  margin-bottom: rem(32px)
+
+.article-author-img
+  margin-right: rem(21px)
+
+  img
+    width: rem(75px)
+    height: rem(75px)
+    object-fit: cover
+    border-radius: 50%
+    display: block
+
+.article-author-name
+  margin-bottom: rem(8px)
+  font-weight: normal
+  font-size: rem(30px)
+  line-height: 1.105
+
+.article-reading-info
+  margin-bottom: rem(31px)
+  display: flex
+  align-items: center
+  white-space: nowrap
+  color: #898989
+
+  span
+    margin-right: rem(30px)
+    position: relative
+
+    &:after
+      content: ''
+      width: rem(3px)
+      height: rem(3px)
+      background-color: #898989
+      top: rem(11px)
+      right: rem(-17px)
+      -webkit-border-radius: 50%
+      -moz-border-radius: 50%
+      border-radius: 50%
+      position: absolute
+
+    &:last-child
+      margin-right: 0
+
+      &:after
+        display: none
+
+.article-main-img
+  margin-bottom: rem(89px)
+
+  img
+    width: 100%
+    display: block
+
+.article-body
+  h1
+    font-size: rem(62px)
+    font-weight: 500
+    margin-bottom: rem(41px)
+    line-height: 1.105
+
+.article-content
+  line-height: 1.529
+  color: #ddd
+  font-size: rem(22px)
+  padding-bottom: rem(70px)
+
+  *:last-child
+    margin-bottom: 0
+
+  p
+    margin-bottom: rem(29px)
+
+    a
+      position: relative
+      +text-gradient(linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%))
+
+      &:hover
+        &:after
+          transform: scaleX(0)
+
+      &:after
+        content: ''
+        position: absolute
+        bottom: rem(2px)
+        left: 0
+        width: 100%
+        height: 1px
+        background: linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%)
+        +tr
+        transform-origin: top left
+
+  blockquote
+    display: block
+    margin: rem(40px) 0 rem(55px)
+    padding-left: rem(41px)
+    border-left: rem(3px) solid #75E9B4
+    color: #fff
+    font-size: rem(24px)
+    font-weight: normal
+    line-height: 1.603
+
+    span
+      display: block
+      margin-top: rem(35px)
+      color: #727272
+
+  h3
+    font-weight: 500
+    font-size: rem(30px)
+    margin: rem(55px) 0 rem(20px)
+    line-height: 1.105
+
+  > img
+    display: block
+    margin: rem(50px) 0 rem(55px)
+    width: 100%
+
+.block-external
+  display: flex
+  margin: rem(45px) 0 rem(55px)
+  color: #fff
+  background-color: #292929
+  padding: rem(6px)
+
+.block-external-content
+  flex-grow: 1
+  padding: rem(27px) rem(27px) rem(27px) rem(36px)
+  display: flex
+  flex-direction: column
+
+.block-external-title
+  margin-bottom: 7px
+  font-weight: normal
+  font-size: rem(22px)
+  line-height: 1.363
+
+.block-external-description
+  font-weight: normal
+  color: #88888A
+  margin-bottom: rem(15px)
+
+.block-external-link
+  margin-top: auto
+
+  a
+    font-weight: 400
+    color: #71C46E
+    +tr
+    text-decoration: underline
+    text-underline-offset: rem(2px)
+
+    &:hover
+      color: $accent
+
+.block-external-img
+  img
+    display: block
+    height: 100%
+    width: rem(251px)
+    flex-shrink: 0
+    object-fit: cover
+
+.article-footer
+  display: flex
+  align-items: center
+  padding: rem(57px) 0
+  border-top: 1px solid rgba(217, 217, 217, 0.14)
+  border-bottom: 1px solid rgba(217, 217, 217, 0.14)
+
+  .article-author
+    margin: 0 rem(59\px) 0 0
+
+.article-likes
+  flex-grow: 1
+  margin-right: rem(20px)
+  display: flex
+  align-items: center
+
+.article-likes-icon
+  display: flex
+  align-items: center
+  justify-content: center
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  margin-right: rem(14px)
+  background: rgba(255, 255, 255, 0.16)
+  width: rem(52px)
+  height: rem(52px)
+  font-size: rem(17px)
+
+.article-likes-quantity
+  font-size: rem(22px)
+  font-weight: normal
+
+.article-share
+  position: relative
+
+.article-share-btn
+  border-radius: 0
+  appearance: none
+  box-shadow: none
+  border: 1px solid rgba(217, 217, 217, 0.17)
+  height: rem(51px)
+  line-height: rem(49px)
+  padding: 0 rem(48px)
+  font-size: rem(12px)
+  text-transform: uppercase
+  color: #fff
+  background-color: transparent
+  +tr
+  outline: none !important
+
+  &:hover
+    background-color: $accent
+    border-color: $accent
+
+.article-share-dropdown
+  position: absolute
+  bottom: 100%
+  right: 0
+  margin-bottom: rem(10px)
+  padding: rem(18px) 0
+  background: #252525
+  box-shadow: 6px 20px 52px rgba(0, 0, 0, 0.25)
+  border-radius: rem(22px)
+  white-space: nowrap
+  min-width: rem(226px)
+  z-index: 3
+  +tr(4)
+
+  &:not(.opened)
+    opacity: 0
+    visibility: hidden
+    transform: translateY(#{rem(5px)})
+
+  a
+    display: flex
+    align-items: center
+    padding: 0 rem(20px)
+    height: rem(48px)
+    color: #fff !important
+    font-size: rem(14px)
+    text-transform: uppercase
+    font-weight: normal
+
+    &:hover
+      background-color: #2C2C2C
+
+      span
+        &:after
+          opacity: 1
+
+    span
+      display: flex
+      align-items: center
+      justify-content: center
+      position: relative
+      -webkit-border-radius: 50%
+      -moz-border-radius: 50%
+      border-radius: 50%
+      border: 1px solid rgba(255, 255, 255, 0.04)
+      flex-shrink: 0
+      width: rem(35px)
+      height: rem(35px)
+      font-size: rem(15px)
+      margin-right: rem(11px)
+      z-index: 1
+
+      &:after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        -webkit-border-radius: 50%
+        -moz-border-radius: 50%
+        border-radius: 50%
+        z-index: -1
+        background: linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%)
+        +tr
+        opacity: 0
+
+.article-written-by
+  padding: rem(46px) 0 0
+
+.article-written-by-title
+  margin-bottom: rem(27px)
+  font-weight: 400
+  font-size: rem(30px)
+  line-height: 1.6
+
+.article-written-by-item
+  display: flex
+  margin-bottom: rem(37px)
+
+  &:last-child
+    margin-bottom: 0
+
+.article-written-by-item-img
+  margin-right: rem(24px)
+
+  img
+    display: block
+    width: rem(110px)
+    height: rem(110px)
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    object-fit: cover
+
+.article-written-by-item-content
+  flex-grow: 1
+  margin-right: rem(41px)
+  font-weight: normal
+
+.article-written-by-item-title
+  font-size: rem(24px)
+  margin-bottom: rem(7px)
+
+.article-written-by-item-description
+  line-height: 1.373
+  color: #88888A
+
+.article-written-by-item-link
+  a
+    width: rem(110px)
+    height: rem(110px)
+    display: flex
+    align-items: center
+    justify-content: center
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    border: 1px solid rgba(255, 255, 255, 0.11)
+    color: #fff
+    font-size: rem(21px)
+    +tr
+
+    &:hover
+      border-color: $accent
+      color: $accent

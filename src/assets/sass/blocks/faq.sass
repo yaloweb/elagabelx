@@ -1,0 +1,126 @@
+.s-faq
+  padding: rem(152px) 0 rem(104px)
+
+.faq-row
+  display: flex
+
+.faq-title
+  width: 20%
+  flex-shrink: 0
+  padding-right: rem(30px)
+
+.faq-content
+  width: 80%
+  flex-shrink: 0
+
+.accordion-item
+  position: relative
+  margin-left: rem(158px)
+  border-bottom: 2px solid rgba(236, 238, 244, 0.04)
+
+  &:not(.opened)
+    .accordion-item-answer
+      max-height: 0 !important
+
+  &.opened
+    .accordion-item-icon
+      box-shadow: 0 4px 62px rgba(174, 189, 246, 0.55)
+      background-color: #AEBDF6
+
+      &:after
+        transform: scale(1) rotate(0)
+
+      span
+        &:after
+          background-color: #fff
+
+        &:before
+          background-color: #fff
+          transform: rotate(90deg)
+
+  &:first-child
+    border-top: 2px solid rgba(236, 238, 244, 0.04)
+
+.accordion-item-question
+  position: relative
+  padding: rem(68px) 0
+  line-height: 1.27
+  font-size: rem(30px)
+  font-weight: 300
+  text-transform: uppercase
+  cursor: pointer
+  +tr(4)
+
+  &:hover
+    color: $accent
+
+.accordion-item-icon
+  position: absolute
+  right: 100%
+  margin-right: rem(73px)
+  width: rem(82px)
+  height: rem(82px)
+  z-index: 1
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  border: 1px solid rgba(215, 217, 231, 0.1)
+  top: 50%
+  margin-top: rem(-41px)
+  display: flex
+  align-items: center
+  justify-content: center
+  +tr(4)
+
+  &:after
+    content: ''
+    width: rem(147px)
+    height: rem(128px)
+    bottom: rem(-4px)
+    left: 50%
+    margin-left: rem(-73px)
+    background-image: url(/img/illustrations/triangle-polygon.svg)
+    -webkit-background-size: contain
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+    position: absolute
+    +tr(4)
+    transform: scale(0) rotate(360deg)
+
+  span
+    width: rem(23px)
+    height: rem(23px)
+    position: relative
+    flex-shrink: 0
+
+    &:after
+      content: ''
+      width: 100%
+      height: rem(3px)
+      left: 0
+      top: rem(10px)
+      background-color: #AEBDF6
+      position: absolute
+      +tr(4)
+
+    &:before
+      content: ''
+      height: 100%
+      width: rem(3px)
+      top: 0
+      left: rem(10px)
+      background-color: #AEBDF6
+      position: absolute
+      +tr(4)
+
+.accordion-item-answer
+  overflow: hidden
+  transition: max-height .4s ease
+  font-size: rem(22px)
+  font-weight: 300
+  line-height: 1.545
+
+.accordion-item-answer-content
+  padding-bottom: rem(79px)
+  padding-left: rem(109px)

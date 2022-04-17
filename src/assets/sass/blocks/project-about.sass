@@ -1,0 +1,68 @@
+.s-project-about
+  padding: rem(208px) 0 rem(247px)
+  background: linear-gradient(83.7deg, #BCC8F7 15.9%, #9EB1F9 96.41%)
+  position: relative
+  overflow: hidden
+
+  .container
+    position: relative
+    z-index: 1
+
+.project-about-illustration
+  position: absolute
+  width: rem(912px)
+  height: rem(912px)
+  left: rem(-95px)
+  bottom: rem(-125px)
+  z-index: 0
+  display: grid
+  grid-template-columns: repeat(4, 1fr)
+  grid-template-rows: repeat(4, 1fr)
+
+  span:nth-child(1),
+  span:nth-child(6),
+  span:nth-child(9),
+  span:nth-child(11),
+  span:nth-child(14),
+  span:nth-child(16)
+    display: block
+    background-image: url(/img/illustrations/square-lines-stroke-white.svg)
+    -webkit-background-size: contain
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center
+
+.project-about
+  width: 70%
+  margin-left: auto
+
+  .h2
+    margin-bottom: rem(62px)
+
+.project-about-info
+  display: flex
+
+.project-about-logo
+  margin-right: rem(186px)
+
+  .project-main-logo
+    &:before
+      display: none
+
+    span
+      background: #fff
+      box-shadow: -11px 0px 52px rgba(255, 255, 255, 0.83)
+      transform: rotate(-15.82deg)
+
+      svg
+        *
+          fill: #B3C1F8
+
+.project-about-content
+  flex-grow: 1
+  padding-top: 39px
+  border-top: 2px solid rgba(236, 238, 244, 0.25)
+
+  p
+    font-size: rem(22px)
+    margin-bottom: rem(33px)

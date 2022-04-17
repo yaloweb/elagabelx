@@ -1,0 +1,106 @@
+.testnet-installation-guide-step
+  margin-bottom: rem(55px)
+
+  &:last-child
+    margin-bottom: 0
+
+.testnet-installation-guide-code
+  .h5
+    color: #C4C4C4
+    font-size: rem(22px)
+    line-height: 1.435
+    font-weight: normal
+    margin-bottom: rem(3px)
+
+.code-block
+  position: relative
+  padding: rem(16px)
+  -webkit-border-radius: rem(8px)
+  -moz-border-radius: rem(8px)
+  border-radius: rem(8px)
+  background-color: #343536
+  display: inline-flex
+  align-items: flex-start
+  margin-bottom: rem(9px)
+  +tr
+
+  &.selected
+    background-color: #1f2021
+
+.code-block-value
+  position: relative
+
+  input
+    position: absolute
+    z-index: -1
+    height: 0
+    opacity: 0
+
+  span
+    +text-gradient(linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%))
+    text-decoration: underline
+    text-decoration-thickness: 1px
+    text-underline-offset: rem(1px)
+    text-decoration-color: #8984FB
+    font-weight: normal
+
+.code-block-copy
+  display: flex
+  margin-left: rem(9px)
+
+  button
+    border: none
+    background-color: transparent
+    outline: none
+    box-shadow: none
+    -webkit-appearance: none
+    -moz-appearance: none
+    appearance: none
+    padding: 0
+    margin: 0
+    color: #AEBDF6
+    +tr
+    font-size: rem(20px)
+
+    &:hover
+      color: $accent
+
+.testnet-installation-guide-step-help
+  margin-bottom: rem(46px)
+
+.testnet-installation-guide-step-help-content
+  display: inline-block
+  padding: rem(18px) rem(32px)
+  -webkit-border-radius: rem(8px)
+  -moz-border-radius: rem(8px)
+  border-radius: rem(8px)
+  background-color: #343536
+  line-height: 1.225
+  color: #878787
+  font-weight: normal
+
+  span
+    +text-gradient(linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%))
+    text-decoration: underline
+    text-decoration-thickness: 1px
+    text-underline-offset: rem(1px)
+    text-decoration-color: #8984FB
+
+.testnet-official-docs
+  margin-bottom: rem(94px)
+
+.testnet-official-docs-block
+  background-color: #343536
+  border-radius: rem(8px)
+  padding: rem(17px) rem(32px)
+  font-weight: normal
+  color: #878787
+  display: inline-block
+
+  a
+    color: #70D0EB
+    +tr
+    text-decoration: underline
+    text-underline-offset: rem(1px)
+    &:hover
+      color: $accent

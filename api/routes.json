@@ -1,0 +1,5 @@
+{
+  "/educational-materials?sort=all": "/educational-materials-all",
+  "/educational-materials?sort=articles": "/educational-materials-articles",
+  "/educational-materials?sort=cards": "/educational-materials-cards"
+}

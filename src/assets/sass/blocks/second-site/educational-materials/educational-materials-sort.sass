@@ -1,0 +1,130 @@
+.educational-materials-sort
+  display: flex
+  align-items: flex-end
+  margin-bottom: rem(31px)
+  padding-bottom: rem(29px)
+  border-bottom: 1px solid rgba(201, 204, 215, 0.18)
+  position: relative
+  z-index: 1
+
+.educational-materials-sort-left
+  flex-grow: 1
+  margin-right: rem(20px)
+
+.educational-materials-sort-right
+  margin-left: auto
+
+.educational-materials-sort-view
+  display: flex
+  align-items: center
+  white-space: nowrap
+
+  a
+    display: flex
+    align-items: center
+    +tr
+    letter-spacing: 0.155em
+    font-size: rem(14px)
+    text-transform: uppercase
+    margin-right: rem(30px)
+    color: #fff
+
+    &.active
+      span
+        &:before
+          opacity: 0
+
+        &:after
+          opacity: 1
+
+    &:last-child
+      margin-right: 0
+
+    span
+      position: relative
+      color: #4C4C4E
+      font-size: rem(18px)
+      margin-right: rem(11px)
+
+      &:before
+        +tr
+
+      &:after
+        position: absolute
+        top: 0
+        left: 0
+        color: #75CBF0
+        +tr
+        opacity: 0
+
+      &.icon-grid
+        &:after
+          content: '\e91b'
+
+      &.icon-list
+        &:after
+          content: '\e91c'
+
+      &.icon-list-full
+        &:after
+          content: '\e919'
+
+.educational-materials-sort-ratings
+  display: flex
+  align-items: flex-end
+
+.educational-materials-sort-ratings-item
+  margin-right: rem(153px)
+
+  &:last-child
+    margin-right: 0
+
+  .h6
+    margin-bottom: rem(22px)
+    font-size: rem(16px)
+    font-weight: normal
+    color: #666A6D
+    text-transform: uppercase
+
+.educational-materials-sort-ranks
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+.educational-materials-sort-rank
+  display: inline-block
+  position: relative
+  margin-right: rem(31px)
+  padding-left: rem(32px)
+  cursor: pointer
+
+  &.active
+    &:after
+      opacity: 1
+      transform: scale(1)
+
+  &:before
+    content: ''
+    position: absolute
+    top: rem(2px)
+    left: 0
+    width: rem(20px)
+    height: rem(20px)
+    cursor: pointer
+    border: 1px solid #3D3E41
+
+  &:after
+    content: ''
+    position: absolute
+    top: rem(2px)
+    left: 0
+    width: rem(20px)
+    height: rem(20px)
+    cursor: pointer
+    background-color: #75CBF0
+    +tr
+    opacity: 0
+    transform: scale(0)
+
+  &:last-child
+    margin-right: 0

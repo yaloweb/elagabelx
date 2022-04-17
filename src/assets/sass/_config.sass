@@ -1,0 +1,50 @@
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap')
+
+$font: 'Jost', sant-serif
+$fontsize: 18px
+$accent: #3A80FB
+$accent-hover: #1369FF
+$accent-active: #1F57BA
+$green: #05CF8F
+
+@mixin tr($ms: 3)
+  transition: all $ms * 0.1+s ease
+
+@mixin trd($ms: 3)
+  transition-delay: $ms * 0.1+s
+
+@mixin text-gradient($background)
+  background: $background
+  -webkit-background-clip: text
+  -webkit-text-fill-color: transparent
+  background-clip: text
+  text-fill-color: transparent
+
+@mixin font2
+  font-family: Fusion, sans-serif
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+  @font-face
+    font-family: $fname
+    font-style: $fstyle
+    font-weight: $fweight
+    src: url($furl) format('woff2')
+
+@include font('Fusion', normal, 400, '@/assets/fonts/Fusion/fusion.woff2')
+
+@function rem($size)
+  @return ($size / $fontsize) * 1rem
+
+html, body
+  font-size: 0.9375vw
+
+body
+  line-height: 1.529
+  color: #fff
+  background-color: #1D1D1D
+  min-width: 320px
+  position: relative
+  overflow-x: hidden
+  font-family: $font
+  font-weight: normal

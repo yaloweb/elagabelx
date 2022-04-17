@@ -1,0 +1,316 @@
+.footer
+  position: relative
+  overflow: hidden
+  background-color: #212223
+  padding-top: rem(91px)
+  margin-top: auto
+
+.footer-body
+  display: flex
+  padding-bottom: rem(37px)
+  margin: 0 rem(-15px)
+
+  > div
+    flex-shrink: 0
+    padding: 0 rem(15px)
+
+.footer-projects
+  width: 33.333%
+
+.footer-projects-nav
+  ul
+    list-style-type: none
+    padding: 0
+    margin: 0
+    column-count: 2
+    display: inline-block
+
+    li
+      margin-bottom: rem(14px)
+      page-break-inside: avoid
+      break-inside: avoid
+      margin-right: rem(30px)
+
+      &:last-child
+        margin-bottom: 0
+
+.footer-project
+  display: inline-flex
+  align-items: center
+  white-space: nowrap
+  font-weight: 300
+  letter-spacing: .03em
+  color: #fff !important
+  +tr
+
+  &:hover:not(:active)
+    color: #AEBDF6 !important
+
+    .footer-project-logo
+      background-color: #AEBDF6
+
+      svg
+        *
+          fill: white
+
+  &:active
+    .footer-project-logo
+      border-color: rgba(255, 255, 255, 0.24)
+
+      svg
+        *
+          fill: white
+
+.footer-project-logo
+  width: rem(35px)
+  height: rem(35px)
+  flex-shrink: 0
+  margin-right: rem(12px)
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid rgba(255, 255, 255, 0.04)
+  border-radius: 50%
+  +tr
+
+  svg
+    max-width: rem(16px)
+    max-height: rem(16px)
+
+    *
+      fill: #48484D
+      +tr
+
+.footer-menu
+  width: 20%
+
+.footer-menu-nav
+  ul
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+    li
+      margin-bottom: rem(18px)
+
+      &:last-child
+        margin-bottom: 0
+
+      a
+        line-height: 1.78
+        letter-spacing: 0.03em
+        font-weight: 300
+        color: #fff
+        +tr
+        position: relative
+        white-space: nowrap
+        display: inline-block
+
+        &:hover
+          color: transparent
+
+          &:after
+            opacity: 1
+            visibility: visible
+
+        &:after
+          content: attr(data-title)
+          position: absolute
+          top: 0
+          left: 0
+          +text-gradient(linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%))
+          opacity: 0
+          visibility: hidden
+          +tr
+
+.footer-soc
+  width: 25%
+
+.footer-soc-nav
+  ul
+    list-style-type: none
+    padding: 0
+    margin: 0
+
+    li
+      margin-bottom: rem(15px)
+
+      &:last-child
+        margin-bottom: 0
+
+.footer-soc-nav-link
+  display: inline-flex
+  align-items: center
+
+  &:hover:not(:active)
+    .footer-soc-nav-link-icon
+      border-color: transparent
+
+      &:before
+        opacity: 1
+
+    .footer-soc-nav-link-title
+      color: transparent
+
+      &:after
+        opacity: 1
+        visibility: visible
+
+  &:active
+    .footer-soc-nav-link-icon
+      background-color: #fff
+      border-color: #fff
+      color: transparent
+
+      .gradient
+        opacity: 1
+        visibility: visible
+
+    .footer-soc-nav-link-title
+      color: transparent
+
+      &:after
+        opacity: 1
+        visibility: visible
+
+
+.footer-soc-nav-link-icon
+  width: rem(35px)
+  height: rem(35px)
+  flex-shrink: 0
+  margin-right: rem(15px)
+  display: flex
+  align-items: center
+  justify-content: center
+  border: 1px solid rgba(255, 255, 255, 0.04)
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  color: #fff
+  font-size: rem(14px)
+  position: relative
+  overflow: hidden
+  z-index: 1
+  +tr
+
+
+  &:last-child
+    margin-right: 0
+
+  span
+    position: relative
+    z-index: 1
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    background: linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%)
+    +tr
+    opacity: 0
+    z-index: -1
+
+  .gradient
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+    +text-gradient(linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%))
+    opacity: 0
+    visibility: hidden
+    +tr
+    z-index: 1
+
+.footer-soc-nav-link-title
+  font-weight: 300
+  color: #fff
+  position: relative
+  display: inline-block
+  +tr
+
+  &:after
+    content: attr(data-title)
+    position: absolute
+    top: 0
+    left: 0
+    +text-gradient(linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%))
+    opacity: 0
+    visibility: hidden
+    +tr
+
+.footer-logo
+  width: 21.666%
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  justify-content: space-between
+
+.footer-logo-link
+  margin-bottom: rem(120px)
+
+  img
+    width: rem(125px)
+    display: block
+
+.footer-up-btn
+  width: rem(281px)
+  background-color: #2A2B2C
+  height: rem(41px)
+  display: flex
+  align-items: center
+  justify-content: center
+  color: #fff !important
+  font-size: rem(11px)
+  position: relative
+  z-index: 1
+
+  span
+    +tr
+    color: #fff
+
+  &:hover:not(:active)
+    &:before
+      opacity: 1
+      visibility: visible
+
+  &:active
+    background-color: #fff
+
+    span
+      +text-gradient(linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%))
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%)
+    z-index: -1
+    opacity: 0
+    visibility: hidden
+    +tr
+
+.footer-copyright
+  padding: rem(22px) 0
+  border-top: 1px solid rgba(255, 255, 255, 0.08)
+  letter-spacing: 0.03em
+  font-weight: 300
+  color: #646465
+
+.footer-col-title
+  margin-bottom: rem(24px)
+  text-transform: uppercase
+  font-weight: 300
+  font-size: rem(18px)

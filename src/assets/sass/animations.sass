@@ -1,0 +1,397 @@
+.app-root
+  opacity: 0
+  will-change: opacity
+  transition: transform .4s ease, opacity .4s ease
+
+  &.app-loaded
+    opacity: 1
+
+//Only for desktop
+@media (min-width: 992px)
+  .animate
+    transition: transform .5s ease, opacity .5s ease
+    +trd(3)
+    will-change: transform, opacity
+
+    &.slide-left
+      opacity: 0
+      transform: translateX(#{rem(30px)})
+
+    &.slide-right
+      opacity: 0
+      transform: translateX(#{rem(-30px)})
+
+    &.slide-up
+      opacity: 0
+      transform: translateY(#{rem(30px)})
+
+    &.slide-long-left
+      transform: translateX(#{rem(200px)})
+      transition: transform 1s ease, opacity 1s ease
+
+    &.enter
+      opacity: 1
+      transform: none
+
+  .animate-cards
+    .project-card
+      opacity: 0
+      transform: translateY(#{rem(30px)})
+      will-change: transform, opacity
+      transition: transform .4s ease, opacity .4s ease
+
+    &.enter
+      .project-card
+        opacity: 1
+        transform: translateY(0)
+
+
+  .in-the-future-bg-illustration-2
+    &.enter
+      &:after
+        animation: rotate 7s infinite linear
+        animation-delay: .5s
+
+  .teams-slider-animate
+    .team-member
+      opacity: 0
+      transform: translateY(#{rem(30px)})
+      will-change: transform, opacity
+      transition: transform .4s ease, opacity .4s ease
+
+    &.enter
+      .team-member
+        opacity: 1
+        transform: translateY(0)
+
+  .page-title-center
+    &.slide-up
+      +trd(4)
+
+  .s-main-banners
+    &.enter
+      &:after,
+      .banners-slider-nav,
+      .banners,
+      .banners-slide-subtitle,
+      .banners-slide-title,
+      .banners-slide-descr,
+      .banners-more,
+      .banners-image-gift,
+      .banners-image-hand
+        opacity: 1
+        transform: none
+
+      .banners-image-texture img
+        opacity: 1
+
+    &:after
+      transition: transform .8s ease, opacity .8s ease
+      transform: translateY(#{rem(600px)})
+      opacity: 0
+      will-change: transform, opacity
+
+    .banners
+      transition: transform .8s ease, opacity .8s ease
+      transform: translateY(#{rem(600px)})
+      opacity: 0
+      +trd(6)
+      will-change: transform, opacity
+
+    .banners-slide-subtitle
+      transition: transform .4s ease, opacity .4s ease
+      +trd(12)
+      opacity: 0
+      transform: translateX(#{rem(20px)})
+      will-change: transform, opacity
+
+    .banners-slide-title
+      transition: transform .4s ease, opacity .4s ease
+      +trd(16)
+      opacity: 0
+      transform: translateX(#{rem(20px)})
+      will-change: transform, opacity
+
+    .banners-slide-descr
+      transition: transform .4s ease, opacity .4s ease
+      +trd(20)
+      opacity: 0
+      transform: translateX(#{rem(20px)})
+      will-change: transform, opacity
+
+    .banners-slider-nav
+      transition: transform .4s ease, opacity .4s ease
+      +trd(24)
+      opacity: 0
+      transform: translateX(#{rem(20px)})
+      will-change: transform, opacity
+
+    .banners-more
+      transition: transform .4s ease, opacity .4s ease
+      +trd(28)
+      opacity: 0
+      transform: translateX(#{rem(20px)})
+      will-change: transform, opacity
+
+    .banners-image-hand
+      transition: transform .6s ease, opacity .6s ease
+      +trd(20)
+      opacity: 0
+      transform: translateY(#{rem(60px)})
+      will-change: transform, opacity
+
+    .banners-image-texture img
+      transition: transform .4s ease, opacity .4s ease
+      +trd(16)
+      opacity: 0
+      will-change: transform, opacity
+
+    .banners-image-gift
+      transition: transform .4s ease, opacity .4s ease
+      +trd(26)
+      opacity: 0
+      will-change: transform, opacity
+
+  .pool-page
+    &.enter
+      .page-title-center,
+      .pool-card
+        opacity: 1
+        transform: none
+
+    .page-title-center
+      transition: transform .6s ease, opacity .6s ease
+      +trd(4)
+      transform: translateY(#{rem(50px)})
+      will-change: transform, opacity
+
+    .pool-card
+      transition: transform .6s ease, opacity .6s ease
+      opacity: 0
+      transform: translateY(#{rem(50px)})
+      will-change: transform, opacity
+
+  .article-page
+    &.enter
+      .article-sidebar,
+      .article-main
+        opacity: 1
+        transform: none
+
+    .article-sidebar
+      transition: transform .6s ease, opacity .6s ease
+      +trd(4)
+      opacity: 0
+      transform: translateY(#{rem(100px)})
+      will-change: transform, opacity
+
+    .article-main
+      transition: transform .6s ease, opacity .6s ease
+      +trd(10)
+      opacity: 0
+      transform: translateY(#{rem(100px)})
+      will-change: transform, opacity
+
+  .s-main-glossary
+    &.enter
+      .main-glossary-top-left img,
+      .main-glossary-top-right:after,
+      .main-glossary-top-right h1,
+      .main-glossary-top-right .h1,
+      .main-glossary-body-container .search-form,
+      .main-glossary-body-container p
+        opacity: 1
+        transform: none
+
+    .main-glossary-top-left-img
+      img
+        transition: transform .6s ease, opacity .6s ease
+        transform: translateY(#{rem(150px)})
+        opacity: 0
+        +trd(4)
+        will-change: transform, opacity
+
+    .main-glossary-top-right
+      &:after
+        transition: transform 1.2s ease, opacity 1.2s ease
+        transform-origin: top right
+        transform: scaleX(0)
+        +trd(10)
+        will-change: transform, opacity
+
+      .h1, h1
+        transition: transform .6s ease, opacity .6s ease
+        opacity: 0
+        transform: translateX(#{rem(150px)})
+        +trd(10)
+        will-change: transform, opacity
+
+    .main-glossary-body-container
+      p
+        transition: transform .6s ease, opacity .6s ease
+        transform-origin: top left
+        transform: translateY(#{rem(50px)})
+        opacity: 0
+        +trd(16)
+        will-change: transform, opacity
+
+      .search-form
+        transition: transform .6s ease, opacity .6s ease
+        transform-origin: top left
+        transform: translateY(#{rem(50px)})
+        opacity: 0
+        +trd(22)
+        will-change: transform, opacity
+
+  .testnet-page
+    .testnet-header
+      opacity: 0
+      transform: translateY(#{rem(50px)})
+      transition: transform .6s ease, opacity .6s ease
+      +trd(4)
+      will-change: transform, opacity
+
+    &.enter
+      .testnet-header,
+      .testnet-sidebar,
+      .testnet-body-main
+        opacity: 1
+        transform: none
+
+    .testnet-sidebar
+      opacity: 0
+      transform: translateY(#{rem(50px)})
+      transition: transform .6s ease, opacity .6s ease
+      +trd(8)
+      will-change: transform, opacity
+
+    .testnet-body-main
+      opacity: 0
+      transform: translateY(#{rem(50px)})
+      transition: transform .6s ease, opacity .6s ease
+      +trd(12)
+      will-change: transform, opacity
+
+  .educational-materials-page-animate
+    &.enter
+      .page-title-center,
+      .search-blog-form,
+      .educational-materials-tags,
+      .educational-materials-sort,
+      .educational-material-card,
+      .educational-material-article
+        opacity: 1
+        transform: none
+
+    .page-title-center
+      transition: transform .6s ease, opacity .6s ease
+      +trd(4)
+      opacity: 0
+      transform: translateY(#{rem(50px)})
+      will-change: transform, opacity
+
+    .search-blog-form
+      transition: transform .6s ease, opacity .6s ease
+      +trd(8)
+      opacity: 0
+      transform: translateY(#{rem(50px)})
+      will-change: transform, opacity
+
+    .educational-materials-tags
+      transition: transform .6s ease, opacity .6s ease
+      +trd(12)
+      opacity: 0
+      transform: translateY(#{rem(50px)})
+      will-change: transform, opacity
+
+    .educational-materials-sort
+      transition: transform .6s ease, opacity .6s ease
+      +trd(16)
+      opacity: 0
+      transform: translateY(#{rem(50px)})
+      will-change: transform, opacity
+
+    .educational-material-card,
+    .educational-material-article
+      transition: transform .6s ease, opacity .6s ease
+      opacity: 0
+      transform: translateY(#{rem(50px)})
+      will-change: transform, opacity
+
+  .project-page
+    &.enter
+      .project-main-info,
+      .project-main-validator-address,
+      .project-main-number,
+      .project-main-start-stacking
+        opacity: 1
+        transform: none
+
+    .project-main-info
+      transition: transform .6s ease, opacity .6s ease
+      opacity: 0
+      transform: translateX(#{rem(150px)})
+      will-change: transform, opacity
+      +trd(4)
+
+    .project-main-validator-address
+      transition: transform .6s ease, opacity .6s ease
+      opacity: 0
+      transform: translateY(#{rem(50px)})
+      +trd(10)
+      will-change: transform, opacity
+
+    .project-main-number
+      transition: transform .6s ease, opacity .6s ease
+      opacity: 0
+      transform: translateY(#{rem(30px)})
+      will-change: transform, opacity
+
+      &:nth-child(1)
+        +trd(10)
+
+      &:nth-child(2)
+        +trd(14)
+
+      &:nth-child(3)
+        +trd(18)
+
+      &:nth-child(4)
+        +trd(22)
+
+    .project-main-start-stacking
+      transition: transform .6s ease, opacity .6s ease
+      opacity: 0
+      transform: translateY(#{rem(50px)})
+      +trd(26)
+      will-change: transform, opacity
+
+  .mosaic-animate
+    &.enter
+      span
+        transform: none
+        opacity: 1
+
+    span
+      transform: translateX(#{rem(-300px)})
+      transition: transform .6s ease, opacity .6s ease
+      opacity: 0
+      will-change: transform, opacity
+
+      &:nth-child(1)
+        transition-delay: .2s
+
+      &:nth-child(6)
+        transition-delay: .4s
+
+      &:nth-child(9)
+        transition-delay: .6s
+
+      &:nth-child(11)
+        transition-delay: .8s
+
+      &:nth-child(14)
+        transition-delay: 1s
+
+      &:nth-child(16)
+        transition-delay: 1.2s

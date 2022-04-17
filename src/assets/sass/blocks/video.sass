@@ -1,0 +1,190 @@
+.video-gallery
+  padding: rem(97px) 0 rem(101px) rem(108px)
+  position: relative
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    right: rem(-141px)
+    bottom: 0
+    left: 0
+    background-color: #242526
+
+  &:before
+    content: ''
+    position: absolute
+    height: rem(166px)
+    width: 1px
+    top: rem(-130px)
+    left: rem(190px)
+    background-color: rgba(208, 208, 208, 0.17)
+    z-index: 2
+
+.video-gallery-container
+  position: relative
+  z-index: 1
+
+.video-gallery-videos
+  position: relative
+  padding-bottom: 57.25%
+  background-color: #1C1C1C
+
+  .video-block
+    opacity: 0
+    visibility: hidden
+    +tr(4)
+
+    &.active
+      opacity: 1
+      visibility: visible
+
+.video-block
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  overflow: hidden
+
+.video-poster
+  display: block
+  height: 100%
+  position: relative
+  +tr
+  z-index: 1
+
+  &.video-open
+    opacity: 0
+    transform: scale(1.1)
+    visibility: hidden
+
+    .video-play
+      transform: scale(1.3)
+      opacity: 0
+
+  &:after
+    content: ''
+    position: absolute
+    background: rgba(3, 3, 3, 0.65)
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 0
+
+  img
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.video-play
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  margin: auto
+  width: rem(158px)
+  height: rem(158px)
+  z-index: 1
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  background-color: rgba(15, 15, 15, 0.65)
+  cursor: pointer
+  font-size: rem(24px)
+  display: flex
+  align-items: center
+  justify-content: center
+  +tr
+
+  &:hover
+    span
+      transform: scale(1.3)
+
+    &:after
+      top: rem(18px)
+      left: rem(18px)
+      right: rem(18px)
+      bottom: rem(18px)
+  span
+    +tr
+
+  &:after
+    content: ''
+    position: absolute
+    top: rem(9px)
+    left: rem(9px)
+    right: rem(9px)
+    bottom: rem(9px)
+    -webkit-border-radius: 50%
+    -moz-border-radius: 50%
+    border-radius: 50%
+    border: 1px solid rgba(255, 255, 255, 0.19)
+    +tr
+
+.video-player
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+
+  *
+    width: 100% !important
+    height: 100% !important
+
+  video
+    display: block
+    object-fit: cover
+
+.video-thumbs-slider
+  margin-top: rem(19px)
+  display: flex
+  align-items: flex-end
+
+.video-thumbs-nav
+  margin-right: rem(55px)
+  display: flex
+  align-items: flex-end
+
+  .slider-prev
+    margin-right: rem(19px)
+
+.video-thumbs-swiper
+  flex-grow: 1
+  max-width: calc(100% - #{rem(212px)})
+
+.video-thumb
+  position: relative
+  padding-bottom: 60.6%
+  cursor: pointer
+
+  &.active
+    &:after
+      opacity: .7
+
+  img
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    z-index: 0
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(225deg, #03CF8E 1.6%, #4E8AC7 48.75%, #9648FD 89.24%)
+    opacity: 0
+    z-index: 1
+    +tr

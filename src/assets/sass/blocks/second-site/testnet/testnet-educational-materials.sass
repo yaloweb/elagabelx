@@ -1,0 +1,143 @@
+.testnet-material-card
+  margin-bottom: rem(28px)
+  background-color: #2E2F30
+  display: flex
+  position: relative
+  +tr(4)
+
+  &:hover
+    background-color: #1D1D1D
+
+    .testnet-material-card-img
+      &:after
+        opacity: .65
+        visibility: visible
+
+    .testnet-material-icon
+      border-color: $accent
+      color: $accent
+      transform: translateX(#{rem(10px)})
+
+
+.testnet-material-card-rank
+  position: absolute
+  top: rem(15px)
+  right: rem(15px)
+  z-index: 2
+
+.rank
+  display: flex
+  align-items: center
+  white-space: nowrap
+
+  &.expert
+    span
+      background: linear-gradient(190.68deg, #FF421D 7.93%, #F1B94C 108.12%)
+
+  &.newbie
+    span
+      background: linear-gradient(180deg, #03CF8E 0%, #03CF6D 100%)
+
+  &.user
+    span
+      background: #427EE8
+
+  img
+    flex-shrink: 0
+    width: rem(24px)
+    height: rem(24px)
+    object-fit: contain
+    margin-right: rem(6px)
+
+  span
+    background-color: #272829
+    font-size: rem(14px)
+    text-transform: uppercase
+    height: rem(24px)
+    line-height: rem(24px)
+    padding: 0 rem(7px)
+    border-radius: rem(4px)
+    letter-spacing: 0.075em
+
+.testnet-material-card-img
+  min-height: rem(298px)
+  position: relative
+  width: rem(367px)
+  flex-shrink: 0
+
+  &:after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%)
+    z-index: 1
+    +tr(4)
+    opacity: 0
+    visibility: hidden
+
+  &:before
+    content: ''
+    display: block
+    width: 100%
+    padding-bottom: 100%
+
+  img
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    position: absolute
+
+.testnet-material-card-link
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  z-index: 2
+
+.testnet-material-card-body
+  flex-grow: 1
+  padding: rem(46px) rem(142px) rem(46px) rem(39px)
+
+.testnet-material-card-date
+  text-transform: uppercase
+  margin-bottom: rem(46px)
+  font-size: rem(16px)
+  color: #949494
+
+.testnet-material-title
+  text-transform: uppercase
+  font-size: rem(22px)
+  line-height: 1.225
+  font-weight: normal
+  max-width: rem(365px)
+  margin-bottom: rem(16px)
+
+.testnet-material-description
+  font-size: rem(16px)
+  color: rgba(#fff, .58)
+  line-height: 1.55
+
+.testnet-material-icon
+  position: absolute
+  right: rem(48px)
+  bottom: rem(35px)
+  width: rem(75px)
+  height: rem(75px)
+  -webkit-border-radius: 50%
+  -moz-border-radius: 50%
+  border-radius: 50%
+  border: 1px solid rgba(255, 255, 255, 0.04)
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 14px
+  +tr
+
+  span
+    transform: translateX(#{rem(2px)})

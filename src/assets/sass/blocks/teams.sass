@@ -1,0 +1,130 @@
+.s-teams
+  padding: rem(92px) 0 rem(153px)
+
+  .container
+    position: relative
+
+.teams-header
+  display: flex
+  margin-bottom: rem(82px)
+
+.teams-header-left
+  width: 35%
+  flex-shrink: 0
+  padding-right: rem(30px)
+
+  .h2
+    margin-bottom: 0
+
+.teams-header-right
+  width: 65%
+  flex-shrink: 0
+
+  p
+    color: #989EA9
+    max-width: rem(710px)
+
+    &:last-child
+      margin-bottom: 0
+
+.teams-slider
+  max-width: rem(1222px)
+  margin-left: auto
+  margin-right: auto
+
+  .swiper
+    margin: rem(-10px) rem(-18px)
+    padding: rem(10px) rem(18px)
+
+.team-member-img
+  --radius: #{rem(6px)}
+  position: relative
+  border-radius: var(--radius)
+  padding-bottom: 218%
+
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    border-radius: var(--radius)
+    background: linear-gradient(225deg, #4EFBC7 1.6%, #7EBFFA 48.75%, #9648FD 89.24%)
+    +tr
+    visibility: hidden
+    opacity: 0
+    z-index: 1
+
+  &:after
+    content: ''
+    position: absolute
+    bottom: rem(-24px)
+    right: rem(-18px)
+    width: rem(88px)
+    height: rem(88px)
+    background-image: url(/img/illustrations/square-lines-white.svg)
+    background-repeat: no-repeat
+    background-position: center
+    -webkit-background-size: contain
+    background-size: contain
+    +tr
+    opacity: 0
+    transform: scale(0)
+    z-index: 2
+
+  img
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    object-fit: cover
+    border-radius: var(--radius)
+
+.team-member
+  position: relative
+
+  &:hover
+    .team-member-img
+      &:before
+        opacity: .6
+        visibility: visible
+
+      &:after
+        opacity: 1
+        transform: scale(1)
+
+    .team-member-content
+      opacity: 1
+      transform: translateY(0)
+      visibility: visible
+
+.team-member-content
+  margin-top: rem(24px)
+  +tr
+  opacity: 0
+  transform: translateY(10px)
+  visibility: hidden
+
+.team-member-name
+  +text-gradient(linear-gradient(225deg, #03CF8E 1.6%, #4E8AC7 48.75%, #9648FD 89.24%))
+  font-size: rem(22px)
+  margin-bottom: rem(5px)
+
+.team-member-position
+  letter-spacing: 0.03em
+  font-weight: 300
+  color: #ABAEB6
+  text-transform: uppercase
+
+.teams-slider-nav
+  button
+    position: absolute
+    top: calc(50% - #{rem(18px)})
+
+  .slider-prev
+    left: rem(20px)
+
+  .slider-next
+    right: rem(20px)
