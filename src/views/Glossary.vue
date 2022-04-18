@@ -94,7 +94,7 @@ const glossaryFiltered = computed(() => {
             <div class="container">
 
                 <GlossaryNavigation
-                    v-if="glossaryFiltered && glossaryFiltered.length"
+                    v-if="glossary && glossary.length"
                     :list="glossaryFiltered"
                 />
 

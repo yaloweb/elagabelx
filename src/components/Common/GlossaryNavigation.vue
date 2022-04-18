@@ -38,6 +38,7 @@ watch(
     () => {
         setSelectedGlossary()
         setGlossaryByQuery()
+        destroyScrollbar()
     }
 )
 
@@ -86,6 +87,18 @@ function selectGlossary(wordIdx, wordTitleIdx) {
     }
 }
 
+const scrollbar = ref(null)
+
+function destroyScrollbar() {
+    if (window.innerWidth < 992) {
+        scrollbar.value?.destroy()
+    }
+}
+
+onMounted(() => {
+    destroyScrollbar()
+})
+
 </script>
 
 <template>
@@ -108,7 +121,7 @@ function selectGlossary(wordIdx, wordTitleIdx) {
 
             <div class="glossary-nav">
 
-                <PerfectScrollbar>
+                <PerfectScrollbar ref="scrollbar">
 
                     <div
                         v-for="(glossaryWord, glossaryWordIdx) in list"
