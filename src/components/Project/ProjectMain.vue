@@ -17,7 +17,8 @@ const {
     expected_profit,
     commision,
     payout_frequency,
-    delegation_cancellation_period
+    delegation_cancellation_period,
+    staking_link
 } = storeToRefs(projectStore)
 
 
@@ -123,12 +124,12 @@ const {
                     </div>
 
                     <div class="project-main-start-stacking">
-                        <router-link
-                            to="/"
+                        <a
+                            :href="staking_link"
                             class="btn btn-with-arrow btn-block"
                         >
                             {{ t('project_page.start_stacking') }} <span class="icon-arrow-right-sm" />
-                        </router-link>
+                        </a>
                     </div>
 
                 </div>

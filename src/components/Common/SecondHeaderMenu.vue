@@ -2,7 +2,9 @@
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useSecondSiteGlobalStore } from '@/stores/secondSiteGlobal'
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 
+const route = useRoute()
 const { t } = useI18n()
 const secondSiteGlobalStore = useSecondSiteGlobalStore()
 const { menu } = secondSiteGlobalStore
@@ -92,10 +94,20 @@ onUnmounted(() => {
                             :key="`${menuIdx}-${childrenIdx}`"
                             @click="closeMenu"
                         >
-                            <RouterLink :to="childrenItem.url">
-                                <span class="second-menu-link-title" :data-title="childrenItem.title">
-                                    {{ childrenItem.title }}
-                                </span>
+                            <RouterLink
+                                :to="{path: childrenItem.url, query: childrenItem.query}"
+                                custom
+                                v-slot="{ isActive, href, navigate }"
+                            >
+                                <a
+                                    :href="href"
+                                    :class="{'router-link-active': childrenItem.query ? childrenItem.query.sort === route.query.sort : isActive}"
+                                    @click="navigate"
+                                >
+                                     <span class="second-menu-link-title" :data-title="childrenItem.title">
+                                        {{ childrenItem.title }}
+                                    </span>
+                                </a>
                             </RouterLink>
                         </li>
                     </ul>

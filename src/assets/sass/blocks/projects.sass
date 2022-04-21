@@ -153,13 +153,13 @@
     height: 100%
 
     *
-      fill: #32323E
+      fill: #828288
       +tr(4)
 
 .project-title
   position: relative
   padding-bottom: rem(29px)
-  color: #BEC2D0
+  color: #fff
   text-transform: uppercase
   margin-bottom: rem(41px)
   width: 100%
@@ -175,24 +175,29 @@
     bottom: 0
     margin-left: auto
     margin-right: auto
-    background-color: #6972DB
+    background-color: #5F6AEE
     +tr(4)
 
 .project-annual-rate
   margin-top: auto
+  position: relative
+
+.project-annual-rate-container
+  +tr(4)
 
 .project-annual-rate-title
-  max-width: rem(130px)
+  max-width: rem(170px)
   line-height: 1.5
   text-transform: uppercase
   font-size: rem(14px)
-  color: #59596D
+  color: #8B8B9A
   margin-bottom: rem(19px)
   +tr(4)
 
 .project-annual-rate-title-value
-  color: #6972DB
+  color: #5F6AEE
   +tr(4)
+  min-height: rem(27px)
 
 .project-btn-container
   position: relative
@@ -242,3 +247,37 @@
   font-weight: 600
   +text-gradient(linear-gradient(225deg, #03CF8E 1.6%, #4E8AC7 48.75%, #9648FD 89.24%))
   +tr(4)
+
+.project-annual-rate-hover
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  +tr(4)
+  opacity: 0
+  transform: translateY(#{rem(20px)})
+  visibility: hidden
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.project-annual-rate-description
+  font-size: rem(14px)
+  color: rgba(#fff, .6)
+  text-transform: uppercase
+  line-height: 1.17
+  width: rem(235px)
+  height: rem(88px)
+
+@media (min-width: 992px)
+  .project-card
+    &:hover
+      &:not(.announcement):not(.elagabel-card)
+        .project-annual-rate-container
+          opacity: 0
+          transform: translateY(#{rem(-20px)})
+
+        .project-annual-rate-hover
+          opacity: 1
+          transform: none
+          visibility: visible

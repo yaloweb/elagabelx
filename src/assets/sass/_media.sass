@@ -648,6 +648,21 @@
     left: 20px
     right: 20px
 
+  .second-wrapper
+    padding-top: 51px
+
+  header
+    &.header-home:not(.fixed)
+      .main-menu-link,
+      .projects-menu-link,
+      .selected-language-current
+        &:hover
+          color: $accent
+
+      .select-language
+        &.opened
+          .selected-language-current
+            color: $accent
 
 @media (max-width: 767.98px)
   body
@@ -832,7 +847,7 @@
   .project-annual-rate-title
     margin-bottom: 12px
     font-size: 12px
-    max-width: 120px
+    max-width: 140px
 
   .project-btn
     height: 36px

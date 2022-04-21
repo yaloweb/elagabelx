@@ -12,9 +12,10 @@ export const useProjectStore = defineStore('project', {
         commision: null,
         payout_frequency: null,
         delegation_cancellation_period: null,
+        staking_link: null,
         educational_materials: null,
         about: null,
-        faq: null
+        faq: null,
     }),
     actions: {
         async getProjectData() {

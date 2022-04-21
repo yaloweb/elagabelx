@@ -5,8 +5,10 @@ import { useEducationalMaterialsStore } from '@/stores/educationalMaterials'
 import Rank from '@/components/Common/Rank.vue'
 import FormRadio from '@/components/Form/FormRadio.vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 
 const { t } = useI18n()
+const route = useRoute()
 
 const educationalMaterialsStore = useEducationalMaterialsStore()
 
@@ -18,11 +20,27 @@ const sortIcons = {
     'all': 'icon-list-full',
 }
 
+function setSortByQuery() {
+    filters.value.selectedSort = route.query.sort
+}
+
+if (route.query.sort) {
+    setSortByQuery()
+}
+
 watch(
     filters,
     async () => {
         await educationalMaterialsStore.getEducationalMaterials()
     },
+    {
+        deep: true
+    }
+)
+
+watch(
+    route,
+    setSortByQuery,
     {
         deep: true
     }

@@ -8,8 +8,8 @@ export const useSecondSiteGlobalStore = defineStore('second-site-global', {
                 title: 'Главная',
                 code: 'main',
                 childrens: [
-                    { title: 'Тестнеты', code: 'testnets', url: '/' },
-                    { title: 'Статьи', code: 'articles', url: '/' }
+                    { title: 'Тестнеты', code: 'testnets', url: '/educational-materials', query: {'sort': 'cards'} },
+                    { title: 'Статьи', code: 'articles', url: '/educational-materials', query: {'sort': 'articles'} }
                 ]
             },
             {

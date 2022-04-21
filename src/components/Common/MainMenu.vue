@@ -26,7 +26,7 @@ function scrollTo(url) {
     if (route.path === '/') {
         if (id && DOMElement) {
             window.scrollTo({
-                top: DOMElement.getBoundingClientRect().top + window.pageYOffset,
+                top: DOMElement.getBoundingClientRect().top + window.pageYOffset - 60,
                 left: 0,
                 behavior: 'smooth'
             })

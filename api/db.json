@@ -40,6 +40,7 @@
 		"projects_cards": {
 			"open_all": "Открыть все",
 			"annual_remuneration_rate": "Годовая ставка вознаграждения",
+			"commission_title": "Комиссия проценты",
 			"soon": "Скоро",
 			"stacking": "Стекинг"
 		},
@@ -193,64 +194,76 @@
 	},
 	"projects": [
 		{
-			"id": 1,
-			"title": "Solana",
-			"img_src": "/img/projects-small-logo/solana.svg",
-			"annual_rate": "10 % - 20 %"
-		},
-		{
 			"id": 2,
 			"title": "Oasis Labs",
 			"img_src": "/img/projects-small-logo/oasis-labs.svg",
-			"annual_rate": "10 % - 20 %"
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
 		},
 		{
 			"id": 3,
 			"title": "Matic",
 			"img_src": "/img/projects-small-logo/matic.svg",
-			"annual_rate": "10 % - 20 %"
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
 		},
 		{
 			"id": 4,
 			"title": "Sentinel",
 			"img_src": "/img/projects-small-logo/sentinel.svg",
-			"annual_rate": "10 % - 20 %"
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
 		},
 		{
 			"id": 5,
 			"title": "Cello",
 			"img_src": "/img/projects-small-logo/cello.svg",
-			"annual_rate": "10 % - 20 %"
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
 		},
 		{
 			"id": 6,
 			"title": "Dock",
 			"img_src": "/img/projects-small-logo/dock.svg",
-			"annual_rate": "10 % - 20 %"
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
 		},
 		{
 			"id": 7,
 			"title": "Oasis",
 			"img_src": "/img/projects-small-logo/oasis.svg",
-			"annual_rate": "10 % - 20 %"
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
 		},
 		{
 			"id": 8,
 			"title": "Regen",
 			"img_src": "/img/projects-small-logo/regen.svg",
-			"annual_rate": "10 % - 20 %"
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
 		},
 		{
 			"id": 9,
 			"title": "The Graph",
 			"img_src": "/img/projects-small-logo/the-graph.svg",
-			"annual_rate": "10 % - 20 %"
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
 		},
 		{
 			"id": 10,
 			"title": "Agoric",
 			"img_src": "/img/projects-small-logo/agoric.svg",
-			"annual_rate": "10 % - 20 %"
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
 		}
 	],
 	"home": {
@@ -280,6 +293,9 @@
 				"url": "/educational-materials/3"
 			}
 		],
+		"elagabel_card": {
+			"title": "Обучающие тестеры интересные статьи"
+		},
 		"about": {
 			"delivered_assets": "$ 725,426,482",
 			"awards_pald": "$ 50,000,000+"
@@ -566,6 +582,7 @@
 		"commision": "8%",
 		"payout_frequency": "Каждые 2 дня",
 		"delegation_cancellation_period": "48 ч.",
+		"staking_link": "https://solanabeach.io/validator/8gJCfKzr55gM6DtAaFqoWjBGAmsJ71mpHem6qJAASBU4",
 		"educational_materials": [
 			{
 				"id": 1,
@@ -897,6 +914,7 @@
 	"educational-materials-all": [
 		{
 			"id": 1,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -917,6 +935,7 @@
 		},
 		{
 			"id": 3,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1293,6 +1312,7 @@
 	"educational-materials-cards": [
 		{
 			"id": 1,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1302,6 +1322,7 @@
 		},
 		{
 			"id": 2,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1311,6 +1332,7 @@
 		},
 		{
 			"id": 3,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1320,6 +1342,7 @@
 		},
 		{
 			"id": 4,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1329,6 +1352,7 @@
 		},
 		{
 			"id": 5,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1338,6 +1362,7 @@
 		},
 		{
 			"id": 6,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1347,6 +1372,7 @@
 		},
 		{
 			"id": 7,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1356,6 +1382,7 @@
 		},
 		{
 			"id": 8,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1365,6 +1392,7 @@
 		},
 		{
 			"id": 9,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1374,6 +1402,7 @@
 		},
 		{
 			"id": 10,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1383,6 +1412,7 @@
 		},
 		{
 			"id": 11,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1392,6 +1422,7 @@
 		},
 		{
 			"id": 12,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1401,6 +1432,7 @@
 		},
 		{
 			"id": 13,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1410,6 +1442,7 @@
 		},
 		{
 			"id": 14,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1419,6 +1452,7 @@
 		},
 		{
 			"id": 15,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1428,6 +1462,7 @@
 		},
 		{
 			"id": 16,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1437,6 +1472,7 @@
 		},
 		{
 			"id": 17,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1446,6 +1482,7 @@
 		},
 		{
 			"id": 18,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1457,6 +1494,7 @@
 	"search": [
 		{
 			"id": 1,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",
@@ -1477,6 +1515,7 @@
 		},
 		{
 			"id": 3,
+			"testnet_id": 1,
 			"type": "card",
 			"platform": "Solana",
 			"title": "Настройка и установка SOLANA",

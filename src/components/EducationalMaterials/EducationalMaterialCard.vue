@@ -12,7 +12,7 @@ const props = defineProps({
 <template>
     <div class="educational-material-card">
 
-        <RouterLink :to="`/educational-materials/${item.id}`" />
+        <RouterLink :to="`/testnet/${item.testnet_id}`" />
 
         <div class="educational-material-card-left">
 

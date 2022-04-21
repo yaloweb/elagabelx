@@ -1,14 +1,33 @@
 .header
-  position: absolute
+  position: fixed
   top: 0
   left: 0
   width: 100%
   z-index: 5
 
-header:not(.header-home)
-  .selected-language-current
-    span
-      +text-gradient(linear-gradient(244.21deg, #03CF8E 22.94%, #4E8AC7 65.85%, #9648FD 116.28%))
+header
+  transition: background-color .4s ease, box-shadow .4s ease
+
+  &.fixed
+    background-color: #1C1C1C
+    box-shadow: 0 36px 57px rgba(0, 0, 0, 0.39)
+
+  &:not(.header-home)
+    .selected-language-current
+      span
+        +text-gradient(linear-gradient(244.21deg, #03CF8E 22.94%, #4E8AC7 65.85%, #9648FD 116.28%))
+
+  &.header-home:not(.fixed)
+    .main-menu-link,
+    .projects-menu-link,
+    .selected-language-current
+      &:hover
+        color: #1c1c1c
+
+    .select-language
+      &.opened
+        .selected-language-current
+          color: #1c1c1c
 
 .header-row
   display: flex
@@ -36,6 +55,7 @@ header:not(.header-home)
 .main-menu
   display: flex
   align-items: center
+  font-weight: 600
 
 .main-menu-link
   margin-right: rem(59px)
@@ -43,7 +63,8 @@ header:not(.header-home)
   +tr
   white-space: nowrap
 
-  &:hover
+  &:hover,
+  &.router-link-active
     color: $accent
 
 .projects-menu
@@ -264,6 +285,7 @@ header:not(.header-home)
   +tr
   padding-right: rem(35px)
   position: relative
+  font-weight: 600
 
   &:after
     content: '\e90d'
@@ -272,7 +294,7 @@ header:not(.header-home)
     top: rem(9px)
     right: 0
     font-size: rem(7px)
-    +tr
+    transition: transform .3s ease
 
   &:hover
     color: $accent

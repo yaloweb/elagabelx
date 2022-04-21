@@ -13,9 +13,13 @@ const secondSiteGlobalStore = useSecondSiteGlobalStore()
 const { soc } = storeToRefs(secondSiteGlobalStore)
 const menuOpened = ref(false)
 
-onMounted(() => {
-    secondSiteGlobalStore.getSecondSiteGlobalData()
-})
+const headerFixed = ref(false)
+
+function headerScroll() {
+    headerFixed.value = window.pageYOffset > 0
+}
+
+window.addEventListener('scroll', headerScroll)
 
 const clickOut = e => {
     if (!e.target.closest('.second-header-menu-block')) {
@@ -25,15 +29,20 @@ const clickOut = e => {
 
 onMounted(() => {
     document.addEventListener('click', clickOut)
+    secondSiteGlobalStore.getSecondSiteGlobalData()
 })
 onUnmounted(() => {
     document.removeEventListener('click', clickOut)
+    window.removeEventListener('scroll', headerScroll)
 })
 
 </script>
 
 <template>
-    <header class="second-header">
+    <header
+        class="second-header"
+        :class="{'fixed': headerFixed}"
+    >
         <div class="second-container">
 
             <div class="second-header-row">

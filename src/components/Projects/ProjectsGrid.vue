@@ -2,6 +2,11 @@
 import { ref, onUnmounted } from 'vue'
 import ProjectCard from '@/components/Projects/ProjectCard.vue'
 import { useI18n } from 'vue-i18n'
+import { useHomeStore } from '@/stores/home'
+import { storeToRefs } from 'pinia'
+
+const homeStore = useHomeStore()
+const { elagabel_card } = storeToRefs(homeStore)
 
 const { t } = useI18n()
 
@@ -31,11 +36,16 @@ onUnmounted(() => {
         v-animate="'animate-cards'">
 
         <ProjectCard
+            :elagabelCard="true"
+            :elagabelCardTitle="elagabel_card?.title"
+        />
+
+        <ProjectCard
             v-for="(project, idx) in list"
-            v-show="isMob ? (openFull ? true : idx < 4) : true"
+            v-show="isMob ? (openFull ? true : idx < 3) : true"
             :key="idx"
             :item="project"
-            :style="{transitionDelay: (idx * 0.2) + 's'}"
+            :style="{transitionDelay: ((idx + 1) * 0.2) + 's'}"
         />
 
         <button

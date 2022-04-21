@@ -16,8 +16,7 @@ smoothscroll.polyfill()
 
 const app = createApp(App)
 
-// axios.defaults.baseURL = import.meta.env.MODE === 'development' ? 'http://localhost:4000/' : 'http://142.132.171.50:82/'
-axios.defaults.baseURL = 'http://142.132.171.50:82/'
+axios.defaults.baseURL = import.meta.env.MODE === 'development' ? 'http://localhost:4000/' : 'http://142.132.171.50:82/'
 axios.defaults.headers.accept = 'application/json'
 
 loadLanguageAsync()

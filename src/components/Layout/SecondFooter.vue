@@ -4,7 +4,9 @@ import { storeToRefs } from 'pinia'
 import { onMounted } from 'vue'
 import UpButton from '@/components/Common/UpButton.vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 
+const route = useRoute()
 const { t } = useI18n()
 
 const secondSiteGlobalStore = useSecondSiteGlobalStore()
@@ -61,9 +63,21 @@ onMounted(() => {
                             <li
                                 v-for="(subMenuItem, subMenuIdx) in menuItem.childrens"
                                 :key="`${menuIdx}-${subMenuIdx}`">
-                                <RouterLink :to="subMenuItem.url">
-                                    {{ subMenuItem.code ? t(`global.second_header.menu.${subMenuItem.code}`) : subMenuItem.title }}
+
+                                <RouterLink
+                                    :to="{path: subMenuItem.url, query: subMenuItem.query}"
+                                    custom
+                                    v-slot="{ isActive, href, navigate }"
+                                >
+                                    <a
+                                        :href="href"
+                                        :class="{'router-link-active': subMenuItem.query ? subMenuItem.query.sort === route.query.sort : isActive}"
+                                        @click="navigate"
+                                    >
+                                        {{ subMenuItem.code ? t(`global.second_header.menu.${subMenuItem.code}`) : subMenuItem.title }}
+                                    </a>
                                 </RouterLink>
+
                             </li>
                         </ul>
                     </nav>

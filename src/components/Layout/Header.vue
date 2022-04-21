@@ -10,6 +10,8 @@ const props = defineProps({
     }
 })
 
+const headerFixed = ref(false)
+
 const menuOpened = ref(false)
 
 const clickOutMenu = e => {
@@ -20,16 +22,26 @@ const clickOutMenu = e => {
     }
 }
 
+function headerScroll() {
+    headerFixed.value = window.pageYOffset > 0
+}
+
 document.addEventListener('click', clickOutMenu)
+
+window.addEventListener('scroll', headerScroll)
 
 onUnmounted(() => {
     document.removeEventListener('click', clickOutMenu)
+    window.removeEventListener('scroll', headerScroll)
 })
 
 </script>
 
 <template>
-    <header class="header">
+    <header
+        class="header"
+        :class="{'fixed': headerFixed}"
+    >
         <div class="container">
 
             <div class="header-row">
