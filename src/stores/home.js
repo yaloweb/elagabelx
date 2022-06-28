@@ -19,7 +19,6 @@ export const useHomeStore = defineStore('home', {
                 this.banners = res.data.banners
                 this.elagabel_card = res.data.elagabel_card
                 this.about = res.data.about
-                console.log(res.data)
             }
         }
     }

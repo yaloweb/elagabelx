@@ -66,7 +66,7 @@ const glossaryFiltered = computed(() => {
                     <div class="main-glossary-top-right">
 
                         <h1>
-                            {{ t('glossary_page.title') }}
+                            Глоссарий
                         </h1>
 
                     </div>

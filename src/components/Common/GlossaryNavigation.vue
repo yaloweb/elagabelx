@@ -15,6 +15,8 @@ const getWordQuery = route.query.word
 
 const selectedGlossary = ref([0, 0])
 
+const glossaryContent = ref(null)
+
 function setSelectedGlossary() {
     selectedGlossary.value = [0, 0]
 }
@@ -25,13 +27,19 @@ function setGlossaryByQuery() {
             item.list.forEach((wordItem, wordIdx) => {
                 if (wordItem.title === getWordQuery) {
                     selectedGlossary.value = [idx, wordIdx]
+
+                    setTimeout(() => {
+                        window.scrollTo({
+                            top: glossaryContent.value.getBoundingClientRect().top + window.pageYOffset - 90,
+                            left: 0,
+                            behavior: 'smooth'
+                        })
+                    }, 400)
                 }
             })
         })
     }
 }
-
-setGlossaryByQuery()
 
 watch(
     props.list,
@@ -60,8 +68,6 @@ const navItem = ref([])
 onBeforeUpdate(() => {
     navItem.value = []
 })
-
-const glossaryContent = ref(null)
 
 function scrollToNavItem(index) {
     const top = navItem.value[index] ? navItem.value[index].getBoundingClientRect().top : 0
@@ -97,6 +103,7 @@ function destroyScrollbar() {
 
 onMounted(() => {
     destroyScrollbar()
+    setGlossaryByQuery()
 })
 
 </script>
