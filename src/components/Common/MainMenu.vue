@@ -12,7 +12,7 @@ const menu = [
     {key: 'about', title: 'О нас', url: '/#about'},
     'projects',
     {key: 'educational_materials', title: 'Обучающие материалы', url: '/#educational-materials'},
-    {key: 'what_we_do', title: 'Что мы делаем', url: '/#what-we-do'},
+    // {key: 'what_we_do', title: 'Что мы делаем', url: '/#what-we-do'},
     {key: 'glossary', title: 'Глоссарий', url: '/glossary'},
     {key: 'contacts', title: 'Контакты', url: '/#contacts'}
 ]

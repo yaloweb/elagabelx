@@ -8,7 +8,7 @@ const props = defineProps({
     item: Object,
     announcement: Boolean,
     elagabelCard: Boolean,
-    elagabelCardTitle: String
+    elagabelCardInfo: Object
 })
 </script>
 
@@ -38,11 +38,11 @@ const props = defineProps({
             </div>
 
             <div class="project-title">
-                <div class="h6">{{ elagabelCard ? 'Elagabel' : item?.title }}</div>
+                <div class="h6">{{ elagabelCard ? elagabelCardInfo.title : item?.title }}</div>
                 <div
                     v-if="announcement"
                     class="project-annual-announcement-text">
-                    {{ item?.announcement_text }}
+                    {{ elagabelCard ? elagabelCardInfo.announcement_text : item?.announcement_text }}
                 </div>
             </div>
 
@@ -67,7 +67,7 @@ const props = defineProps({
 
                 <div class="project-annual-rate-container">
                     <div class="project-annual-rate-title">
-                        {{ elagabelCard ? elagabelCardTitle : t('projects_cards.annual_remuneration_rate') }}
+                        {{ elagabelCard ? elagabelCardInfo.subtitle : t('projects_cards.annual_remuneration_rate') }}
                     </div>
                     <div class="project-annual-rate-title-value">
                         {{ item?.annual_rate }}
@@ -88,7 +88,7 @@ const props = defineProps({
             v-if="!announcement"
             class="project-btn-container">
             <span class="project-btn">
-                {{ t('projects_cards.stacking') }}
+                {{ elagabelCard ? elagabelCardInfo.button_text : t('projects_cards.stacking') }}
             </span>
         </div>
 

@@ -56,7 +56,7 @@ onMounted(async () => {
 
         <SectionInTheFuture />
 
-        <SectionLearningMaterials />
+<!--        <SectionLearningMaterials />-->
 
         <SectionTeams />
 

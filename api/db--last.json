@@ -1,0 +1,1888 @@
+{
+	"translation": {
+		"global": {
+			"header": {
+				"menu": {
+					"about": "О нас",
+					"projects": "Проекты",
+					"what_we_do": "Что мы делаем",
+					"educational_materials": "Обучающие материалы",
+					"glossary": "Глоссарий",
+					"contacts": "Контакты"
+				},
+				"more": "Больше"
+			},
+			"second_header": {
+				"back_to_validator": "Вернуться к валидатору",
+				"menu": {
+					"main": "Главная",
+					"testnets": "Тестнеты",
+					"articles": "Статьи",
+					"delegation": "Делегирование",
+					"glossary": "Глоссарий",
+					"news": "Новости"
+				}
+			},
+			"footer": {
+				"networks": "Сети",
+				"company": "Компания",
+				"social": "Социальное",
+				"copyright": "Авторские права © Elagabal X 2022",
+				"menu": {
+					"about": "О нас",
+					"glossary": "Глоссарий",
+					"video_about_us": "Видео про нас",
+					"team": "Команда",
+					"contact_us": "Связаться с нами"
+				}
+			}
+		},
+		"projects_cards": {
+			"open_all": "Открыть все",
+			"annual_remuneration_rate": "Годовая ставка вознаграждения",
+			"commission_title": "Комиссия проценты",
+			"soon": "Скоро",
+			"stacking": "Стекинг"
+		},
+		"callback": {
+			"title": "Для этого <br>Свяжитесь с нами!",
+			"slider_bg_text": "Готовы начать?"
+		},
+		"home_page": {
+			"banners": {
+				"read_more": "Читать подробнее"
+			},
+			"about": {
+				"title": "О нас",
+				"description": "Мы являемся ведущим поставщиком стекинг-услуг для <a href=\"/glossary?word=Blockchain\" data-title=\"Это текст - &#34;рыба&#34;, часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной &#34;рыбой&#34; для текстов на латинице с начала XVI века.\">блокчейн-проектов</a>. Присоединяйтесь к нашему сообществу, чтобы участвовать в развитии защищенных сетей и получать вознаграждения за это! Мы знаем о стекинге всё.",
+				"delivered_assets": "Всего поставленных активов",
+				"awards_pald": "Всего наград палд"
+			},
+			"networks": {
+				"title": "Сети, доступные для стекинга",
+				"description": "Мы управляем валидаторами для этих проектов. Чтобы помочь развитию этих сетей и заработать вознаграждения, владельцы токенов могут осуществлять стекинг через нас. Присоединяйтесь к стекинг-экосистеме сегодня вместе с Elagabal!"
+			},
+			"educational_materials": {
+				"title": "Обучающие материалы"
+			},
+			"team": {
+				"title": "Команда",
+				"description": "Видео — отличный способ узнать о блокчейнах. Следите за обновлениями и обращайтесь к нам с любыми предложениями для следующих видео!"
+			}
+		},
+		"project_page": {
+			"back_link": "Вернуться назад",
+			"network_validator": "Валидатор сети",
+			"expected_profit": "Ожидаемая прибыль",
+			"commision": "Комиссия",
+			"payout_frequency": "Частота выплат",
+			"delegation_cancellation_period": "Период отмены делегирования",
+			"start_stacking": "Начать стекинг",
+			"validator_name": "Имя",
+			"validator_address": "Адрес валидатора",
+			"educational_materials": {
+				"title": "Обучающие материалы",
+				"video_training": "Видео обучение",
+				"instructional_video": "Обучающее видео",
+				"tutorial_article": "Обучающая статья"
+			},
+			"faq": {
+				"title": "FAQ"
+			}
+		},
+		"glossary_page": {
+			"title": "Глоссарий",
+			"description": "Мир блокчейна развивается стремительными темпами, и за ним может быть трудно угнаться. Если вы новичок в этой области, мы надеемся, что вы сможете обратиться к этому глоссарию терминов по мере того, как будете расширять свои знания в этой быстро развивающейся области.",
+			"search_form_placeholder": "Введите ключевое слово",
+			"end_of_the_list": "Вы дошли до конца списка",
+			"select_termin": "Выберите термин из списка в меню",
+			"no_results": "Нет результатов"
+		},
+		"testnet_page": {
+			"main": {
+				"score": "баллов",
+				"evaluation_title": "Оценка проекта экспертами",
+				"levels_title": "Необходимый уровень знаний",
+				"levels": {
+					"low": "Низкий",
+					"middle": "Средний",
+					"high": "Высокий"
+				}
+			},
+			"sidebar_menu": {
+				"overview": "Обзор",
+				"installation_guide": "Установка",
+				"official_documentaions": "Офф документация",
+				"site": "Сайт",
+				"educational_materials": "Полезные материалы"
+			},
+			"overview": {
+				"title": "Обзор",
+				"statuses": {
+					"active": "Активный",
+					"not_active": "Не активный"
+				},
+				"info": {
+					"status": "Статус",
+					"dates": "Даты",
+					"type": "Тип",
+					"rating": "Рейтинг",
+					"hardware": "Аппаратное обеспечение",
+					"awards": "Награды",
+					"complexity": "Сложность",
+					"lock": "Замок"
+				},
+				"system_requirements_title": "Системные Требования",
+				"rent_title": "Аренда на"
+			},
+			"installation_guide": {
+				"title": "Руководство по установке",
+				"official_documentation_title": "Официальная документация доступна"
+			},
+			"educational_materials": {
+				"title": "Полезные материалы"
+			}
+		},
+		"educational_materials_page": {
+			"title": "Обучающие материалы",
+			"tags": {
+				"active": "Активные",
+				"upcoming": "Предстоящие",
+				"completed": "Завершенные"
+			},
+			"sort": {
+				"ranks": {
+					"expert": "Эксперт",
+					"newbie": "Новичок",
+					"user": "Пользователь"
+				},
+				"ratings": {
+					"title": "Рейтинг",
+					"promising": "Многообещающий",
+					"mythical": "Мифический",
+					"seldom": "Редко"
+				},
+				"platforms": {
+					"technical": "Технические",
+					"community": "Сообщество"
+				},
+				"sorts": {
+					"cards": "Карточки",
+					"articles": "Статьи",
+					"all": "Все"
+				}
+			},
+			"card": {
+				"rating": "Рейтинг",
+				"platform": "тех./сообщество"
+			},
+			"load_more": "загрузить еще"
+		},
+		"search_page": {
+			"search_input_placeholder": "Введите слово",
+			"no_results": "Нет результатов",
+			"title": "Результаты поиска",
+			"back_link": "вернуться назад"
+		},
+		"educational_materials_article_page": {
+			"back_link": "вернуться назад",
+			"reading_time": "мин для прочтения",
+			"navigation_content_title": "Навигация по статье",
+			"liked": "нравится",
+			"share": "поделиться"
+		}
+	},
+	"projects": [
+		{
+			"id": 2,
+			"title": "Oasis Labs",
+			"img_src": "/img/projects-small-logo/oasis-labs.svg",
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
+		},
+		{
+			"id": 3,
+			"title": "Matic",
+			"img_src": "/img/projects-small-logo/matic.svg",
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
+		},
+		{
+			"id": 4,
+			"title": "Sentinel",
+			"img_src": "/img/projects-small-logo/sentinel.svg",
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
+		},
+		{
+			"id": 5,
+			"title": "Cello",
+			"img_src": "/img/projects-small-logo/cello.svg",
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
+		},
+		{
+			"id": 6,
+			"title": "Dock",
+			"img_src": "/img/projects-small-logo/dock.svg",
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
+		},
+		{
+			"id": 7,
+			"title": "Oasis",
+			"img_src": "/img/projects-small-logo/oasis.svg",
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
+		},
+		{
+			"id": 8,
+			"title": "Regen",
+			"img_src": "/img/projects-small-logo/regen.svg",
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
+		},
+		{
+			"id": 9,
+			"title": "The Graph",
+			"img_src": "/img/projects-small-logo/the-graph.svg",
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
+		},
+		{
+			"id": 10,
+			"title": "Agoric",
+			"img_src": "/img/projects-small-logo/agoric.svg",
+			"annual_rate": "10 % - 20 %",
+			"commission": 12,
+			"description": "владельцы токенов могут осуществлять стекинг через нас стекинг через нас"
+		}
+	],
+	"home": {
+		"banners": [
+			{
+				"id": 1,
+				"subtitle": "Ethereum 2.0 Non-Custodial Staking",
+				"title": "Защитите сеть Ethere и получайте награды",
+				"description": "Фисированная комиссия 01.ETH за каждый валидатор до тех пор, пока не будет доступен вывод средств",
+				"img": "/img/main-page/banner-1.png",
+				"url": "/educational-materials/1"
+			},
+			{
+				"id": 2,
+				"subtitle": "Ethereum 2.0 Non-Custodial Staking",
+				"title": "Защитите сеть Ethere и получайте награды",
+				"description": "Фисированная комиссия 01.ETH за каждый валидатор до тех пор, пока не будет доступен вывод средств",
+				"img": "/img/main-page/banner-1.png",
+				"url": "/educational-materials/2"
+			},
+			{
+				"id": 3,
+				"subtitle": "Ethereum 2.0 Non-Custodial Staking",
+				"title": "Защитите сеть Ethere и получайте награды",
+				"description": "Фисированная комиссия 01.ETH за каждый валидатор до тех пор, пока не будет доступен вывод средств",
+				"img": "/img/main-page/banner-1.png",
+				"url": "/educational-materials/3"
+			}
+		],
+		"elagabel_card": {
+			"title": "Обучающие тестеры интересные статьи"
+		},
+		"about": {
+			"delivered_assets": "$ 725,426,482",
+			"awards_pald": "$ 50,000,000+"
+		}
+	},
+	"in-the-future": [
+		{
+			"id": 2,
+			"title": "Oasis Labs",
+			"img_src": "/img/projects-small-logo/oasis-labs.svg",
+			"announcement_text": "масштабируемый протокол передачи данных"
+		},
+		{
+			"id": 8,
+			"title": "Regen",
+			"img_src": "/img/projects-small-logo/regen.svg",
+			"announcement_text": "масштабируемый протокол передачи данных"
+		},
+		{
+			"id": 9,
+			"title": "The Graph",
+			"img_src": "/img/projects-small-logo/the-graph.svg",
+			"announcement_text": "масштабируемый протокол передачи данных"
+		},
+		{
+			"id": 5,
+			"title": "Cello",
+			"img_src": "/img/projects-small-logo/cello.svg",
+			"announcement_text": "масштабируемый протокол передачи данных"
+		}
+	],
+	"learning-materials": [
+		{
+			"id": 1,
+			"poster": "/img/video/poster.jpg",
+			"video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+		},
+		{
+			"id": 2,
+			"poster": "/img/video/poster.jpg",
+			"video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+		},
+		{
+			"id": 3,
+			"poster": "/img/video/poster.jpg",
+			"video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+		},
+		{
+			"id": 4,
+			"poster": "/img/video/poster.jpg",
+			"video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+		},
+		{
+			"id": 5,
+			"poster": "/img/video/poster.jpg",
+			"video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+		},
+		{
+			"id": 6,
+			"poster": "/img/video/poster.jpg",
+			"video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"
+		}
+	],
+	"teams": [
+		{
+			"id": 1,
+			"img_src": "/img/teams/1.jpg",
+			"name": "Василий Романов",
+			"position": "СЕО"
+		},
+		{
+			"id": 2,
+			"img_src": "/img/teams/2.jpg",
+			"name": "Андрей Градский",
+			"position": "Тех. директор"
+		},
+		{
+			"id": 3,
+			"img_src": "/img/teams/3.jpg",
+			"name": "Рамиль Насибуллин",
+			"position": "Дизайнер"
+		},
+		{
+			"id": 4,
+			"img_src": "/img/teams/4.jpg",
+			"name": "Мария Русакова",
+			"position": "Маркетолог"
+		},
+		{
+			"id": 5,
+			"img_src": "/img/teams/1.jpg",
+			"name": "Василий Романов",
+			"position": "СЕО"
+		}
+	],
+	"soc": [
+		{
+			"id": 1,
+			"name": "telegram",
+			"title": "Telegram",
+			"url": "#"
+		},
+		{
+			"id": 2,
+			"name": "youtube",
+			"title": "YouTube",
+			"url": "#"
+		},
+		{
+			"id": 3,
+			"name": "medium",
+			"title": "Medium",
+			"url": "#"
+		},
+		{
+			"id": 4,
+			"name": "twitter",
+			"title": "Twitter",
+			"url": "#"
+		},
+		{
+			"id": 5,
+			"name": "instagram",
+			"title": "Instagram",
+			"url": "#"
+		}
+	],
+	"glossary": [
+		{
+			"word": "A",
+			"list": [
+				{
+					"title": "51% Attack",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				},
+				{
+					"title": "Atomic Swap",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				}
+			]
+		},
+		{
+			"word": "B",
+			"list": [
+				{
+					"title": "Blockchain",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				}
+			]
+		},
+		{
+			"word": "C",
+			"list": [
+				{
+					"title": "Consensus Mechanism",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				},
+				{
+					"title": "Cryptocurrency",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				}
+			]
+		},
+		{
+			"word": "D",
+			"list": [
+				{
+					"title": "Decentralized Autonomous Organization",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				},
+				{
+					"title": "Decentralized Finance",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				},
+				{
+					"title": "Delegated Proof of Stake",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				},
+				{
+					"title": "Delegation",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				},
+				{
+					"title": "Double-Spend Problem",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				}
+			]
+		},
+		{
+			"word": "L",
+			"list": [
+				{
+					"title": "Liquid Stacking",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				}
+			]
+		},
+		{
+			"word": "N",
+			"list": [
+				{
+					"title": "Node",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				},
+				{
+					"title": "Non-Fungible Token",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				},
+				{
+					"title": "Nothing at Stake Problem",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				}
+			]
+		},
+		{
+			"word": "P",
+			"list": [
+				{
+					"title": "Proof of Stake",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				},
+				{
+					"title": "Proof of Work",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				}
+			]
+		},
+		{
+			"word": "S",
+			"list": [
+				{
+					"title": "Scalability",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				},
+				{
+					"title": "Sharding",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				},
+				{
+					"title": "Slashing",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				},
+				{
+					"title": "Smart Contract",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				}
+			]
+		},
+		{
+			"word": "U",
+			"list": [
+				{
+					"title": "Unbonding Period",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				}
+			]
+		},
+		{
+			"word": "V",
+			"list": [
+				{
+					"title": "Validator",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				}
+			]
+		},
+		{
+			"word": "W",
+			"list": [
+				{
+					"title": "Wallet",
+					"description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
+				}
+			]
+		}
+	],
+	"project": {
+		"id": 1,
+		"title": "Solana",
+		"img_src": "/img/projects-small-logo/solana.svg",
+		"validator_name": "SF-01",
+		"validator_address": "16fish7rrBhVnkmfQuiKUaPZGm8AiK2oGGJoTwrL4keeHbbe",
+		"expected_profit": "10% – 20%",
+		"commision": "8%",
+		"payout_frequency": "Каждые 2 дня",
+		"delegation_cancellation_period": "48 ч.",
+		"staking_link": "https://solanabeach.io/validator/8gJCfKzr55gM6DtAaFqoWjBGAmsJ71mpHem6qJAASBU4",
+		"educational_materials": [
+			{
+				"id": 1,
+				"video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+				"poster": "/img/video/poster.jpg",
+				"article_link": "https://medium.com/stake-service/crypto-payments-af7e9696c3bb"
+			},
+			{
+				"id": 2,
+				"video": "https://www.youtube.com/watch?v=djV11Xbc914&ab_channel=a-ha",
+				"poster": "/img/video/poster.jpg",
+				"article_link": "https://medium.com/stake-service/how-to-stake-solana-tokens-7a6542fe4ec8"
+			},
+			{
+				"id": 3,
+				"video": "https://www.youtube.com/watch?v=4kHl4FoK1Ys&ab_channel=ModernTalkingVEVO",
+				"poster": "/img/video/poster.jpg",
+				"article_link": "https://medium.com/stake-service/introduction-to-solana-f35e23a25a61"
+			},
+			{
+				"id": 4,
+				"video": "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+				"poster": "/img/video/poster.jpg",
+				"article_link": "https://medium.com/stake-service/crypto-payments-af7e9696c3bb"
+			},
+			{
+				"id": 5,
+				"video": "https://www.youtube.com/watch?v=djV11Xbc914&ab_channel=a-ha",
+				"poster": "/img/video/poster.jpg",
+				"article_link": "https://medium.com/stake-service/how-to-stake-solana-tokens-7a6542fe4ec8"
+			},
+			{
+				"id": 6,
+				"video": "https://www.youtube.com/watch?v=4kHl4FoK1Ys&ab_channel=ModernTalkingVEVO",
+				"poster": "/img/video/poster.jpg",
+				"article_link": "https://medium.com/stake-service/introduction-to-solana-f35e23a25a61"
+			}
+		],
+		"about": {
+			"title": "Мы поддерживали Solana с самого начала, выступая в качестве валидатора",
+			"description": "<p>Мы рады видеть, что Polkadot обеспечивает совместимость для большого разнообразия блокчейнов. Мы поддерживали Polkadot с самого начала, выступая в качестве валидатора внутри его экспериментальной Kusama. Вы можете прочитать</p><p>Мы рады видеть, что Polkadot обеспечивает совместимость для большого разнообразия блокчейнов. Мы поддерживали</p>"
+		},
+		"faq": [
+			{
+				"id": 1,
+				"question": "Что такое солана?",
+				"answer": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была запущена в марте 2020 года. Чтобы узнать больше о Solana, ознакомьтесь с официальной документацией."
+			},
+			{
+				"id": 2,
+				"question": "Что такое валидация и делегирование?",
+				"answer": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была запущена в марте 2020 года. Чтобы узнать больше о Solana, ознакомьтесь с официальной документацией."
+			},
+			{
+				"id": 3,
+				"question": "Почему вы должны делегировать?",
+				"answer": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была запущена в марте 2020 года. Чтобы узнать больше о Solana, ознакомьтесь с официальной документацией."
+			},
+			{
+				"id": 4,
+				"question": "Что происходит с правом собственности на токены SOL после их делегирования?",
+				"answer": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была запущена в марте 2020 года. Чтобы узнать больше о Solana, ознакомьтесь с официальной документацией."
+			},
+			{
+				"id": 5,
+				"question": "Какая в этом выгода для Elagabal?",
+				"answer": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была запущена в марте 2020 года. Чтобы узнать больше о Solana, ознакомьтесь с официальной документацией."
+			}
+		]
+	},
+	"second-site-global": {
+		"soc": [
+			{
+				"id": 1,
+				"name": "telegram",
+				"title": "Telegram",
+				"url": "#"
+			},
+			{
+				"id": 2,
+				"name": "twitter",
+				"title": "Twitter",
+				"url": "#"
+			}
+		]
+	},
+	"testnet": {
+		"name": "solana testnet",
+		"img_src": "/img/projects-small-logo/solana.svg",
+		"points": 8,
+		"level": 2,
+		"rental_sites": [
+			{
+				"id": 1,
+				"name": "Вультр",
+				"link": "#"
+			},
+			{
+				"id": 2,
+				"name": "DigitalOcean",
+				"link": "#"
+			},
+			{
+				"id": 3,
+				"name": "Хетцнер",
+				"link": "#"
+			}
+		],
+		"official_documentaions_url": [
+			"https://docs.solana.com/ru/clusters",
+			"https://docs.solana.com/ru/clusters"
+		],
+		"site": "https://docs.solana.com/ru/",
+		"soc": [
+			{
+				"id": 1,
+				"name": "telegram",
+				"title": "Telegram",
+				"url": "#"
+			},
+			{
+				"id": 4,
+				"name": "twitter",
+				"title": "Twitter",
+				"url": "#"
+			},
+			{
+				"id": 5,
+				"name": "instagram",
+				"title": "Instagram",
+				"url": "#"
+			}
+		],
+		"overview": {
+			"status": 1,
+			"dates": ["1 ноября", "уточняется"],
+			"type": "технология",
+			"description": "Это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum <a href=\"/glossary?word=Blockchain\" data-title=\"Это текст - &#34;рыба&#34;, часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной &#34;рыбой&#34; для текстов на латинице с начала XVI века.\">для распечатки образцов</a>. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.",
+			"rating": "Многообещающе",
+			"hardware": 3,
+			"complexity": 3,
+			"awards": "без поощрения",
+			"lock": "уточняется",
+			"system_requirements": "Системных требований нет, но мы можем порекомендовать:<br><br>ЦПУ 4 виртуальных процессора<br> ОЗУ 16Гб или 8Гб + подкачка<br> Место хранения 120 ГБ+ SSD"
+		},
+		"installation_guide": {
+			"steps": [
+				{
+					"id": 1,
+					"title": "Установите",
+					"codes": [
+						{
+							"id": 1,
+							"title": "Используйте наш скрипт для быстрой установки:",
+							"code": "wget -q -O anoma.sh https://api.nodes.guru/anoma.sh && chmod +x anoma.sh && sudo /bin/bash anoma.sh"
+						},
+						{
+							"id": 2,
+							"title": "Дождитесь завершения установки, затем выполните команду:",
+							"code": "source $HOME/.bash_profile"
+						},
+						{
+							"id": 3,
+							"title": "Вы можете проверить журналы узла с помощью следующей команды:",
+							"code": "journalctl -u anomad -f"
+						}
+					]
+				},
+				{
+					"id": 2,
+					"title": "Создание ключа",
+					"help_text": "Не забудьте указать свои значения вместо <span>YOUR_WALLET_NAME</span>, <span>YOUR_VALIDATOR_NAME</span> и <span>YOUR_ACCOUNT_ALIAS</span>.",
+					"codes": [
+						{
+							"id": 4,
+							"title": "Сгенерируйте новый ключ командой:",
+							"code": "anoma wallet key gen --alias YOUR_WALLET_NAME"
+						},
+						{
+							"id": 5,
+							"title": "После полной синхронизации отправьте транзакцию для инициализации аккаунта:",
+							"code": "anomac init-account --alias YOUR_ACCOUNT_ALIAS --public-key YOUR_WALLET_NAME --source YOUR_WALLET_NAME"
+						}
+					]
+				},
+				{
+					"id": 3,
+					"title": "Смеситель",
+					"codes": [
+						{
+							"id": 6,
+							"title": "Запросить токены из крана командой:",
+							"code": "anoma client transfer --source faucet --target YOUR_ACCOUNT_ALIAS --signer YOUR_ACCOUNT_ALIAS --token XAN --amount 1000"
+						},
+						{
+							"id": 7,
+							"title": "Подтвердите свой баланс:",
+							"code": "anoma client balance --token XAN --owner YOUR_ACCOUNT_ALIAS "
+						}
+					]
+				},
+				{
+					"id": 4,
+					"title": "Создание валидатора",
+					"codes": [
+						{
+							"id": 8,
+							"title": "Эта команда сгенерирует ключи, необходимые для запуска валидатора (потребуется ввести пароль):",
+							"code": "anoma client init-validator --alias YOUR_VALIDATOR_NAME --source YOUR_ACCOUNT_ALIAS"
+						},
+						{
+							"id": 9,
+							"title": "После этого перезапускаем узел:",
+							"code": "sudo systemctl restart anomad "
+						},
+						{
+							"id": 10,
+							"title": "Теперь мы делегируем больше токенов нашему валидатору:",
+							"code": "anoma client bond --source YOUR_ACCOUNT_ALIAS --validator YOUR_VALIDATOR_NAME --amount 950"
+						},
+						{
+							"id": 11,
+							"title": "Проверить все делегирования можно командой:",
+							"code": "anoma client bonds --owner YOUR_ACCOUNT_ALIAS "
+						}
+					]
+				},
+				{
+					"id": 5,
+					"title": "Дополнительные",
+					"codes": [
+						{
+							"id": 12,
+							"title": "Показать все ключи:",
+							"code": "anoma wallet key list"
+						},
+						{
+							"id": 13,
+							"title": "Сгенерируйте новый ключ:",
+							"code": "anoma wallet key gen --alias YOUR_WALLET_NAME"
+						},
+						{
+							"id": 14,
+							"title": "Список всех известных адресов:",
+							"code": "anoma wallet address list"
+						},
+						{
+							"id": 15,
+							"title": "Создайте новый адрес:",
+							"code": "anoma wallet address gen --alias YOUR_NEW_WALLET_ALIAS"
+						}
+					]
+				}
+			]
+		},
+		"educational_materials": [
+			{
+				"id": 1,
+				"img_src": "/img/educational-materials/1.jpg",
+				"rank": {
+					"type": "expert",
+					"title": "Эксперт"
+				},
+				"date": "2012-04-23T18:25:43.511Z",
+				"title": "USF Настройка Firevan в unix системах",
+				"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+			},
+			{
+				"id": 2,
+				"img_src": "/img/educational-materials/2.jpg",
+				"rank": {
+					"type": "expert",
+					"title": "Эксперт"
+				},
+				"date": "2012-04-23T18:25:43.511Z",
+				"title": "USF Настройка Firevan в unix системах",
+				"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+			},
+			{
+				"id": 3,
+				"img_src": "/img/educational-materials/3.jpg",
+				"rank": {
+					"type": "expert",
+					"title": "Эксперт"
+				},
+				"date": "2012-04-23T18:25:43.511Z",
+				"title": "USF Настройка Firevan в unix системах",
+				"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+			},
+			{
+				"id": 4,
+				"img_src": "/img/educational-materials/4.jpg",
+				"rank": {
+					"type": "expert",
+					"title": "Эксперт"
+				},
+				"date": "2012-04-23T18:25:43.511Z",
+				"title": "USF Настройка Firevan в unix системах",
+				"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+			}
+		]
+	},
+	"educational-materials-search": [
+		{
+			"id": 1,
+			"value": "Криптовалюта"
+		},
+		{
+			"id": 2,
+			"value": "Криптовалютник"
+		},
+		{
+			"id": 3,
+			"value": "Крипто-бизнес"
+		},
+		{
+			"id": 4,
+			"value": "Криптовалюта"
+		},
+		{
+			"id": 5,
+			"value": "Криптовалютник"
+		},
+		{
+			"id": 6,
+			"value": "Крипто-бизнес"
+		}
+	],
+	"educational-materials-all": [
+		{
+			"id": 1,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 2,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 3,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 4,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 5,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "newbie",
+				"title": "Новичок"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 6,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "user",
+				"title": "Пользователь"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 7,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 8,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "newbie",
+				"title": "Новичок"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 9,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "user",
+				"title": "Пользователь"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 10,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 11,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "newbie",
+				"title": "Новичок"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 12,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "user",
+				"title": "Пользователь"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 13,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 14,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "newbie",
+				"title": "Новичок"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 15,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "user",
+				"title": "Пользователь"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 16,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 17,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "newbie",
+				"title": "Новичок"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 18,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "user",
+				"title": "Пользователь"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		}
+	],
+	"educational-materials-articles": [
+		{
+			"id": 1,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 2,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 3,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 4,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 5,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 6,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 7,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 8,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 9,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 10,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 11,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 12,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 13,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 14,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 15,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 16,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 17,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 18,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		}
+	],
+	"educational-materials-cards": [
+		{
+			"id": 1,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 2,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 3,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 4,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 5,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 6,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 7,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 8,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 9,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 10,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 11,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 12,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 13,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 14,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 15,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 16,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 17,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 18,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		}
+	],
+	"search": [
+		{
+			"id": 1,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		},
+		{
+			"id": 2,
+			"type": "article",
+			"date": "2012-04-23T18:25:43.511Z",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			},
+			"title": "USF Настройка Firevan в unix системах",
+			"description": "Solana — это блокчейн для быстрых, безопасных, масштабируемых, децентрализованных приложений и торговых площадок. Бета-версия основной сети Solana была Бета-версия основной сети ..."
+		},
+		{
+			"id": 3,
+			"testnet_id": 1,
+			"type": "card",
+			"platform": "Solana",
+			"title": "Настройка и установка SOLANA",
+			"rating": "Многообещающе",
+			"tech_community": 3,
+			"img_src": "/img/projects-small-logo/solana.svg"
+		}
+	],
+	"pool": [
+		{
+			"id": 1,
+			"img_src": "/img/pool/1.png",
+			"title": "stake service",
+			"description": "Это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для <a href=\"#\",>Криптовалюта</a> на латинице с начала XVI века. В то время некий безымянный печатник создал большую...",
+			"cases": [
+				{
+					"id": 1,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 2,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 3,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 4,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				}
+			],
+			"total_stake": 8000000,
+			"site_url": "https://stakeservice.com/",
+			"soc": [
+				{
+					"id": 1,
+					"name": "telegram",
+					"title": "Telegram",
+					"url": "#"
+				},
+				{
+					"id": 4,
+					"name": "twitter",
+					"title": "Twitter",
+					"url": "#"
+				},
+				{
+					"id": 5,
+					"name": "instagram",
+					"title": "Instagram",
+					"url": "#"
+				}
+			]
+		},
+		{
+			"id": 2,
+			"img_src": "/img/pool/1.png",
+			"title": "stake service",
+			"description": "Это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для <a href=\"#\",>Криптовалюта</a> на латинице с начала XVI века. В то время некий безымянный печатник создал большую...",
+			"cases": [
+				{
+					"id": 1,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 2,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 3,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 4,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				}
+			],
+			"total_stake": 8000000,
+			"site_url": "https://stakeservice.com/",
+			"soc": [
+				{
+					"id": 1,
+					"name": "telegram",
+					"title": "Telegram",
+					"url": "#"
+				},
+				{
+					"id": 4,
+					"name": "twitter",
+					"title": "Twitter",
+					"url": "#"
+				},
+				{
+					"id": 5,
+					"name": "instagram",
+					"title": "Instagram",
+					"url": "#"
+				}
+			]
+		},
+		{
+			"id": 3,
+			"img_src": "/img/pool/1.png",
+			"title": "stake service",
+			"description": "Это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для <a href=\"#\",>Криптовалюта</a> на латинице с начала XVI века. В то время некий безымянный печатник создал большую...",
+			"cases": [
+				{
+					"id": 1,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 2,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 3,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 4,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				}
+			],
+			"total_stake": 8000000,
+			"site_url": "https://stakeservice.com/",
+			"soc": [
+				{
+					"id": 1,
+					"name": "telegram",
+					"title": "Telegram",
+					"url": "#"
+				},
+				{
+					"id": 4,
+					"name": "twitter",
+					"title": "Twitter",
+					"url": "#"
+				},
+				{
+					"id": 5,
+					"name": "instagram",
+					"title": "Instagram",
+					"url": "#"
+				}
+			]
+		},
+		{
+			"id": 4,
+			"img_src": "/img/pool/1.png",
+			"title": "stake service",
+			"description": "Это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для <a href=\"#\",>Криптовалюта</a> на латинице с начала XVI века. В то время некий безымянный печатник создал большую...",
+			"cases": [
+				{
+					"id": 1,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 2,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 3,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 4,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				}
+			],
+			"total_stake": 8000000,
+			"site_url": "https://stakeservice.com/",
+			"soc": [
+				{
+					"id": 1,
+					"name": "telegram",
+					"title": "Telegram",
+					"url": "#"
+				},
+				{
+					"id": 4,
+					"name": "twitter",
+					"title": "Twitter",
+					"url": "#"
+				},
+				{
+					"id": 5,
+					"name": "instagram",
+					"title": "Instagram",
+					"url": "#"
+				}
+			]
+		},
+		{
+			"id": 5,
+			"img_src": "/img/pool/1.png",
+			"title": "stake service",
+			"description": "Это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для <a href=\"#\",>Криптовалюта</a> на латинице с начала XVI века. В то время некий безымянный печатник создал большую...",
+			"cases": [
+				{
+					"id": 1,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 2,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 3,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 4,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				}
+			],
+			"total_stake": 8000000,
+			"site_url": "https://stakeservice.com/",
+			"soc": [
+				{
+					"id": 1,
+					"name": "telegram",
+					"title": "Telegram",
+					"url": "#"
+				},
+				{
+					"id": 4,
+					"name": "twitter",
+					"title": "Twitter",
+					"url": "#"
+				},
+				{
+					"id": 5,
+					"name": "instagram",
+					"title": "Instagram",
+					"url": "#"
+				}
+			]
+		},
+		{
+			"id": 6,
+			"img_src": "/img/pool/1.png",
+			"title": "stake service",
+			"description": "Это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для <a href=\"#\",>Криптовалюта</a> на латинице с начала XVI века. В то время некий безымянный печатник создал большую...",
+			"cases": [
+				{
+					"id": 1,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 2,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 3,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				},
+				{
+					"id": 4,
+					"title": "Solana",
+					"img_src": "/img/projects-small-logo/solana.svg"
+				}
+			],
+			"total_stake": 8000000,
+			"site_url": "https://stakeservice.com/",
+			"soc": [
+				{
+					"id": 1,
+					"name": "telegram",
+					"title": "Telegram",
+					"url": "#"
+				},
+				{
+					"id": 4,
+					"name": "twitter",
+					"title": "Twitter",
+					"url": "#"
+				},
+				{
+					"id": 5,
+					"name": "instagram",
+					"title": "Instagram",
+					"url": "#"
+				}
+			]
+		}
+	],
+	"article": {
+		"id": 1,
+		"title": "Как работает криптовалюта",
+		"img_src": "/img/article/1.jpg",
+		"date": "2012-04-23T18:25:43.511Z",
+		"reading_time_minutes": 4,
+		"content_navigation": [
+			{
+				"id": 1,
+				"title": "Как работает криптовалюта",
+				"block_id": "article-page-title"
+			},
+			{
+				"id": 2,
+				"title": "Для чего нужна криптовалюта",
+				"block_id": "title-2"
+			},
+			{
+				"id": 3,
+				"title": "Вкладываемся",
+				"block_id": "title-3"
+			},
+			{
+				"id": 4,
+				"title": "Советы вместо заключения",
+				"block_id": "title-4"
+			}
+		],
+		"content": "<p>Это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для <a href=\"#\">Криптовалюта</a> на латинице с начала XVI века. В то время некий безымянный печатник создал большую...</p> <p>Это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для <a href=\"#\">Криптовалюта</a> на латинице с начала XVI века. В то время некий безымянный печатник создал большую...</p> <div class=\"block-external\"> <div class=\"block-external-content\"> <div class=\"block-external-title\">Celo: первая мобильная платформа Defi для быстрых, безопасных и стабильных цифровых платежей</div> <div class=\"block-external-description\">Celo — это глобальная платежная инфраструктура, которая делает финансовые инструменты доступными для всех, у кого есть мобильный телефон.</div> <div class=\"block-external-link\"><a href=\"#\">celo.org</a></div> </div> <div class=\"block-external-img\"> <img src=\"/img/article/2.jpg\" alt=\"\"> </div> </div> <p><b>Это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\"</b> для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum.</p> <blockquote> “The Alliance for Prosperity gives us a fresh chance to build, interoperate, and secure new financial services applications” <span>Gigi Gatti, Grameen Foundation</span> </blockquote> <h3 id=\"title-2\">Для чего нужна криптовалюта</h3> <p>это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p> <img src=\"/img/article/3.jpg\" alt=\"\"> <p id=\"title-3\">это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p> <h3 id=\"title-4\">Советы вместо заключения</h3> <p>это текст-\"рыба\", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной \"рыбой\" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>",
+		"author": {
+			"img_src": "/img/article/author.png",
+			"name": "Екатерина Волощук",
+			"rank": {
+				"type": "expert",
+				"title": "Эксперт"
+			}
+		},
+		"likes": 98,
+		"share": [
+			{
+				"id": 1,
+				"name": "vk",
+				"title": "VK",
+				"url": "#"
+			},
+			{
+				"id": 2,
+				"name": "facebook",
+				"title": "Facebook",
+				"url": "#"
+			},
+			{
+				"id": 3,
+				"name": "twitter",
+				"title": "Twitter",
+				"url": "#"
+			}
+		]
+	}
+}

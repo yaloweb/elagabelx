@@ -9,27 +9,27 @@
           "glossary": "Glossary",
           "contacts": "Contact us"
         },
-        "more": "More"
+        "more": "Больше"
       },
       "second_header": {
-        "back_to_validator": "back to validator",
+        "back_to_validator": "Вернуться к валидатору",
         "menu": {
           "main": "Main",
           "testnets": "Testnets",
           "articles": "Articles",
           "delegation": "Delegate",
-          "glossary": "Glossary"
+          "glossary": "Glossary",
         }
       },
       "footer": {
         "networks": "Networks",
-        "company": "Company",
-        "social": "Social",
-        "copyright": "© Elagabal X 2022",
+        "company": "Компания",
+        "social": "Социальное",
+        "copyright": "Авторские права © Elagabal X 2022",
         "menu": {
           "about": "About us",
           "glossary": "Glossary",
-          "video_about_us": "Video about us",
+          "video_about_us": "Видео про нас",
           "team": "Team",
           "contact_us": "Contact us"
         }
@@ -38,13 +38,13 @@
     "projects_cards": {
       "open_all": "Open all",
       "annual_remuneration_rate": "APR",
-      "commission_title": "comission",
-      "soon": "Soon",
-      "stacking": "staking"
+      "commission_title": "Комиссия проценты",
+      "soon": "Скоро",
+      "stacking": "Стекинг"
     },
     "callback": {
-      "title": "<br>Contact us!",
-      "slider_bg_text": "Ready?"
+      "title": "Для этого <br>Свяжитесь с нами!",
+      "slider_bg_text": "Готовы начать?"
     },
     "home_page": {
       "banners": {
@@ -58,19 +58,14 @@
       },
       "networks": {
         "title": "Networks, avalible for staking",
-        "description": "We are active validators in these networks. Token holders can stake their tokens to help to maintain the network. Stake with Elagabal to earn rewards!"
-      },
-      "in_the_future": {
-        "title": "В ближайшем будущем",
-        "description": "Скоро мы будем операционными нодами для проектов, перечисленных рядом. В этот список мы включили только те проекты, которым мы можем полностью доверять. Ждите от нас объявления в ближайшее время.",
-        "btn_text": "Перейти в глоссарий"
+        "description": "Мы управляем валидаторами для этих проектов. Чтобы помочь развитию этих сетей и заработать вознаграждения, владельцы токенов могут осуществлять стекинг через нас. Присоединяйтесь к стекинг-экосистеме сегодня вместе с Elagabal!"
       },
       "educational_materials": {
         "title": "Обучающие материалы"
       },
       "team": {
-        "title": "Team",
-        "description": "Young team of crypto entusiast's"
+        "title": "Команда",
+        "description": "Видео — отличный способ узнать о блокчейнах. Следите за обновлениями и обращайтесь к нам с любыми предложениями для следующих видео!"
       }
     },
     "project_page": {
@@ -255,13 +250,13 @@
       "id": 2,
       "title": "Aptos",
       "img_src": "/img/projects-small-logo/aptos.svg",
-      "announcement_text": "It’s a layer 1 blockchain founded by former Meta employees that aims to provide billions of people with secure, scalable, and easy access to decentralized assets. "
+      "announcement_text": "масштабируемый протокол передачи данных"
     },
     {
       "id": 8,
       "title": "Neon",
       "img_src": "/img/projects-small-logo/neon.svg",
-      "announcement_text": "Neon EVM is a virtual machine which gives an opportunity to use the scalability and liquidity provided by Solana and tools from Ethereum."
+      "announcement_text": "масштабируемый протокол передачи данных"
     }
   ],
   "learning-materials": [
@@ -300,14 +295,14 @@
     {
       "id": 1,
       "img_src": "/img/teams/1.jpg",
-      "name": "Marcus Aurelius",
+      "name": "Василий Романов",
       "position": "СЕО"
     },
     {
       "id": 2,
       "img_src": "/img/teams/2.jpg",
-      "name": "Elina Syrtaeva",
-      "position": "CMO"
+      "name": "Андрей Градский",
+      "position": "Тех. директор"
     },
     {
       "id": 3,
@@ -425,7 +420,7 @@
       "word": "L",
       "list": [
         {
-          "title": "Liquid Staking",
+          "title": "Liquid Stacking",
           "description": "In a Proof of Work blockchain, a 51% attack occurs when a participant attempts to take control of a network by controlling 51% of the hashrate in the case of a Proof of Work coin, or 51% of the total number of coins in a Proof of Stake system. A successful 51% attack can enable the attacker to revert transactions or double spend coins."
         }
       ]

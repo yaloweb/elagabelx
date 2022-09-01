@@ -3,8 +3,10 @@ import { useInTheFutureStore } from '@/stores/inTheFuture'
 import { storeToRefs } from 'pinia'
 import { onMounted } from 'vue'
 import ProjectCard from '@/components/Projects/ProjectCard.vue'
+import { useI18n } from 'vue-i18n'
 
 const inTheFutureStore = useInTheFutureStore()
+const { t } = useI18n()
 
 onMounted(async () => {
     await inTheFutureStore.getInTheFutureProjects()
@@ -35,13 +37,15 @@ const { inTheFutureProjectsCols } = storeToRefs(inTheFutureStore)
                             class="h2"
                             v-animate="'slide-left'"
                         >
-                            В ближайшем будущем
+                            {{ t('home_page.in_the_future.title') }}
                         </div>
 
-                        <p v-animate="'slide-left'">Скоро мы будем операционными нодами для проектов, перечисленных рядом. В этот список мы включили только те проекты, которым мы можем полностью доверять. Ждите от нас объявления в ближайшее время.</p>
+                        <p v-animate="'slide-left'">
+                            {{ t('home_page.in_the_future.description') }}
+                        </p>
 
                         <RouterLink to="/glossary" class="link-with-circle-arrow">
-                            Перейти в глоссарий
+                            {{ t('home_page.in_the_future.btn_text') }}
                             <span class="icon-arrow-right-sm" />
                         </RouterLink>
 

@@ -37,7 +37,7 @@ onUnmounted(() => {
 
         <ProjectCard
             :elagabelCard="true"
-            :elagabelCardTitle="elagabel_card?.title"
+            :elagabelCardInfo="elagabel_card"
         />
 
         <ProjectCard
